@@ -431,13 +431,16 @@ class X86Assembler {
     }
 #endif
 public:
+    void emit(const std::string &s) {
+        m_asm_code += s + "\n";
+    }
     X86Assembler(Allocator &al, bool bits64) : m_al{al} {
         m_code.reserve(m_al, 1024*128);
         m_origin = 0x08048000;
 #ifdef LFORTRAN_ASM_PRINT
         if (bits64) {
-            m_asm_code = "BITS 64\n";
-            emit("    ", "org " + i2s((uint64_t)m_origin) + "\n"); // specify origin info
+            // m_asm_code = "BITS 64\n";
+            // emit("    ", "org " + i2s((uint64_t)m_origin) + "\n"); // specify origin info
         } else {
             m_asm_code = "BITS 32\n";
             emit("    ", "org " + i2s(m_origin) + "\n"); // specify origin info

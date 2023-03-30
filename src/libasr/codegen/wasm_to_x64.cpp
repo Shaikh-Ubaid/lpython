@@ -579,9 +579,12 @@ class X64Visitor : public WASMDecoder<X64Visitor>,
     void visit_F32Sqrt() { visit_F64Sqrt(); }
 
     void gen_x64_bytes() {
-        emit_elf64_header(m_a);
+        // emit_elf64_header(m_a);
 
         // declare compile-time strings
+        m_a.emit("	section .text");
+        m_a.emit("	global _start");
+
         std::string base_memory = "    "; /* in wasm backend, memory starts after 4 bytes*/
         for (uint32_t i = 0; i < data_segments.size(); i++) {
             base_memory += data_segments[i].text;
@@ -590,8 +593,8 @@ class X64Visitor : public WASMDecoder<X64Visitor>,
 
         NO_OF_IMPORTS = imports.size();
 
-        m_a.align_by_byte(0x1000);
-        m_a.add_label("text_segment_start");
+        // m_a.align_by_byte(0x1000);
+        // m_a.add_label("text_segment_start");
         for (uint32_t idx = 0; idx < type_indices.size(); idx++) {
             m_a.add_label(exports[idx + 1].name);
             {
@@ -614,10 +617,11 @@ class X64Visitor : public WASMDecoder<X64Visitor>,
             emit_double_const(m_a, d.first, d.second);
         }
 
-        m_a.add_label("text_segment_end");
+        // m_a.add_label("text_segment_end");
 
-        m_a.align_by_byte(0x1000);
-        m_a.add_label("data_segment_start");
+        // m_a.align_by_byte(0x1000);
+        // m_a.add_label("data_segment_start");
+        m_a.emit("	section .data");
         for (auto &s : label_to_str) {
             emit_data_string(m_a, s.first, s.second);
         }
@@ -651,9 +655,9 @@ class X64Visitor : public WASMDecoder<X64Visitor>,
                 default: throw CodeGenError("decode_global_section: Unsupport global type"); break;
             }
         }
-        m_a.add_label("data_segment_end");
+        // m_a.add_label("data_segment_end");
 
-        emit_elf64_footer(m_a);
+        // emit_elf64_footer(m_a);
     }
 };
 
@@ -713,7 +717,7 @@ Result<int> wasm_to_x64(Vec<uint8_t> &wasm_bytes, Allocator &al,
     }
 
     //! Helpful for debugging
-    // std::cout << x64_visitor.m_a.get_asm() << std::endl;
+    std::cout << x64_visitor.m_a.get_asm() << std::endl;
 
     if (time_report) {
         std::cout << "Codegen Time report:" << std::endl;

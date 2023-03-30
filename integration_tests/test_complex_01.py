@@ -11,6 +11,7 @@ def test_real_imag():
     b = x.imag
     assert abs(a - 2.0) <= eps
     assert abs(b - 3.0) <= eps
+    print(x)
 
 def test_complex():
     x: c64
@@ -59,6 +60,7 @@ def test_complex():
     x = complex(i1, -i1) # (i32, i32)
     x = complex(-i2, -i2) # (i64, i64)
     x = complex(i2, -i1) # (i64, i32)
+    print(x)
 
 def test_complex_unary_minus():
     c: c32
@@ -80,6 +82,7 @@ def test_complex_unary_minus():
     c2 = -c2
     assert abs(c2.real - (-3.0)) <= 1e-12
     assert abs(c2.imag - (-4.0)) <= 1e-12
+    print(c, c2)
 
 def test_complex_not():
     c: c32
@@ -92,6 +95,7 @@ def test_complex_not():
     c2 = complex(0, 0)
     b = not c2
     assert b
+    print(c, b)
 
 def check():
     test_real_imag()
