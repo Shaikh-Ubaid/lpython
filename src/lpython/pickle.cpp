@@ -4,6 +4,7 @@
 #include <lpython/bigint.h>
 #include <lpython/python_ast.h>
 #include <libasr/asr_utils.h>
+#include <libasr/pass/intrinsic_function_registry.h>
 #include <libasr/string_utils.h>
 #include <libasr/location.h>
 #include <libasr/pass/intrinsic_function_registry.h>
