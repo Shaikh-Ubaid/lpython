@@ -82,6 +82,31 @@ static inline ASR::expr_t* instantiate_functions(Allocator &al,
             }
         }
     }
+    new_name = "_lcompilers_" + new_name;
+    // Check if Function is already defined.
+    {
+        std::string new_func_name = new_name;
+        int i = 1;
+        while (global_scope->get_symbol(new_func_name) != nullptr) {
+            ASR::symbol_t *s = global_scope->get_symbol(new_func_name);
+            ASR::Function_t *f = ASR::down_cast<ASR::Function_t>(s);
+            if (ASRUtils::types_equal(ASRUtils::expr_type(f->m_return_var),
+                    arg_type)) {
+                return ASRUtils::EXPR(ASR::make_FunctionCall_t(al, loc, s,
+                    s, new_args.p, new_args.size(), arg_type, value, nullptr));
+            } else {
+                c_func_name = "_lfortran_z" + new_name;
+            }
+            break;
+        }
+        default : {
+            if (ASRUtils::extract_kind_from_ttype_t(arg_type) == 4) {
+                c_func_name = "_lfortran_s" + new_name;
+            } else {
+                c_func_name = "_lfortran_d" + new_name;
+            }
+        }
+    }
     new_name = "_lcompilers_" + new_name + "_" + type_to_str_python(arg_type);
 
     if (global_scope->get_symbol(new_name)) {
