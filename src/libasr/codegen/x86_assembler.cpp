@@ -25,6 +25,36 @@ void X86Assembler::save_binary(const std::string &filename) {
 #endif
 }
 
+// ELF header structure for 32-bit
+struct Elf32_Ehdr {
+    uint8_t ident[16];
+    uint16_t type;
+    uint16_t machine;
+    uint32_t version;
+    uint32_t entry;
+    uint32_t phoff;
+    uint32_t shoff;
+    uint32_t flags;
+    uint16_t ehsize;
+    uint16_t phentsize;
+    uint16_t phnum;
+    uint16_t shentsize;
+    uint16_t shnum;
+    uint16_t shstrndx;
+};
+
+// Program header structure for 32-bit
+struct Elf32_Phdr {
+    uint32_t type;
+    uint32_t offset;
+    uint32_t vaddr;
+    uint32_t paddr;
+    uint32_t filesz;
+    uint32_t memsz;
+    uint32_t flags;
+    uint32_t align;
+};
+
 void emit_elf32_header(X86Assembler &a, uint32_t p_flags) {
     /* Elf32_Ehdr */
     a.add_label("ehdr");
@@ -282,6 +312,121 @@ void emit_print_float(X86Assembler &a, const std::string &name) {
 }
 
 /************************* 64-bit functions **************************/
+
+// ELF header structure for 64-bit
+struct Elf64_Ehdr {
+    std::vector<uint8_t> ident; // size of 8 bytes
+    uint16_t type;
+    uint16_t machine;
+    uint32_t version;
+    uint64_t entry;
+    uint64_t phoff;
+    uint64_t shoff;
+    uint32_t flags;
+    uint16_t ehsize;
+    uint16_t phentsize;
+    uint16_t phnum;
+    uint16_t shentsize;
+    uint16_t shnum;
+    uint16_t shstrndx;
+};
+
+// Program header structure for 64-bit
+struct Elf64_Phdr {
+    uint32_t type;
+    uint32_t flags;
+    uint64_t offset;
+    uint64_t vaddr;
+    uint64_t paddr;
+    uint64_t filesz;
+    uint64_t memsz;
+    uint64_t align;
+};
+
+Elf64_Ehdr get_header(X86Assembler &a) {
+    Elf64_Ehdr e;
+    e.ident = {
+        0x7f,
+        0x45,
+        0x46,
+        0x47,  // magic number
+        2,    // file class (64-bit)
+        1,    // data encoding (little endian)
+        1,    // ELF version
+        0     // padding
+    };
+    e.type = 2;
+    e.machine = 0x3e;
+    e.version = 1;
+    e.entry = a.get_defined_symbol("_start").value;
+    e.phoff = sizeof(Elf64_Ehdr);
+    e.shoff = 0;
+    e.flags = 0;
+    e.ehsize = sizeof(Elf64_Ehdr);
+    e.phentsize = sizeof(Elf64_Phdr);
+    e.phnum = 3;
+    e.shentsize = 0;
+    e.shnum = 0;
+    e.shstrndx = 0;
+    return e;
+}
+
+Elf64_Phdr get_program_header(X86Assembler &a) {
+    Elf64_Phdr p;
+    p.type = 1;
+    p.flags = 4;
+    p.offset = sizeof(Elf64_Phdr);
+    p.vaddr = a.origin();
+    p.paddr = a.origin();
+    p.filesz = sizeof(Elf64_Phdr);
+    p.memsz = sizeof(Elf64_Phdr);
+    p.align = 0x1000;
+    return p;
+}
+
+Elf64_Phdr get_text_segment(X86Assembler &a, Elf64_Phdr &p_program) {
+    Elf64_Phdr p;
+    p.type = 1;
+    p.flags = 5;
+    p.offset = p_program.offset + sizeof(p);
+    p.vaddr = a.origin() + p.offset;
+    p.paddr = a.origin() + p.offset;
+    p.filesz = sizeof(Elf64_Phdr);
+    p.memsz = sizeof(Elf64_Phdr);
+    p.align = 0x1000;
+    return p;
+}
+
+Elf64_Phdr get_data_segment(X86Assembler &a, Elf64_Phdr &p_text_seg) {
+    Elf64_Phdr p;
+    p.type = 1;
+    p.flags = 6;
+    p.offset = p_text_seg.offset + sizeof(p_text_seg);
+    p.vaddr = a.origin() + p.offset;
+    p.paddr = a.origin() + p.offset;
+    p.filesz = sizeof(Elf64_Phdr);
+    p.memsz = sizeof(Elf64_Phdr);
+    p.align = 0x1000;
+    return p;
+}
+
+
+void X86Assembler::save_binary64(const std::string &filename) {{
+    Elf64_Ehdr e = get_header(*this);
+    Elf64_Phdr p_program = get_program_header(*this);
+    Elf64_Phdr p_text_seg = get_text_segment(*this, p_program);
+    Elf64_Phdr p_data_seg = get_data_segment(*this, p_text_seg);
+
+    std::ofstream out;
+    out.open(filename);
+
+    out.write((const char*) &e, sizeof(e));
+    out.write((const char*) &p_program, sizeof(p_program));
+    out.write((const char*) &p_text_seg, sizeof(p_text_seg));
+    out.write((const char*) &p_data_seg, sizeof(p_data_seg));
+    out.write((const char*) m_code.p, m_code.size());
+}
+
 
 void emit_elf64_header(X86Assembler &a) {
     /* Elf64_Ehdr */
