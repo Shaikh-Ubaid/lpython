@@ -411,7 +411,7 @@ Elf64_Phdr get_data_segment(X86Assembler &a, Elf64_Phdr &p_text_seg) {
 }
 
 
-void X86Assembler::save_binary64(const std::string &filename) {{
+void X86Assembler::save_binary64(const std::string &filename) {
     Elf64_Ehdr e = get_header(*this);
     Elf64_Phdr p_program = get_program_header(*this);
     Elf64_Phdr p_text_seg = get_text_segment(*this, p_program);
