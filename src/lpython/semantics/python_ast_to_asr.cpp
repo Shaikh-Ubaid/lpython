@@ -202,8 +202,8 @@ Result<std::string> get_full_path(const std::string &filename,
         return file_path;
     } else {
         // If this is `lpython`, do a special lookup
-        if (filename == "lpython.py") {
-            file_path = runtime_library_dir + "/lpython/" + filename;
+        if (filename == "lpython.py" || filename == "lptypes.py") {
+            file_path = runtime_library_dir + "/lpython/" + "lpython.py";
             status = read_file(file_path, input);
             if (status) {
                 lpython = true;
@@ -3622,7 +3622,7 @@ public:
             in any directory other than src/runtime will also
             be ignored.
         */
-        if (mod_sym == "lpython") {
+        if (mod_sym == "lpython" || mod_sym == "lptypes" || mod_sym == "numpy") {
             return ;
         }
 
