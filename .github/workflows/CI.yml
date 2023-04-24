@@ -184,3 +184,37 @@ jobs:
             which node
             node -v
             node src/lpython/tests/test_lpython.js
+
+  test_pip_pkgs:
+    name: Test PIP Installable Packages
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - uses: mamba-org/provision-with-micromamba@v15
+        with:
+          environment-file: environment_linux.yml
+
+      - uses: hendrikmuhs/ccache-action@main
+        with:
+          variant: sccache
+          key: ${{ github.job }}-${{ matrix.os }}
+
+      - name: Build Linux
+        shell: bash -l {0}
+        run: |
+            ./build0.sh
+            ./build1.sh
+
+      - name: Test PIP Pacakges with Python
+        shell: bash -l {0}
+        run: |
+            python integration_tests/test_pip_import_01.py
+
+      - name: Test PIP Pacakges with LPython
+        shell: bash -l {0}
+        run: |
+            pip_pkg_path=$(python -c "import site; print(site.getsitepackages()[0])")
+            ./src/bin/lpython integration_tests/test_pip_import_01.py -I $pip_pkg_path
