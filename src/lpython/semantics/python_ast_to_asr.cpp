@@ -3785,6 +3785,8 @@ public:
                         current_procedure_interface = true;
                     } else if (name == "ccallback" || name == "ccallable") {
                         current_procedure_abi_type = ASR::abiType::BindC;
+                    } else if (name == "cpython") {
+                        current_procedure_abi_type = ASR::abiType::Pythonic;
                     } else if (name == "overload") {
                         overload = true;
                     } else if (name == "interface") {
@@ -4487,6 +4489,9 @@ public:
     }
 
     void handle_fn(const AST::FunctionDef_t &x, ASR::Function_t &v) {
+        if (ASRUtils::get_FunctionType(v)->m_abi == ASR::abiType::Pythonic) {
+            return;
+        }
         current_scope = v.m_symtab;
         Vec<ASR::stmt_t*> body;
         body.reserve(al, x.n_body);
