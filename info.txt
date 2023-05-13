@@ -1,0 +1,1321 @@
+
+python 3.10.10 hc0d8a6c_2
+-------------------------
+file name   : python-3.10.10-hc0d8a6c_2.conda
+name        : python
+version     : 3.10.10
+build string: hc0d8a6c_2
+build number: 2
+channel     : https://repo.anaconda.com/pkgs/main/osx-arm64
+size        : 13.0 MB
+arch        : None
+constrains  : ()
+legacy_bz2_md5: fb143c52cd49fab9811036d5e68e613f
+legacy_bz2_size: 13838710
+license     : PSF-2.0
+license_family: PSF
+md5         : bd5ef8b4531bcd58ac2c00393a7d8c3f
+platform    : None
+sha256      : 4a0bb55411bd7869457ad54bc3d19eaed171298e01daa93f176cf72b56759121
+subdir      : osx-arm64
+timestamp   : 1679424280102
+url         : https://repo.anaconda.com/pkgs/main/osx-arm64/python-3.10.10-hc0d8a6c_2.conda
+dependencies:
+    bzip2 >=1.0.8,<2.0a0
+    libffi >=3.4,<3.5
+    libffi >=3.4,<4.0a0
+    ncurses >=6.4,<7.0a0
+    openssl >=1.1.1t,<1.1.2a
+    readline >=8.1.2,<9.0a0
+    sqlite >=3.41.1,<4.0a0
+    tk >=8.6.12,<8.7.0a0
+    tzdata
+    xz >=5.2.10,<6.0a0
+    zlib >=1.2.13,<1.3.0a0
+    pip
+
+python 3.10.11 hc0d8a6c_2
+-------------------------
+file name   : python-3.10.11-hc0d8a6c_2.conda
+name        : python
+version     : 3.10.11
+build string: hc0d8a6c_2
+build number: 2
+channel     : https://repo.anaconda.com/pkgs/main/osx-arm64
+size        : 13.0 MB
+arch        : None
+constrains  : ()
+legacy_bz2_md5: 14df276f2fd0455ef9df84c2ab873c18
+legacy_bz2_size: 13897594
+license     : PSF-2.0
+license_family: PSF
+md5         : 658853b9ef9b3961212f913f69d93a51
+platform    : None
+sha256      : 875361d86f4e7baf86ffc932f311b28892bec69591c86fc4514e62d5752984df
+subdir      : osx-arm64
+timestamp   : 1682017334914
+url         : https://repo.anaconda.com/pkgs/main/osx-arm64/python-3.10.11-hc0d8a6c_2.conda
+dependencies:
+    bzip2 >=1.0.8,<2.0a0
+    libffi >=3.4,<3.5
+    libffi >=3.4,<4.0a0
+    ncurses >=6.4,<7.0a0
+    openssl >=1.1.1t,<1.1.2a
+    readline >=8.1.2,<9.0a0
+    sqlite >=3.41.2,<4.0a0
+    tk >=8.6.12,<8.7.0a0
+    tzdata
+    xz >=5.2.10,<6.0a0
+    zlib >=1.2.13,<1.3.0a0
+    pip
+
+python 3.10.6 hbdb9e5c_0
+------------------------
+file name   : python-3.10.6-hbdb9e5c_0.conda
+name        : python
+version     : 3.10.6
+build string: hbdb9e5c_0
+build number: 0
+channel     : https://repo.anaconda.com/pkgs/main/osx-arm64
+size        : 10.6 MB
+arch        : None
+constrains  : ()
+legacy_bz2_md5: c68dd4038b3c6cb17e17b4f04c9f6ff5
+legacy_bz2_size: 13863880
+license     : PSF-2.0
+license_family: PSF
+md5         : 88a21cb05becd5c8e9c400c843bf1e28
+platform    : None
+sha256      : dab36a246f57992bb5dd775d51c4e380618ac725e35a35a1447b3e77ee911600
+subdir      : osx-arm64
+timestamp   : 1665174147846
+url         : https://repo.anaconda.com/pkgs/main/osx-arm64/python-3.10.6-hbdb9e5c_0.conda
+dependencies:
+    bzip2 >=1.0.8,<2.0a0
+    libffi >=3.3,<4.0a0
+    ncurses >=6.3,<7.0a0
+    openssl >=1.1.1q,<1.1.2a
+    readline >=8.1.2,<9.0a0
+    sqlite >=3.39.3,<4.0a0
+    tk >=8.6.12,<8.7.0a0
+    tzdata
+    xz >=5.2.6,<6.0a0
+    zlib >=1.2.12,<1.3.0a0
+    pip
+
+python 3.10.6 hbdb9e5c_1
+------------------------
+file name   : python-3.10.6-hbdb9e5c_1.conda
+name        : python
+version     : 3.10.6
+build string: hbdb9e5c_1
+build number: 1
+channel     : https://repo.anaconda.com/pkgs/main/osx-arm64
+size        : 10.6 MB
+arch        : None
+constrains  : ()
+legacy_bz2_md5: 5dcc8206c1cba61672a943412c7dbd50
+legacy_bz2_size: 13881540
+license     : PSF-2.0
+license_family: PSF
+md5         : 82661371d0778f010384ed0a062cb3ae
+platform    : None
+sha256      : df6c9813e55e8dd847dd386b37c43324935880770989946a9acfdb02b0de6e73
+subdir      : osx-arm64
+timestamp   : 1666627682074
+url         : https://repo.anaconda.com/pkgs/main/osx-arm64/python-3.10.6-hbdb9e5c_1.conda
+dependencies:
+    bzip2 >=1.0.8,<2.0a0
+    libffi >=3.3,<4.0a0
+    ncurses >=6.3,<7.0a0
+    openssl >=1.1.1q,<1.1.2a
+    readline >=8.1.2,<9.0a0
+    sqlite >=3.39.3,<4.0a0
+    tk >=8.6.12,<8.7.0a0
+    tzdata
+    xz >=5.2.6,<6.0a0
+    zlib >=1.2.13,<1.3.0a0
+    pip
+
+python 3.10.8 hbdb9e5c_0
+------------------------
+file name   : python-3.10.8-hbdb9e5c_0.conda
+name        : python
+version     : 3.10.8
+build string: hbdb9e5c_0
+build number: 0
+channel     : https://repo.anaconda.com/pkgs/main/osx-arm64
+size        : 13.0 MB
+arch        : None
+constrains  : ()
+legacy_bz2_md5: 899c72f77324f2667c18784177d97889
+legacy_bz2_size: 13905037
+license     : PSF-2.0
+license_family: PSF
+md5         : 545b607406621ce61491dde188a2ac24
+platform    : None
+sha256      : 105adea749f2533e1bc5459c868f6fa4a518b0c1a251e7e57d88a2d618be29d3
+subdir      : osx-arm64
+timestamp   : 1667569768095
+url         : https://repo.anaconda.com/pkgs/main/osx-arm64/python-3.10.8-hbdb9e5c_0.conda
+dependencies:
+    bzip2 >=1.0.8,<2.0a0
+    libffi >=3.3,<4.0a0
+    ncurses >=6.3,<7.0a0
+    openssl >=1.1.1q,<1.1.2a
+    readline >=8.1.2,<9.0a0
+    sqlite >=3.39.3,<4.0a0
+    tk >=8.6.12,<8.7.0a0
+    tzdata
+    xz >=5.2.6,<6.0a0
+    zlib >=1.2.13,<1.3.0a0
+    pip
+
+python 3.10.8 hc0d8a6c_1
+------------------------
+file name   : python-3.10.8-hc0d8a6c_1.conda
+name        : python
+version     : 3.10.8
+build string: hc0d8a6c_1
+build number: 1
+channel     : https://repo.anaconda.com/pkgs/main/osx-arm64
+size        : 12.9 MB
+arch        : None
+constrains  : ()
+legacy_bz2_md5: 12b83e7607e5994ba91a6974c2745591
+legacy_bz2_size: 13747656
+license     : PSF-2.0
+license_family: PSF
+md5         : 6b0a8c1832a2b63c7bfb0f6de5967601
+platform    : None
+sha256      : daf6ffd14a6a8216067353773952328fc25c9ad8dad34e51f9c6c56676004616
+subdir      : osx-arm64
+timestamp   : 1669299114749
+url         : https://repo.anaconda.com/pkgs/main/osx-arm64/python-3.10.8-hc0d8a6c_1.conda
+dependencies:
+    bzip2 >=1.0.8,<2.0a0
+    libffi >=3.4,<3.5
+    libffi >=3.4,<4.0a0
+    ncurses >=6.3,<7.0a0
+    openssl >=1.1.1s,<1.1.2a
+    readline >=8.1.2,<9.0a0
+    sqlite >=3.40.0,<4.0a0
+    tk >=8.6.12,<8.7.0a0
+    tzdata
+    xz >=5.2.6,<6.0a0
+    zlib >=1.2.13,<1.3.0a0
+    pip
+
+python 3.10.9 hc0d8a6c_0
+------------------------
+file name   : python-3.10.9-hc0d8a6c_0.conda
+name        : python
+version     : 3.10.9
+build string: hc0d8a6c_0
+build number: 0
+channel     : https://repo.anaconda.com/pkgs/main/osx-arm64
+size        : 12.0 MB
+arch        : None
+constrains  : ()
+legacy_bz2_md5: 0cc1824a3978b2a6917ee85e76968a81
+legacy_bz2_size: 13846970
+license     : PSF-2.0
+license_family: PSF
+md5         : f87a2e1f7595344e3d8e0842f0016831
+platform    : None
+sha256      : fef4b468230ec3eb452654ff60377141a288a80b5e86e329cb5d9e189843410f
+subdir      : osx-arm64
+timestamp   : 1673450513668
+url         : https://repo.anaconda.com/pkgs/main/osx-arm64/python-3.10.9-hc0d8a6c_0.conda
+dependencies:
+    bzip2 >=1.0.8,<2.0a0
+    libffi >=3.4,<3.5
+    libffi >=3.4,<4.0a0
+    ncurses >=6.3,<7.0a0
+    openssl >=1.1.1s,<1.1.2a
+    readline >=8.1.2,<9.0a0
+    sqlite >=3.40.1,<4.0a0
+    tk >=8.6.12,<8.7.0a0
+    tzdata
+    xz >=5.2.8,<6.0a0
+    zlib >=1.2.13,<1.3.0a0
+    pip
+
+python 3.10.9 hc0d8a6c_1
+------------------------
+file name   : python-3.10.9-hc0d8a6c_1.conda
+name        : python
+version     : 3.10.9
+build string: hc0d8a6c_1
+build number: 1
+channel     : https://repo.anaconda.com/pkgs/main/osx-arm64
+size        : 12.9 MB
+arch        : None
+constrains  : ()
+legacy_bz2_md5: 79db6ab46b228ae5779c077a7f4314b9
+legacy_bz2_size: 13813760
+license     : PSF-2.0
+license_family: PSF
+md5         : b49223285e681289fe846def063b8c61
+platform    : None
+sha256      : 717f4901666a82f0d1fb71be02870d845a72eaec083218e71200000481e5577b
+subdir      : osx-arm64
+timestamp   : 1677695073705
+url         : https://repo.anaconda.com/pkgs/main/osx-arm64/python-3.10.9-hc0d8a6c_1.conda
+dependencies:
+    bzip2 >=1.0.8,<2.0a0
+    libffi >=3.4,<3.5
+    libffi >=3.4,<4.0a0
+    ncurses >=6.4,<7.0a0
+    openssl >=1.1.1t,<1.1.2a
+    readline >=8.1.2,<9.0a0
+    sqlite >=3.40.1,<4.0a0
+    tk >=8.6.12,<8.7.0a0
+    tzdata
+    xz >=5.2.10,<6.0a0
+    zlib >=1.2.13,<1.3.0a0
+    pip
+
+python 3.10.9 hc0d8a6c_2
+------------------------
+file name   : python-3.10.9-hc0d8a6c_2.conda
+name        : python
+version     : 3.10.9
+build string: hc0d8a6c_2
+build number: 2
+channel     : https://repo.anaconda.com/pkgs/main/osx-arm64
+size        : 13.0 MB
+arch        : None
+constrains  : ()
+legacy_bz2_md5: 0c47c7fca8e6caf1b8c3d2eb5a27bb63
+legacy_bz2_size: 13825261
+license     : PSF-2.0
+license_family: PSF
+md5         : ede0e4fc40d6eefe7ae13e82831e1578
+platform    : None
+sha256      : 501f646e1c636bcb26c8b04a922b573d6b0357bf172a0d61a0240c2dfc161445
+subdir      : osx-arm64
+timestamp   : 1678272486489
+url         : https://repo.anaconda.com/pkgs/main/osx-arm64/python-3.10.9-hc0d8a6c_2.conda
+dependencies:
+    bzip2 >=1.0.8,<2.0a0
+    libffi >=3.4,<3.5
+    libffi >=3.4,<4.0a0
+    ncurses >=6.4,<7.0a0
+    openssl >=1.1.1t,<1.1.2a
+    readline >=8.1.2,<9.0a0
+    sqlite >=3.40.1,<4.0a0
+    tk >=8.6.12,<8.7.0a0
+    tzdata
+    xz >=5.2.10,<6.0a0
+    zlib >=1.2.13,<1.3.0a0
+    pip
+
+python 3.11.0 hc0d8a6c_2
+------------------------
+file name   : python-3.11.0-hc0d8a6c_2.conda
+name        : python
+version     : 3.11.0
+build string: hc0d8a6c_2
+build number: 2
+channel     : https://repo.anaconda.com/pkgs/main/osx-arm64
+size        : 15.3 MB
+arch        : None
+constrains  : ()
+legacy_bz2_md5: 4f2d3cbd62b2566a77ab1ee0ed8a581e
+legacy_bz2_size: 16321187
+license     : PSF-2.0
+license_family: PSF
+md5         : 1a7019acdc1637c47a0b2d94fd8ca044
+platform    : None
+sha256      : 8d7fac7a0a716308614fe6cd392d5a14cbfddc48f100cf0e628210dbb8a9a41a
+subdir      : osx-arm64
+timestamp   : 1673889560183
+url         : https://repo.anaconda.com/pkgs/main/osx-arm64/python-3.11.0-hc0d8a6c_2.conda
+dependencies:
+    bzip2 >=1.0.8,<2.0a0
+    libffi >=3.4,<3.5
+    libffi >=3.4,<4.0a0
+    ncurses >=6.3,<7.0a0
+    openssl >=1.1.1s,<1.1.2a
+    readline >=8.1.2,<9.0a0
+    sqlite >=3.40.1,<4.0a0
+    tk >=8.6.12,<8.7.0a0
+    tzdata
+    xz >=5.2.8,<6.0a0
+    zlib >=1.2.13,<1.3.0a0
+    pip
+
+python 3.11.0 hc0d8a6c_3
+------------------------
+file name   : python-3.11.0-hc0d8a6c_3.conda
+name        : python
+version     : 3.11.0
+build string: hc0d8a6c_3
+build number: 3
+channel     : https://repo.anaconda.com/pkgs/main/osx-arm64
+size        : 15.3 MB
+arch        : None
+constrains  : ()
+legacy_bz2_md5: 3ff779983acb6aa7a03ef24268c0eb88
+legacy_bz2_size: 16306305
+license     : PSF-2.0
+license_family: PSF
+md5         : 6b08c690468a632dcfd0ef55e1b26ab0
+platform    : None
+sha256      : 0d63271980993bf931a312915ad338219ab398d022ed323edb242662690a28dd
+subdir      : osx-arm64
+timestamp   : 1677696064396
+url         : https://repo.anaconda.com/pkgs/main/osx-arm64/python-3.11.0-hc0d8a6c_3.conda
+dependencies:
+    bzip2 >=1.0.8,<2.0a0
+    libffi >=3.4,<3.5
+    libffi >=3.4,<4.0a0
+    ncurses >=6.4,<7.0a0
+    openssl >=1.1.1t,<1.1.2a
+    readline >=8.1.2,<9.0a0
+    sqlite >=3.40.1,<4.0a0
+    tk >=8.6.12,<8.7.0a0
+    tzdata
+    xz >=5.2.10,<6.0a0
+    zlib >=1.2.13,<1.3.0a0
+    pip
+
+python 3.11.2 hc0d8a6c_0
+------------------------
+file name   : python-3.11.2-hc0d8a6c_0.conda
+name        : python
+version     : 3.11.2
+build string: hc0d8a6c_0
+build number: 0
+channel     : https://repo.anaconda.com/pkgs/main/osx-arm64
+size        : 15.3 MB
+arch        : None
+constrains  : ()
+legacy_bz2_md5: 331e1e522bc59b8f79bf40fa9ff3f5b8
+legacy_bz2_size: 16289531
+license     : PSF-2.0
+license_family: PSF
+md5         : 2436b0e3116ed03300c05217a4bf1fa6
+platform    : None
+sha256      : 3c9fc5e7ebc55fd33d8906c997487c2ac558f523d7f9c13dfc48f306b5a13179
+subdir      : osx-arm64
+timestamp   : 1679960726695
+url         : https://repo.anaconda.com/pkgs/main/osx-arm64/python-3.11.2-hc0d8a6c_0.conda
+dependencies:
+    bzip2 >=1.0.8,<2.0a0
+    libffi >=3.4,<3.5
+    libffi >=3.4,<4.0a0
+    ncurses >=6.4,<7.0a0
+    openssl >=1.1.1t,<1.1.2a
+    readline >=8.1.2,<9.0a0
+    sqlite >=3.41.1,<4.0a0
+    tk >=8.6.12,<8.7.0a0
+    tzdata
+    xz >=5.2.10,<6.0a0
+    zlib >=1.2.13,<1.3.0a0
+    pip
+
+python 3.11.3 hc0d8a6c_0
+------------------------
+file name   : python-3.11.3-hc0d8a6c_0.conda
+name        : python
+version     : 3.11.3
+build string: hc0d8a6c_0
+build number: 0
+channel     : https://repo.anaconda.com/pkgs/main/osx-arm64
+size        : 15.3 MB
+arch        : None
+constrains  : ()
+legacy_bz2_md5: 34638131cb236a2cb8ca1dd2e89d098f
+legacy_bz2_size: 16348962
+license     : PSF-2.0
+license_family: PSF
+md5         : 2fde54a2c622f9574e2fb47d20e92502
+platform    : None
+sha256      : bed4500a451edef1f440c0f4b284b7cb32440f911724b57dc50cbfca67a2e1f4
+subdir      : osx-arm64
+timestamp   : 1681948617632
+url         : https://repo.anaconda.com/pkgs/main/osx-arm64/python-3.11.3-hc0d8a6c_0.conda
+dependencies:
+    bzip2 >=1.0.8,<2.0a0
+    libffi >=3.4,<3.5
+    libffi >=3.4,<4.0a0
+    ncurses >=6.4,<7.0a0
+    openssl >=1.1.1t,<1.1.2a
+    readline >=8.1.2,<9.0a0
+    sqlite >=3.41.2,<4.0a0
+    tk >=8.6.12,<8.7.0a0
+    tzdata
+    xz >=5.2.10,<6.0a0
+    zlib >=1.2.13,<1.3.0a0
+    pip
+
+python 3.8.11 hbdb9e5c_5
+------------------------
+file name   : python-3.8.11-hbdb9e5c_5.conda
+name        : python
+version     : 3.8.11
+build string: hbdb9e5c_5
+build number: 5
+channel     : https://repo.anaconda.com/pkgs/main/osx-arm64
+size        : 10.1 MB
+arch        : None
+constrains  : ()
+legacy_bz2_md5: a0badffb369362f48f1d7cbe49240225
+legacy_bz2_size: 12783902
+license     : Python-2.0
+md5         : 2436f07f2fe23409ff5d29057225820c
+platform    : None
+sha256      : 007d60f27679f6f530fced1a84f6e45ada97f3fe60134723e164565096df3d9e
+subdir      : osx-arm64
+timestamp   : 1629108476472
+url         : https://repo.anaconda.com/pkgs/main/osx-arm64/python-3.8.11-hbdb9e5c_5.conda
+dependencies:
+    libcxx >=12.0.0
+    libffi >=3.3,<4.0a0
+    ncurses >=6.2,<7.0a0
+    openssl >=1.1.1j,<1.1.2a
+    readline >=8.1,<9.0a0
+    sqlite >=3.35.4,<4.0a0
+    tk >=8.6.10,<8.7.0a0
+    xz >=5.2.5,<6.0a0
+    zlib >=1.2.11,<1.3.0a0
+    pip
+
+python 3.8.13 hbdb9e5c_0
+------------------------
+file name   : python-3.8.13-hbdb9e5c_0.conda
+name        : python
+version     : 3.8.13
+build string: hbdb9e5c_0
+build number: 0
+channel     : https://repo.anaconda.com/pkgs/main/osx-arm64
+size        : 10.6 MB
+arch        : None
+constrains  : ()
+legacy_bz2_md5: 38695164f3288e059659855839a2f631
+legacy_bz2_size: 13401429
+license     : PSF-2.0
+license_family: PSF
+md5         : 393886f7e6f2096ccf8bb651d38a6022
+platform    : None
+sha256      : 724a326158970db567e731dfd319446e08e2425bd7ec74090d298cb1a2bc4742
+subdir      : osx-arm64
+timestamp   : 1648466228890
+url         : https://repo.anaconda.com/pkgs/main/osx-arm64/python-3.8.13-hbdb9e5c_0.conda
+dependencies:
+    libcxx >=12.0.0
+    libffi >=3.3,<4.0a0
+    ncurses >=6.3,<7.0a0
+    openssl >=1.1.1n,<1.1.2a
+    readline >=8.1.2,<9.0a0
+    sqlite >=3.38.0,<4.0a0
+    tk >=8.6.11,<8.7.0a0
+    xz >=5.2.5,<6.0a0
+    zlib >=1.2.11,<1.3.0a0
+    pip
+
+python 3.8.13 hbdb9e5c_1
+------------------------
+file name   : python-3.8.13-hbdb9e5c_1.conda
+name        : python
+version     : 3.8.13
+build string: hbdb9e5c_1
+build number: 1
+channel     : https://repo.anaconda.com/pkgs/main/osx-arm64
+size        : 10.6 MB
+arch        : None
+constrains  : ()
+legacy_bz2_md5: 25e15cd5755fd65d6c22be425d007afa
+legacy_bz2_size: 13358698
+license     : PSF-2.0
+license_family: PSF
+md5         : 2f0dbf5c6c2fedbfc3775f92cb964b3f
+platform    : None
+sha256      : 95c3574833072381e28595602b7d391e7bc4484ba93b2fb6463a03dbec86128c
+subdir      : osx-arm64
+timestamp   : 1666220161011
+url         : https://repo.anaconda.com/pkgs/main/osx-arm64/python-3.8.13-hbdb9e5c_1.conda
+dependencies:
+    libcxx >=12.0.0
+    libffi >=3.3,<4.0a0
+    ncurses >=6.3,<7.0a0
+    openssl >=1.1.1q,<1.1.2a
+    readline >=8.1.2,<9.0a0
+    sqlite >=3.39.3,<4.0a0
+    tk >=8.6.12,<8.7.0a0
+    xz >=5.2.6,<6.0a0
+    zlib >=1.2.12,<1.3.0a0
+    pip
+
+python 3.8.15 h266c4f5_0
+------------------------
+file name   : python-3.8.15-h266c4f5_0.conda
+name        : python
+version     : 3.8.15
+build string: h266c4f5_0
+build number: 0
+channel     : https://repo.anaconda.com/pkgs/main/osx-arm64
+size        : 12.5 MB
+arch        : None
+constrains  : ()
+legacy_bz2_md5: a6450976dbba19dca12925263fb0385b
+legacy_bz2_size: 13370361
+license     : PSF-2.0
+license_family: PSF
+md5         : a8a7637c6349662b86bd3805efdc1cb8
+platform    : None
+sha256      : 7dbc515dc5626596181c47868cfc7b0a986a29c735c6ecb611707a1e2e02f368
+subdir      : osx-arm64
+timestamp   : 1668107914571
+url         : https://repo.anaconda.com/pkgs/main/osx-arm64/python-3.8.15-h266c4f5_0.conda
+dependencies:
+    libcxx >=14.0.6
+    libffi >=3.3,<4.0a0
+    ncurses >=6.3,<7.0a0
+    openssl >=1.1.1s,<1.1.2a
+    readline >=8.1.2,<9.0a0
+    sqlite >=3.39.3,<4.0a0
+    tk >=8.6.12,<8.7.0a0
+    xz >=5.2.6,<6.0a0
+    zlib >=1.2.13,<1.3.0a0
+    pip
+
+python 3.8.15 hc0d8a6c_2
+------------------------
+file name   : python-3.8.15-hc0d8a6c_2.conda
+name        : python
+version     : 3.8.15
+build string: hc0d8a6c_2
+build number: 2
+channel     : https://repo.anaconda.com/pkgs/main/osx-arm64
+size        : 12.3 MB
+arch        : None
+constrains  : ()
+legacy_bz2_md5: 1fe21106f7dd0d123d93142e084c9f27
+legacy_bz2_size: 13309912
+license     : PSF-2.0
+license_family: PSF
+md5         : cdf4af92159db1d56e48478e03ff47ba
+platform    : None
+sha256      : a87b97328901fe3f21818b1b024d6d9f43c88f72687c08f5df54163c8731a22c
+subdir      : osx-arm64
+timestamp   : 1669302330501
+url         : https://repo.anaconda.com/pkgs/main/osx-arm64/python-3.8.15-hc0d8a6c_2.conda
+dependencies:
+    libcxx >=14.0.6
+    libffi >=3.4,<3.5
+    libffi >=3.4,<4.0a0
+    ncurses >=6.3,<7.0a0
+    openssl >=1.1.1s,<1.1.2a
+    readline >=8.1.2,<9.0a0
+    sqlite >=3.40.0,<4.0a0
+    tk >=8.6.12,<8.7.0a0
+    xz >=5.2.6,<6.0a0
+    zlib >=1.2.13,<1.3.0a0
+    pip
+
+python 3.8.16 hc0d8a6c_2
+------------------------
+file name   : python-3.8.16-hc0d8a6c_2.conda
+name        : python
+version     : 3.8.16
+build string: hc0d8a6c_2
+build number: 2
+channel     : https://repo.anaconda.com/pkgs/main/osx-arm64
+size        : 12.6 MB
+arch        : None
+constrains  : ()
+legacy_bz2_md5: 1137fd601ac04aa95ba3382be3a767fa
+legacy_bz2_size: 13380505
+license     : PSF-2.0
+license_family: PSF
+md5         : 69452a039f7a8f8341550c05a4f7bf24
+platform    : None
+sha256      : 7c61cd3f7e01bfc249b31e253c3cd37df38cff49ca1b1728ae0d4ac18e2dd1e4
+subdir      : osx-arm64
+timestamp   : 1673995396825
+url         : https://repo.anaconda.com/pkgs/main/osx-arm64/python-3.8.16-hc0d8a6c_2.conda
+dependencies:
+    libcxx >=14.0.6
+    libffi >=3.4,<3.5
+    libffi >=3.4,<4.0a0
+    ncurses >=6.3,<7.0a0
+    openssl >=1.1.1s,<1.1.2a
+    readline >=8.1.2,<9.0a0
+    sqlite >=3.40.1,<4.0a0
+    tk >=8.6.12,<8.7.0a0
+    xz >=5.2.10,<6.0a0
+    zlib >=1.2.13,<1.3.0a0
+    pip
+
+python 3.8.16 hc0d8a6c_3
+------------------------
+file name   : python-3.8.16-hc0d8a6c_3.conda
+name        : python
+version     : 3.8.16
+build string: hc0d8a6c_3
+build number: 3
+channel     : https://repo.anaconda.com/pkgs/main/osx-arm64
+size        : 12.6 MB
+arch        : None
+constrains  : ()
+legacy_bz2_md5: d7566159abd7d24820c262aa37487105
+legacy_bz2_size: 13316421
+license     : PSF-2.0
+license_family: PSF
+md5         : 28dad6a0dbda41b86b592ccc0bcb4a70
+platform    : None
+sha256      : 589c67ade9cf50180fd1d1ca0472d038bd72d05d76d011db676ec7cabfa35e6e
+subdir      : osx-arm64
+timestamp   : 1677727339227
+url         : https://repo.anaconda.com/pkgs/main/osx-arm64/python-3.8.16-hc0d8a6c_3.conda
+dependencies:
+    libcxx >=14.0.6
+    libffi >=3.4,<3.5
+    libffi >=3.4,<4.0a0
+    ncurses >=6.4,<7.0a0
+    openssl >=1.1.1t,<1.1.2a
+    readline >=8.1.2,<9.0a0
+    sqlite >=3.40.1,<4.0a0
+    tk >=8.6.12,<8.7.0a0
+    xz >=5.2.10,<6.0a0
+    zlib >=1.2.13,<1.3.0a0
+    pip
+
+python 3.9.11 hbdb9e5c_1
+------------------------
+file name   : python-3.9.11-hbdb9e5c_1.conda
+name        : python
+version     : 3.9.11
+build string: hbdb9e5c_1
+build number: 1
+channel     : https://repo.anaconda.com/pkgs/main/osx-arm64
+size        : 10.2 MB
+arch        : None
+constrains  : ()
+legacy_bz2_md5: b9cc5f99fe3265965689a7d7d03b6b12
+legacy_bz2_size: 13213183
+license     : PSF-2.0
+license_family: PSF
+md5         : 7602582b891b47e986c2367038eaa3dd
+platform    : None
+sha256      : 32edfa47a03e72ae16e5c36275c43d48899fb74b5e06c3a12a9e27d7e619476f
+subdir      : osx-arm64
+timestamp   : 1648462165396
+url         : https://repo.anaconda.com/pkgs/main/osx-arm64/python-3.9.11-hbdb9e5c_1.conda
+dependencies:
+    libcxx >=12.0.0
+    libffi >=3.3,<4.0a0
+    ncurses >=6.3,<7.0a0
+    openssl >=1.1.1n,<1.1.2a
+    readline >=8.1.2,<9.0a0
+    sqlite >=3.38.0,<4.0a0
+    tk >=8.6.11,<8.7.0a0
+    tzdata
+    xz >=5.2.5,<6.0a0
+    zlib >=1.2.11,<1.3.0a0
+    pip
+
+python 3.9.11 hbdb9e5c_2
+------------------------
+file name   : python-3.9.11-hbdb9e5c_2.conda
+name        : python
+version     : 3.9.11
+build string: hbdb9e5c_2
+build number: 2
+channel     : https://repo.anaconda.com/pkgs/main/osx-arm64
+size        : 10.1 MB
+arch        : None
+constrains  : ()
+legacy_bz2_md5: e037b103ae39d0f4101a606bd2c15fbd
+legacy_bz2_size: 13273661
+license     : PSF-2.0
+license_family: PSF
+md5         : c4e41bae925a2eb489f0c8644bc8f2ee
+platform    : None
+sha256      : e02676f577b3636f064e757b376f45e4f8d25afb4f0247fa5115f52c53ee4e5f
+subdir      : osx-arm64
+timestamp   : 1648580869667
+url         : https://repo.anaconda.com/pkgs/main/osx-arm64/python-3.9.11-hbdb9e5c_2.conda
+dependencies:
+    libcxx >=12.0.0
+    libffi >=3.3,<4.0a0
+    ncurses >=6.3,<7.0a0
+    openssl >=1.1.1n,<1.1.2a
+    readline >=8.1.2,<9.0a0
+    sqlite >=3.38.0,<4.0a0
+    tk >=8.6.11,<8.7.0a0
+    tzdata
+    xz >=5.2.5,<6.0a0
+    zlib >=1.2.11,<1.3.0a0
+    pip
+
+python 3.9.12 hbdb9e5c_0
+------------------------
+file name   : python-3.9.12-hbdb9e5c_0.conda
+name        : python
+version     : 3.9.12
+build string: hbdb9e5c_0
+build number: 0
+channel     : https://repo.anaconda.com/pkgs/main/osx-arm64
+size        : 10.2 MB
+arch        : None
+constrains  : ()
+legacy_bz2_md5: 0c7d763301630cfb849959b52fda685b
+legacy_bz2_size: 13229067
+license     : PSF-2.0
+license_family: PSF
+md5         : 6d4e471648e21dd0dadd853bf54d8a28
+platform    : None
+sha256      : ab32998dc7fdd5e8e756140aac58c47eaacba3a5ecf3b90dbbbe27de14106f62
+subdir      : osx-arm64
+timestamp   : 1649141750593
+url         : https://repo.anaconda.com/pkgs/main/osx-arm64/python-3.9.12-hbdb9e5c_0.conda
+dependencies:
+    libcxx >=12.0.0
+    libffi >=3.3,<4.0a0
+    ncurses >=6.3,<7.0a0
+    openssl >=1.1.1n,<1.1.2a
+    readline >=8.1.2,<9.0a0
+    sqlite >=3.38.2,<4.0a0
+    tk >=8.6.11,<8.7.0a0
+    tzdata
+    xz >=5.2.5,<6.0a0
+    zlib >=1.2.11,<1.3.0a0
+    pip
+
+python 3.9.12 hbdb9e5c_1
+------------------------
+file name   : python-3.9.12-hbdb9e5c_1.conda
+name        : python
+version     : 3.9.12
+build string: hbdb9e5c_1
+build number: 1
+channel     : https://repo.anaconda.com/pkgs/main/osx-arm64
+size        : 10.2 MB
+arch        : None
+constrains  : ()
+legacy_bz2_md5: ab95a459d71fa2503a0d27613a1f6336
+legacy_bz2_size: 13239336
+license     : PSF-2.0
+license_family: PSF
+md5         : 53fbd267a0fc103b65fc058892b55519
+platform    : None
+sha256      : 554fc4a9251cd2dc06ae9feb70dfbdc8029eb97a939c153e8441bf09b7853207
+subdir      : osx-arm64
+timestamp   : 1654083487177
+url         : https://repo.anaconda.com/pkgs/main/osx-arm64/python-3.9.12-hbdb9e5c_1.conda
+dependencies:
+    libcxx >=12.0.0
+    libffi >=3.3,<4.0a0
+    ncurses >=6.3,<7.0a0
+    openssl >=1.1.1o,<1.1.2a
+    readline >=8.1.2,<9.0a0
+    sqlite >=3.38.3,<4.0a0
+    tk >=8.6.11,<8.7.0a0
+    tzdata
+    xz >=5.2.5,<6.0a0
+    zlib >=1.2.12,<1.3.0a0
+    pip
+
+python 3.9.13 hbdb9e5c_1
+------------------------
+file name   : python-3.9.13-hbdb9e5c_1.conda
+name        : python
+version     : 3.9.13
+build string: hbdb9e5c_1
+build number: 1
+channel     : https://repo.anaconda.com/pkgs/main/osx-arm64
+size        : 10.1 MB
+arch        : None
+constrains  : ()
+legacy_bz2_md5: 53676451afd965e7582e5b4c898fa90c
+legacy_bz2_size: 13225998
+license     : PSF-2.0
+license_family: PSF
+md5         : 007c2e16a887d4dc3ab85fb765a5005f
+platform    : None
+sha256      : ee9319d1a78717e64ac2777ff2dd0fd0a648174c806a9a665a33835e63b27b92
+subdir      : osx-arm64
+timestamp   : 1661470286166
+url         : https://repo.anaconda.com/pkgs/main/osx-arm64/python-3.9.13-hbdb9e5c_1.conda
+dependencies:
+    libcxx >=12.0.0
+    libffi >=3.3,<4.0a0
+    ncurses >=6.3,<7.0a0
+    openssl >=1.1.1q,<1.1.2a
+    readline >=8.1.2,<9.0a0
+    sqlite >=3.39.2,<4.0a0
+    tk >=8.6.12,<8.7.0a0
+    tzdata
+    xz >=5.2.5,<6.0a0
+    zlib >=1.2.12,<1.3.0a0
+    pip
+
+python 3.9.13 hbdb9e5c_2
+------------------------
+file name   : python-3.9.13-hbdb9e5c_2.conda
+name        : python
+version     : 3.9.13
+build string: hbdb9e5c_2
+build number: 2
+channel     : https://repo.anaconda.com/pkgs/main/osx-arm64
+size        : 10.2 MB
+arch        : None
+constrains  : ()
+legacy_bz2_md5: 0c35bd74c4914869264f7fc7d0acb6a6
+legacy_bz2_size: 13256298
+license     : PSF-2.0
+license_family: PSF
+md5         : 185591d7dd14a96bb2e02654dacabba3
+platform    : None
+sha256      : ae1865224dd01e2b1afd73ac62e74ef44d1a986acce9eb0381a0dd1355b78336
+subdir      : osx-arm64
+timestamp   : 1665695759979
+url         : https://repo.anaconda.com/pkgs/main/osx-arm64/python-3.9.13-hbdb9e5c_2.conda
+dependencies:
+    libcxx >=12.0.0
+    libffi >=3.3,<4.0a0
+    ncurses >=6.3,<7.0a0
+    openssl >=1.1.1q,<1.1.2a
+    readline >=8.1.2,<9.0a0
+    sqlite >=3.39.3,<4.0a0
+    tk >=8.6.12,<8.7.0a0
+    tzdata
+    xz >=5.2.6,<6.0a0
+    zlib >=1.2.12,<1.3.0a0
+    pip
+
+python 3.9.15 hbdb9e5c_0
+------------------------
+file name   : python-3.9.15-hbdb9e5c_0.conda
+name        : python
+version     : 3.9.15
+build string: hbdb9e5c_0
+build number: 0
+channel     : https://repo.anaconda.com/pkgs/main/osx-arm64
+size        : 12.5 MB
+arch        : None
+constrains  : ()
+legacy_bz2_md5: 6d29e3b729fb0acf813875f0685ab4d9
+legacy_bz2_size: 13296222
+license     : PSF-2.0
+license_family: PSF
+md5         : 552b857a1dcae1f85b375261336927a0
+platform    : None
+sha256      : c11e39c0d484a46e7e600671f62e31a2fe24a76e7797cbb114e533d4330d8a2d
+subdir      : osx-arm64
+timestamp   : 1667578629312
+url         : https://repo.anaconda.com/pkgs/main/osx-arm64/python-3.9.15-hbdb9e5c_0.conda
+dependencies:
+    libcxx >=12.0.0
+    libffi >=3.3,<4.0a0
+    ncurses >=6.3,<7.0a0
+    openssl >=1.1.1q,<1.1.2a
+    readline >=8.1.2,<9.0a0
+    sqlite >=3.39.3,<4.0a0
+    tk >=8.6.12,<8.7.0a0
+    tzdata
+    xz >=5.2.6,<6.0a0
+    zlib >=1.2.13,<1.3.0a0
+    pip
+
+python 3.9.15 hc0d8a6c_2
+------------------------
+file name   : python-3.9.15-hc0d8a6c_2.conda
+name        : python
+version     : 3.9.15
+build string: hc0d8a6c_2
+build number: 2
+channel     : https://repo.anaconda.com/pkgs/main/osx-arm64
+size        : 12.5 MB
+arch        : None
+constrains  : ()
+legacy_bz2_md5: 4b755a83b8e078efb38e867dc8fa6ba0
+legacy_bz2_size: 13251787
+license     : PSF-2.0
+license_family: PSF
+md5         : e28533a8091cab7be3f75151ba71b335
+platform    : None
+sha256      : d59afa70323c2a16d2c7a03c76d72f8266737c500cf45142c838147c52bfb4af
+subdir      : osx-arm64
+timestamp   : 1669300325059
+url         : https://repo.anaconda.com/pkgs/main/osx-arm64/python-3.9.15-hc0d8a6c_2.conda
+dependencies:
+    libcxx >=14.0.6
+    libffi >=3.4,<3.5
+    libffi >=3.4,<4.0a0
+    ncurses >=6.3,<7.0a0
+    openssl >=1.1.1s,<1.1.2a
+    readline >=8.1.2,<9.0a0
+    sqlite >=3.40.0,<4.0a0
+    tk >=8.6.12,<8.7.0a0
+    tzdata
+    xz >=5.2.6,<6.0a0
+    zlib >=1.2.13,<1.3.0a0
+    pip
+
+python 3.9.16 hc0d8a6c_0
+------------------------
+file name   : python-3.9.16-hc0d8a6c_0.conda
+name        : python
+version     : 3.9.16
+build string: hc0d8a6c_0
+build number: 0
+channel     : https://repo.anaconda.com/pkgs/main/osx-arm64
+size        : 12.6 MB
+arch        : None
+constrains  : ()
+legacy_bz2_md5: 87a7365336811a8891967ae4a3ab30ac
+legacy_bz2_size: 13282757
+license     : PSF-2.0
+license_family: PSF
+md5         : 9dc504b7a7ad7766d0745a267b011682
+platform    : None
+sha256      : 55406d9871440b3b4258d044779d23d30c135513758d6e139c2638c863f6ec5a
+subdir      : osx-arm64
+timestamp   : 1673453153580
+url         : https://repo.anaconda.com/pkgs/main/osx-arm64/python-3.9.16-hc0d8a6c_0.conda
+dependencies:
+    libcxx >=14.0.6
+    libffi >=3.4,<3.5
+    libffi >=3.4,<4.0a0
+    ncurses >=6.3,<7.0a0
+    openssl >=1.1.1s,<1.1.2a
+    readline >=8.1.2,<9.0a0
+    sqlite >=3.40.1,<4.0a0
+    tk >=8.6.12,<8.7.0a0
+    tzdata
+    xz >=5.2.8,<6.0a0
+    zlib >=1.2.13,<1.3.0a0
+    pip
+
+python 3.9.16 hc0d8a6c_1
+------------------------
+file name   : python-3.9.16-hc0d8a6c_1.conda
+name        : python
+version     : 3.9.16
+build string: hc0d8a6c_1
+build number: 1
+channel     : https://repo.anaconda.com/pkgs/main/osx-arm64
+size        : 12.6 MB
+arch        : None
+constrains  : ()
+legacy_bz2_md5: 41d0c8df311e7e57c9cbab4647683414
+legacy_bz2_size: 13276696
+license     : PSF-2.0
+license_family: PSF
+md5         : 4ad0c59b65109fcafa9fbabf38f8be25
+platform    : None
+sha256      : 17fe2a6f8a9e8127485f953e13acb644058272d444f518dc9564be146ca58137
+subdir      : osx-arm64
+timestamp   : 1677694984975
+url         : https://repo.anaconda.com/pkgs/main/osx-arm64/python-3.9.16-hc0d8a6c_1.conda
+dependencies:
+    libcxx >=14.0.6
+    libffi >=3.4,<3.5
+    libffi >=3.4,<4.0a0
+    ncurses >=6.4,<7.0a0
+    openssl >=1.1.1t,<1.1.2a
+    readline >=8.1.2,<9.0a0
+    sqlite >=3.40.1,<4.0a0
+    tk >=8.6.12,<8.7.0a0
+    tzdata
+    xz >=5.2.10,<6.0a0
+    zlib >=1.2.13,<1.3.0a0
+    pip
+
+python 3.9.16 hc0d8a6c_2
+------------------------
+file name   : python-3.9.16-hc0d8a6c_2.conda
+name        : python
+version     : 3.9.16
+build string: hc0d8a6c_2
+build number: 2
+channel     : https://repo.anaconda.com/pkgs/main/osx-arm64
+size        : 12.6 MB
+arch        : None
+constrains  : ()
+legacy_bz2_md5: 134b7ea4be89422b06baf214d41a4f45
+legacy_bz2_size: 13236530
+license     : PSF-2.0
+license_family: PSF
+md5         : f4f3fae25939c852bc4b3a4e52befddc
+platform    : None
+sha256      : 3182a2dd576b1cc7f2214ed63d9c28f1f4671d5a5d52f0531c0cd67ac47e0f76
+subdir      : osx-arm64
+timestamp   : 1678271574166
+url         : https://repo.anaconda.com/pkgs/main/osx-arm64/python-3.9.16-hc0d8a6c_2.conda
+dependencies:
+    libcxx >=14.0.6
+    libffi >=3.4,<3.5
+    libffi >=3.4,<4.0a0
+    ncurses >=6.4,<7.0a0
+    openssl >=1.1.1t,<1.1.2a
+    readline >=8.1.2,<9.0a0
+    sqlite >=3.40.1,<4.0a0
+    tk >=8.6.12,<8.7.0a0
+    tzdata
+    xz >=5.2.10,<6.0a0
+    zlib >=1.2.13,<1.3.0a0
+    pip
+
+python 3.9.6 hc70090a_5
+-----------------------
+file name   : python-3.9.6-hc70090a_5.conda
+name        : python
+version     : 3.9.6
+build string: hc70090a_5
+build number: 5
+channel     : https://repo.anaconda.com/pkgs/main/osx-arm64
+size        : 10.0 MB
+arch        : None
+constrains  : ()
+legacy_bz2_md5: 2f5b2ced11b42c039f88dc6ec157c5be
+legacy_bz2_size: 12601779
+license     : Python-2.0
+md5         : bdf8e5b921efe19f13ef6fac45a5564f
+platform    : None
+sha256      : 1bdd99c9ba709428fc592f740c9500a828fd107bc97ce7d8ca87388e640345b8
+subdir      : osx-arm64
+timestamp   : 1629110759575
+url         : https://repo.anaconda.com/pkgs/main/osx-arm64/python-3.9.6-hc70090a_5.conda
+dependencies:
+    expat >=2.4.1,<3.0a0
+    libcxx >=12.0.0
+    libffi >=3.3,<4.0a0
+    libiconv >=1.16,<2.0a0
+    ncurses >=6.2,<7.0a0
+    openssl >=1.1.1j,<1.1.2a
+    readline >=8.1,<9.0a0
+    sqlite >=3.35.4,<4.0a0
+    tk >=8.6.10,<8.7.0a0
+    tzdata
+    xz >=5.2.5,<6.0a0
+    zlib >=1.2.11,<1.3.0a0
+    pip
+
+python 3.9.7 hc70090a_1
+-----------------------
+file name   : python-3.9.7-hc70090a_1.conda
+name        : python
+version     : 3.9.7
+build string: hc70090a_1
+build number: 1
+channel     : https://repo.anaconda.com/pkgs/main/osx-arm64
+size        : 9.6 MB
+arch        : None
+constrains  : ()
+legacy_bz2_md5: 54874300ef9228e4e3f0d065966c2c6a
+legacy_bz2_size: 12690694
+license     : Python-2.0
+md5         : 1c300656fadc104a32f159071f3e3648
+platform    : None
+sha256      : 1dfb271f2aabc7828d1ff1fb707647f0b01ff9247f0cf66ee674c02afa5d2674
+subdir      : osx-arm64
+timestamp   : 1631829401348
+url         : https://repo.anaconda.com/pkgs/main/osx-arm64/python-3.9.7-hc70090a_1.conda
+dependencies:
+    expat >=2.4.1,<3.0a0
+    libcxx >=12.0.0
+    libffi >=3.3,<4.0a0
+    libiconv >=1.16,<2.0a0
+    ncurses >=6.2,<7.0a0
+    openssl >=1.1.1j,<1.1.2a
+    readline >=8.1,<9.0a0
+    sqlite >=3.36.0,<4.0a0
+    tk >=8.6.10,<8.7.0a0
+    tzdata
+    xz >=5.2.5,<6.0a0
+    zlib >=1.2.11,<1.3.0a0
+    pip
+
+python 3.10.0 hbdb9e5c_5
+------------------------
+file name   : python-3.10.0-hbdb9e5c_5.tar.bz2
+name        : python
+version     : 3.10.0
+build string: hbdb9e5c_5
+build number: 5
+channel     : https://repo.anaconda.com/pkgs/main/osx-arm64
+size        : 12.6 MB
+arch        : None
+constrains  : ()
+license     : Python-2.0
+md5         : 7149a001b81f5d740645b1eee26d670d
+platform    : None
+sha256      : 4f6725855b55cf60ee79dfb6c6da1372e1a5df45a6c40541559766c1b5b1b221
+subdir      : osx-arm64
+timestamp   : 1646301505694
+url         : https://repo.anaconda.com/pkgs/main/osx-arm64/python-3.10.0-hbdb9e5c_5.tar.bz2
+dependencies:
+    bzip2 >=1.0.8,<2.0a0
+    libffi >=3.3,<4.0a0
+    ncurses >=6.3,<7.0a0
+    openssl >=1.1.1m,<1.1.2a
+    readline >=8.1.2,<9.0a0
+    sqlite >=3.37.2,<4.0a0
+    tk >=8.6.11,<8.7.0a0
+    tzdata
+    xz >=5.2.5,<6.0a0
+    zlib >=1.2.11,<1.3.0a0
+    pip
+
+python 3.10.0 hbdb9e5c_1
+------------------------
+file name   : python-3.10.0-hbdb9e5c_1.tar.bz2
+name        : python
+version     : 3.10.0
+build string: hbdb9e5c_1
+build number: 1
+channel     : https://repo.anaconda.com/pkgs/main/osx-arm64
+size        : 12.6 MB
+arch        : None
+constrains  : ()
+license     : Python-2.0
+md5         : c344f41666ca0e45950b4484d855b6a5
+platform    : None
+sha256      : 36d51a9a806b58c8c16977cc7263885134594432509a6431f5879445e655ab5f
+subdir      : osx-arm64
+timestamp   : 1633598227916
+url         : https://repo.anaconda.com/pkgs/main/osx-arm64/python-3.10.0-hbdb9e5c_1.tar.bz2
+dependencies:
+    bzip2 >=1.0.8,<2.0a0
+    libffi >=3.3,<4.0a0
+    ncurses >=6.2,<7.0a0
+    openssl >=1.1.1j,<1.1.2a
+    readline >=8.1,<9.0a0
+    sqlite >=3.36.0,<4.0a0
+    tk >=8.6.10,<8.7.0a0
+    tzdata
+    xz >=5.2.5,<6.0a0
+    zlib >=1.2.11,<1.3.0a0
+    pip
+
+python 3.10.4 hbdb9e5c_0
+------------------------
+file name   : python-3.10.4-hbdb9e5c_0.tar.bz2
+name        : python
+version     : 3.10.4
+build string: hbdb9e5c_0
+build number: 0
+channel     : https://repo.anaconda.com/pkgs/main/osx-arm64
+size        : 13.1 MB
+arch        : None
+constrains  : ()
+license     : PSF-2.0
+license_family: PSF
+md5         : f4aae673df5b9a783bffae7ef1110657
+platform    : None
+sha256      : 6a5ffd857f73fbcfa043296ac35129f9354d1a8bf826fd0b6c42a901b0c43ded
+subdir      : osx-arm64
+timestamp   : 1648716085350
+url         : https://repo.anaconda.com/pkgs/main/osx-arm64/python-3.10.4-hbdb9e5c_0.tar.bz2
+dependencies:
+    bzip2 >=1.0.8,<2.0a0
+    libffi >=3.3,<4.0a0
+    ncurses >=6.3,<7.0a0
+    openssl >=1.1.1n,<1.1.2a
+    readline >=8.1.2,<9.0a0
+    sqlite >=3.38.0,<4.0a0
+    tk >=8.6.11,<8.7.0a0
+    tzdata
+    xz >=5.2.5,<6.0a0
+    zlib >=1.2.11,<1.3.0a0
+    pip
+
+python 3.10.3 hbdb9e5c_5
+------------------------
+file name   : python-3.10.3-hbdb9e5c_5.tar.bz2
+name        : python
+version     : 3.10.3
+build string: hbdb9e5c_5
+build number: 5
+channel     : https://repo.anaconda.com/pkgs/main/osx-arm64
+size        : 13.2 MB
+arch        : None
+constrains  : ()
+license     : PSF-2.0
+license_family: PSF
+md5         : 223945c60e1b472da9c1c3903a6d8ba8
+platform    : None
+sha256      : 655e81813eb5d38c25833d077f331d466069660ac60a9137f204324be6a46d21
+subdir      : osx-arm64
+timestamp   : 1648459764224
+url         : https://repo.anaconda.com/pkgs/main/osx-arm64/python-3.10.3-hbdb9e5c_5.tar.bz2
+dependencies:
+    bzip2 >=1.0.8,<2.0a0
+    libffi >=3.3,<4.0a0
+    ncurses >=6.3,<7.0a0
+    openssl >=1.1.1n,<1.1.2a
+    readline >=8.1.2,<9.0a0
+    sqlite >=3.38.0,<4.0a0
+    tk >=8.6.11,<8.7.0a0
+    tzdata
+    xz >=5.2.5,<6.0a0
+    zlib >=1.2.11,<1.3.0a0
+    pip
+
+python 3.10.0 hbdb9e5c_3
+------------------------
+file name   : python-3.10.0-hbdb9e5c_3.tar.bz2
+name        : python
+version     : 3.10.0
+build string: hbdb9e5c_3
+build number: 3
+channel     : https://repo.anaconda.com/pkgs/main/osx-arm64
+size        : 12.7 MB
+arch        : None
+constrains  : ()
+license     : Python-2.0
+md5         : 546107c8688d70d72a64e2c6c4154014
+platform    : None
+sha256      : 29cd5851fa4fe54f51b7be6cc0d6ed4416be67ae85a9b3a7a4721c595965a56f
+subdir      : osx-arm64
+timestamp   : 1636572723119
+url         : https://repo.anaconda.com/pkgs/main/osx-arm64/python-3.10.0-hbdb9e5c_3.tar.bz2
+dependencies:
+    bzip2 >=1.0.8,<2.0a0
+    libffi >=3.3,<4.0a0
+    ncurses >=6.3,<7.0a0
+    openssl >=1.1.1j,<1.1.2a
+    readline >=8.1,<9.0a0
+    sqlite >=3.36.0,<4.0a0
+    tk >=8.6.11,<8.7.0a0
+    tzdata
+    xz >=5.2.5,<6.0a0
+    zlib >=1.2.11,<1.3.0a0
+    pip
+
+python 3.10.0 hbdb9e5c_2
+------------------------
+file name   : python-3.10.0-hbdb9e5c_2.tar.bz2
+name        : python
+version     : 3.10.0
+build string: hbdb9e5c_2
+build number: 2
+channel     : https://repo.anaconda.com/pkgs/main/osx-arm64
+size        : 12.6 MB
+arch        : None
+constrains  : ()
+license     : Python-2.0
+md5         : 96ba09e9aaf624a7246c38efb096fcab
+platform    : None
+sha256      : 8c13b46aaf607cd959986746f088d9e7ba960029bd8141b4f96f23c10a847b26
+subdir      : osx-arm64
+timestamp   : 1636466367228
+url         : https://repo.anaconda.com/pkgs/main/osx-arm64/python-3.10.0-hbdb9e5c_2.tar.bz2
+dependencies:
+    bzip2 >=1.0.8,<2.0a0
+    libffi >=3.3,<4.0a0
+    ncurses >=6.3,<7.0a0
+    openssl >=1.1.1j,<1.1.2a
+    readline >=8.1,<9.0a0
+    sqlite >=3.36.0,<4.0a0
+    tk >=8.6.11,<8.7.0a0
+    tzdata
+    xz >=5.2.5,<6.0a0
+    zlib >=1.2.11,<1.3.0a0
+    pip
