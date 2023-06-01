@@ -1,0 +1,781 @@
+RUN(NAME array_01_decl 
+    LABELS cpython llvm c)
+
+RUN(NAME array_02_decl 
+    LABELS cpython llvm c)
+
+RUN(NAME array_03_decl 
+    LABELS cpython llvm c)
+
+RUN(NAME variable_decl_01 
+    LABELS cpython llvm c)
+
+RUN(NAME variable_decl_02 
+    LABELS cpython llvm c)
+
+RUN(NAME variable_decl_03 
+    LABELS cpython llvm c)
+
+RUN(NAME array_expr_01 
+    LABELS cpython llvm c)
+
+RUN(NAME array_expr_02 NOFAST
+    LABELS cpython llvm c)
+
+RUN(NAME array_size_01 
+    LABELS cpython llvm c)
+
+RUN(NAME array_size_02 
+    LABELS cpython llvm c)
+
+RUN(NAME array_01 
+    LABELS cpython llvm wasm c)
+
+RUN(NAME array_02 
+    LABELS cpython wasm c)
+
+RUN(NAME array_03 
+    LABELS cpython llvm c)
+
+RUN(NAME bindc_01 
+    LABELS cpython llvm c)
+
+RUN(NAME bindc_02 
+    LABELS cpython llvm c)
+
+RUN(NAME bindc_04 NOFAST
+    LABELS llvm c)
+
+RUN(NAME bindc_07 NOFAST
+    LABELS cpython llvm c)
+
+RUN(NAME bindc_08 
+    LABELS cpython llvm c)
+
+RUN(NAME bindc_09 
+    LABELS cpython llvm c)
+
+RUN(NAME exit_01 NOFAST
+    LABELS cpython llvm c)
+
+RUN(NAME exit_02 FAIL
+    LABELS cpython llvm c)
+
+RUN(NAME exit_03 
+    LABELS cpython llvm c wasm wasm_x86 wasm_x64)
+
+RUN(NAME exit_04 FAIL
+    LABELS cpython llvm c wasm wasm_x86 wasm_x64)
+
+RUN(NAME exit_01b 
+    LABELS cpython llvm c wasm wasm_x86 wasm_x64)
+
+RUN(NAME exit_02b FAIL
+    LABELS cpython llvm c wasm wasm_x86 wasm_x64)
+
+RUN(NAME exit_02c FAIL
+    LABELS cpython llvm c)
+
+RUN(NAME print_01 
+    LABELS cpython llvm c wasm)
+
+RUN(NAME print_03 
+    LABELS x86 c wasm wasm_x86 wasm_x64)
+
+RUN(NAME print_04 
+    LABELS cpython llvm c)
+
+RUN(NAME print_06 
+    LABELS cpython llvm c)
+
+RUN(NAME print_05 
+    LABELS cpython llvm c wasm wasm_x64)
+
+RUN(NAME print_float 
+    LABELS cpython llvm c wasm wasm_x64)
+
+RUN(NAME print_list_tuple_01 NOFAST
+    LABELS cpython llvm c)
+
+RUN(NAME print_list_tuple_02 NOFAST
+    LABELS cpython llvm c)
+
+RUN(NAME const_01 
+    LABELS cpython llvm c)
+
+RUN(NAME const_02 
+    LABELS cpython llvm c)
+
+RUN(NAME const_03 
+    LABELS cpython llvm c
+    EXTRAFILES const_03b.c)
+
+RUN(NAME const_04 
+    LABELS cpython llvm c)
+
+RUN(NAME expr_01 
+    LABELS cpython llvm c wasm wasm_x64)
+
+RUN(NAME expr_02 
+    LABELS cpython llvm c wasm wasm_x64)
+
+RUN(NAME expr_03 
+    LABELS cpython llvm c wasm wasm_x64)
+
+RUN(NAME expr_04 NOFAST
+    LABELS cpython llvm c wasm)
+
+RUN(NAME expr_05 NOFAST
+    LABELS cpython llvm c)
+
+RUN(NAME expr_06 NOFAST
+    LABELS cpython llvm c)
+
+RUN(NAME expr_07 
+    LABELS cpython llvm c)
+
+RUN(NAME expr_08 NOFAST
+    LABELS llvm c)
+
+RUN(NAME expr_09 
+    LABELS cpython llvm c)
+
+RUN(NAME expr_10 
+    LABELS cpython llvm c)
+
+RUN(NAME expr_11 
+    LABELS cpython llvm c wasm)
+
+RUN(NAME expr_12 
+    LABELS llvm c)
+
+RUN(NAME expr_13 
+    LABELS llvm c
+    EXTRAFILES expr_13b.c)
+
+RUN(NAME expr_14 
+    LABELS cpython llvm c)
+
+RUN(NAME expr_15 
+    LABELS cpython llvm c)
+
+RUN(NAME expr_16 
+    LABELS cpython c)
+
+RUN(NAME expr_01u 
+    LABELS cpython llvm c)
+
+RUN(NAME expr_02u 
+    LABELS cpython llvm c)
+
+RUN(NAME expr_03u 
+    LABELS cpython llvm c)
+
+RUN(NAME loop_01 
+    LABELS cpython llvm c)
+
+RUN(NAME loop_02 
+    LABELS cpython llvm c wasm wasm_x86 wasm_x64)
+
+RUN(NAME loop_03 
+    LABELS cpython llvm c wasm wasm_x64)
+
+RUN(NAME loop_04 
+    LABELS cpython llvm c)
+
+RUN(NAME loop_05 
+    LABELS cpython llvm c)
+
+RUN(NAME if_01 
+    LABELS cpython llvm c wasm wasm_x86 wasm_x64)
+
+RUN(NAME if_02 
+    LABELS cpython llvm c wasm wasm_x86 wasm_x64)
+
+RUN(NAME if_03 FAIL
+    LABELS cpython llvm c)
+
+RUN(NAME print_02 
+    LABELS cpython llvm c)
+
+RUN(NAME test_types_01 
+    LABELS cpython llvm c)
+
+RUN(NAME test_types_02 
+    LABELS cpython llvm c wasm)
+
+RUN(NAME test_str_01 
+    LABELS cpython llvm c)
+
+RUN(NAME test_str_02 
+    LABELS cpython llvm c)
+
+RUN(NAME test_str_03 
+    LABELS cpython llvm c)
+
+RUN(NAME test_list_01 
+    LABELS cpython llvm c)
+
+RUN(NAME test_list_02 
+    LABELS cpython llvm c)
+
+RUN(NAME test_list_03 NOFAST
+    LABELS cpython llvm c)
+
+RUN(NAME test_list_04 NOFAST
+    LABELS cpython llvm c)
+
+RUN(NAME test_list_05 NOFAST
+    LABELS cpython llvm c)
+
+RUN(NAME test_list_06 
+    LABELS cpython llvm c)
+
+RUN(NAME test_list_07 NOFAST
+    LABELS cpython llvm c)
+
+RUN(NAME test_list_08 NOFAST
+    LABELS cpython llvm c)
+
+RUN(NAME test_list_09 NOFAST
+    LABELS cpython llvm c)
+
+RUN(NAME test_list_10 NOFAST
+    LABELS cpython llvm c)
+
+RUN(NAME test_list_11 
+    LABELS cpython llvm c)
+
+RUN(NAME test_list_section NOFAST
+    LABELS cpython llvm c)
+
+RUN(NAME test_list_count 
+    LABELS cpython llvm)
+
+RUN(NAME test_list_index 
+    LABELS cpython llvm)
+
+RUN(NAME test_list_reverse 
+    LABELS cpython llvm)
+
+RUN(NAME test_tuple_01 
+    LABELS cpython llvm c)
+
+RUN(NAME test_tuple_02 NOFAST
+    LABELS cpython llvm c)
+
+RUN(NAME test_tuple_03 
+    LABELS cpython llvm c)
+
+RUN(NAME test_tuple_concat 
+    LABELS cpython llvm)
+
+RUN(NAME test_dict_01 
+    LABELS cpython llvm c)
+
+RUN(NAME test_dict_02 NOFAST
+    LABELS cpython llvm c)
+
+RUN(NAME test_dict_03 NOFAST
+    LABELS cpython llvm)
+
+RUN(NAME test_dict_04 NOFAST
+    LABELS cpython llvm)
+
+RUN(NAME test_dict_05 
+    LABELS cpython llvm c)
+
+RUN(NAME test_dict_06 
+    LABELS cpython llvm c)
+
+RUN(NAME test_dict_07 
+    LABELS cpython llvm c)
+
+RUN(NAME test_dict_08 
+    LABELS cpython llvm c)
+
+RUN(NAME test_dict_09 
+    LABELS cpython llvm c)
+
+RUN(NAME test_dict_10 
+    LABELS cpython llvm c)
+
+RUN(NAME test_dict_11 
+    LABELS cpython llvm c)
+
+RUN(NAME test_dict_bool 
+    LABELS cpython llvm)
+
+RUN(NAME test_for_loop 
+    LABELS cpython llvm c)
+
+RUN(NAME modules_01 
+    LABELS cpython llvm c wasm wasm_x86 wasm_x64)
+
+RUN(NAME modules_02 
+    LABELS cpython llvm c wasm wasm_x86 wasm_x64)
+
+RUN(NAME test_import_01 
+    LABELS cpython llvm c)
+
+RUN(NAME test_import_02 
+    LABELS cpython llvm c)
+
+RUN(NAME test_import_03 
+    LABELS cpython llvm c)
+
+RUN(NAME test_import_04 
+    LABELS cpython llvm c
+    IMPORT_PATH ..)
+
+RUN(NAME test_import_05 
+    LABELS cpython llvm c wasm wasm_x86 wasm_x64)
+
+RUN(NAME test_math NOFAST
+    LABELS cpython llvm)
+
+RUN(NAME test_numpy_01 
+    LABELS cpython llvm c)
+
+RUN(NAME test_numpy_02 
+    LABELS cpython llvm c)
+
+RUN(NAME test_numpy_03 
+    LABELS cpython llvm c)
+
+RUN(NAME test_numpy_04 
+    LABELS cpython llvm c)
+
+RUN(NAME elemental_01 NOFAST
+    LABELS cpython llvm c)
+
+RUN(NAME elemental_02 NOFAST
+    LABELS cpython llvm c)
+
+RUN(NAME elemental_03 NOFAST
+    LABELS cpython llvm c)
+
+RUN(NAME elemental_04 NOFAST
+    LABELS cpython llvm c)
+
+RUN(NAME elemental_05 NOFAST
+    LABELS cpython llvm c)
+
+RUN(NAME elemental_06 NOFAST
+    LABELS cpython llvm c)
+
+RUN(NAME elemental_07 NOFAST
+    LABELS cpython llvm c)
+
+RUN(NAME elemental_08 NOFAST
+    LABELS cpython llvm c)
+
+RUN(NAME elemental_09 NOFAST
+    LABELS cpython llvm c)
+
+RUN(NAME elemental_10 NOFAST
+    LABELS cpython llvm c)
+
+RUN(NAME elemental_11 NOFAST
+    LABELS cpython llvm c)
+
+RUN(NAME elemental_12 NOFAST
+    LABELS cpython llvm c)
+
+RUN(NAME test_random NOFAST
+    LABELS cpython llvm)
+
+RUN(NAME test_os NOFAST
+    LABELS cpython llvm c)
+
+RUN(NAME test_builtin 
+    LABELS cpython llvm c)
+
+RUN(NAME test_builtin_abs 
+    LABELS cpython llvm c)
+
+RUN(NAME test_builtin_bool 
+    LABELS cpython llvm c)
+
+RUN(NAME test_builtin_pow 
+    LABELS cpython llvm c)
+
+RUN(NAME test_builtin_int 
+    LABELS cpython llvm c)
+
+RUN(NAME test_builtin_len 
+    LABELS cpython llvm c)
+
+RUN(NAME test_builtin_str 
+    LABELS cpython llvm c)
+
+RUN(NAME test_builtin_oct 
+    LABELS cpython llvm c)
+
+RUN(NAME test_builtin_hex 
+    LABELS cpython llvm c)
+
+RUN(NAME test_builtin_bin 
+    LABELS cpython llvm c)
+
+RUN(NAME test_builtin_float 
+    LABELS cpython llvm c)
+
+RUN(NAME test_builtin_str_02 NOFAST
+    LABELS cpython llvm c)
+
+RUN(NAME test_builtin_round 
+    LABELS cpython llvm c)
+
+RUN(NAME test_builtin_divmod 
+    LABELS cpython llvm c)
+
+RUN(NAME test_builtin_sum 
+    LABELS cpython llvm c)
+
+RUN(NAME test_math1 
+    LABELS cpython llvm c)
+
+RUN(NAME test_math_02 NOFAST
+    LABELS cpython llvm)
+
+RUN(NAME test_math_03 
+    LABELS llvm)
+
+RUN(NAME test_pass_compare 
+    LABELS cpython llvm c)
+
+RUN(NAME test_c_interop_01 
+    LABELS cpython llvm c)
+
+RUN(NAME test_c_interop_02 
+    LABELS cpython llvm c
+    EXTRAFILES test_c_interop_02b.c)
+
+RUN(NAME test_c_interop_03 
+    LABELS cpython llvm c
+    EXTRAFILES test_c_interop_03b.c)
+
+RUN(NAME test_c_interop_04 
+    LABELS cpython llvm c
+    EXTRAFILES test_c_interop_04b.c)
+
+RUN(NAME test_c_interop_05 
+    LABELS llvm c
+    EXTRAFILES test_c_interop_05b.c)
+
+RUN(NAME bindc_03 
+    LABELS llvm c
+    EXTRAFILES bindc_03b.c)
+
+RUN(NAME bindc_05 
+    LABELS llvm c
+    EXTRAFILES bindc_05b.c)
+
+RUN(NAME bindc_06 
+    LABELS llvm c
+    EXTRAFILES bindc_06b.c)
+
+RUN(NAME bindpy_01 
+    LABELS cpython c
+    EXTRAFILES bindpy_01_module.py)
+
+RUN(NAME test_generics_01 NOFAST
+    LABELS cpython llvm c)
+
+RUN(NAME test_cmath NOFAST
+    LABELS cpython llvm c)
+
+RUN(NAME test_complex_01 
+    LABELS cpython llvm c wasm wasm_x64)
+
+RUN(NAME test_complex_02 
+    LABELS cpython llvm c)
+
+RUN(NAME test_max_min 
+    LABELS cpython llvm c)
+
+RUN(NAME test_global 
+    LABELS cpython llvm c)
+
+RUN(NAME test_global_decl 
+    LABELS cpython llvm c)
+
+RUN(NAME test_integer_bitnot 
+    LABELS cpython llvm c wasm)
+
+RUN(NAME test_ifexp 
+    LABELS cpython llvm c)
+
+RUN(NAME test_unary_minus 
+    LABELS cpython llvm c)
+
+RUN(NAME test_unary_plus 
+    LABELS cpython llvm c)
+
+RUN(NAME test_bool_binop 
+    LABELS cpython llvm c)
+
+RUN(NAME test_issue_518 NOFAST
+    LABELS cpython llvm c)
+
+RUN(NAME structs_01 
+    LABELS cpython llvm c)
+
+RUN(NAME structs_02 
+    LABELS cpython llvm c)
+
+RUN(NAME structs_03 
+    LABELS llvm c)
+
+RUN(NAME structs_04 
+    LABELS cpython llvm c)
+
+RUN(NAME structs_05 
+    LABELS cpython llvm c)
+
+RUN(NAME structs_06 
+    LABELS cpython llvm c)
+
+RUN(NAME structs_07 
+    LABELS llvm c
+    EXTRAFILES structs_07b.c)
+
+RUN(NAME structs_08 
+    LABELS cpython llvm c)
+
+RUN(NAME structs_09 
+    LABELS cpython llvm c)
+
+RUN(NAME structs_10 NOFAST
+    LABELS cpython llvm c)
+
+RUN(NAME structs_11 
+    LABELS cpython llvm c)
+
+RUN(NAME structs_12 
+    LABELS cpython llvm c)
+
+RUN(NAME structs_13 
+    LABELS llvm c
+    EXTRAFILES structs_13b.c)
+
+RUN(NAME structs_14 
+    LABELS cpython llvm c)
+
+RUN(NAME structs_15 
+    LABELS cpython llvm c)
+
+RUN(NAME structs_16 
+    LABELS cpython llvm c)
+
+RUN(NAME structs_17 
+    LABELS cpython llvm c)
+
+RUN(NAME structs_18 
+    LABELS cpython llvm c
+    EXTRAFILES structs_18b.c)
+
+RUN(NAME structs_19 
+    LABELS cpython llvm c
+    EXTRAFILES structs_19b.c)
+
+RUN(NAME structs_20 
+    LABELS cpython llvm c
+    EXTRAFILES structs_20b.c)
+
+RUN(NAME structs_21 
+    LABELS cpython llvm c)
+
+RUN(NAME structs_22 
+    LABELS cpython llvm c)
+
+RUN(NAME structs_23 
+    LABELS cpython llvm c)
+
+RUN(NAME structs_24 
+    LABELS cpython llvm c)
+
+RUN(NAME structs_25 
+    LABELS cpython llvm c)
+
+RUN(NAME sizeof_01 
+    LABELS llvm c
+    EXTRAFILES sizeof_01b.c)
+
+RUN(NAME sizeof_02 
+    LABELS cpython llvm c)
+
+RUN(NAME enum_01 
+    LABELS cpython llvm c)
+
+RUN(NAME enum_02 
+    LABELS cpython llvm)
+
+RUN(NAME enum_03 
+    LABELS cpython llvm c)
+
+RUN(NAME enum_04 
+    LABELS cpython llvm c)
+
+RUN(NAME enum_05 
+    LABELS llvm c
+    EXTRAFILES enum_05b.c)
+
+RUN(NAME enum_06 
+    LABELS cpython llvm c)
+
+RUN(NAME enum_07 
+    LABELS cpython llvm c
+    IMPORT_PATH ..)
+
+RUN(NAME union_01 
+    LABELS cpython llvm c)
+
+RUN(NAME union_02 
+    LABELS llvm c)
+
+RUN(NAME union_03 
+    LABELS cpython llvm c)
+
+RUN(NAME test_str_to_int 
+    LABELS cpython llvm c)
+
+RUN(NAME test_platform 
+    LABELS cpython llvm c)
+
+RUN(NAME test_vars_01 
+    LABELS cpython llvm)
+
+RUN(NAME test_version 
+    LABELS cpython llvm)
+
+RUN(NAME logical_binop1 
+    LABELS cpython llvm)
+
+RUN(NAME vec_01 
+    LABELS cpython llvm c)
+
+RUN(NAME test_str_comparison 
+    LABELS cpython llvm c)
+
+RUN(NAME test_bit_length 
+    LABELS cpython llvm c)
+
+RUN(NAME str_to_list_cast 
+    LABELS cpython llvm c)
+
+RUN(NAME test_sys_01 NOFAST
+    LABELS cpython llvm c)
+
+RUN(NAME intent_01 
+    LABELS cpython llvm)
+
+RUN(NAME test_package_01 NOFAST
+    LABELS cpython llvm)
+
+RUN(NAME test_pkg_lpdraw 
+    LABELS cpython llvm wasm)
+
+RUN(NAME test_pkg_lnn_01 NOFAST
+    LABELS cpython llvm)
+
+RUN(NAME test_pkg_lnn_02 NOFAST
+    LABELS cpython llvm)
+
+RUN(NAME test_pkg_lpconvexhull 
+    LABELS cpython c)
+
+RUN(NAME generics_01 
+    LABELS cpython llvm c)
+
+RUN(NAME generics_02 
+    LABELS cpython llvm c)
+
+RUN(NAME generics_array_01 
+    LABELS cpython llvm c)
+
+RUN(NAME generics_array_02 
+    LABELS cpython llvm c)
+
+RUN(NAME generics_array_03 
+    LABELS cpython llvm c)
+
+RUN(NAME generics_list_01 
+    LABELS cpython llvm c)
+
+RUN(NAME test_statistics NOFAST
+    LABELS cpython llvm)
+
+RUN(NAME test_str_attributes 
+    LABELS cpython llvm c)
+
+RUN(NAME kwargs_01 NOFAST
+    LABELS cpython llvm c)
+
+RUN(NAME func_inline_01 
+    LABELS llvm c wasm)
+
+RUN(NAME func_inline_02 
+    LABELS cpython llvm c)
+
+RUN(NAME func_static_01 
+    LABELS cpython llvm c wasm)
+
+RUN(NAME func_static_02 
+    LABELS cpython llvm c wasm)
+
+RUN(NAME func_dep_03 
+    LABELS cpython llvm c)
+
+RUN(NAME func_dep_04 
+    LABELS cpython llvm c)
+
+RUN(NAME float_01 
+    LABELS cpython llvm c wasm wasm_x64)
+
+RUN(NAME recursive_01 
+    LABELS cpython llvm c wasm wasm_x64 wasm_x86)
+
+RUN(NAME comp_01 
+    LABELS cpython llvm c wasm wasm_x64)
+
+RUN(NAME bit_operations_i32 
+    LABELS cpython llvm c wasm wasm_x64)
+
+RUN(NAME bit_operations_i64 
+    LABELS cpython llvm c wasm)
+
+RUN(NAME test_argv_01 NOFAST
+    LABELS cpython llvm)
+
+RUN(NAME global_syms_01 
+    LABELS cpython llvm c)
+
+RUN(NAME global_syms_02 
+    LABELS cpython llvm c)
+
+RUN(NAME global_syms_03_b 
+    LABELS cpython llvm c)
+
+RUN(NAME global_syms_03_c 
+    LABELS cpython llvm c)
+
+RUN(NAME global_syms_04 
+    LABELS cpython llvm c wasm wasm_x64)
+
+RUN(NAME global_syms_05 
+    LABELS cpython llvm c)
+
+RUN(NAME global_syms_06 
+    LABELS cpython llvm c)
+
+RUN(NAME callback_01 
+    LABELS cpython llvm)
+
+RUN(NAME intrinsics_01 NOFAST
+    LABELS cpython llvm)
+
+RUN(NAME lpython_decorator_01 
+    LABELS cpython)
+

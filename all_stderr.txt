@@ -1,0 +1,2137 @@
+
+
+
+
+
+
+
+
+Internal Compiler Error: Unhandled exception
+Traceback (most recent call last):
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/bin/lpython.cpp[39m[0m[2m", line 1828[0m
+    err = compile_python_to_object_file(arg_file, tmp_o, runtime_library_dir,
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/bin/lpython.cpp[39m[0m[2m", line 809[0m
+    res = fe.get_llvm3(*asr, pass_manager, diagnostics, infile);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/lpython/python_evaluator.cpp[39m[0m[2m", line 58[0m
+    run_fn, infile);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/codegen/asr_to_llvm.cpp[39m[0m[2m", line 8521[0m
+    pass_manager.apply_passes(al, &asr, pass_options, diagnostics);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/pass_manager.h[39m[0m[2m", line 274[0m
+    apply_passes(al, asr, _with_optimization_passes, pass_options,
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/pass_manager.h[39m[0m[2m", line 148[0m
+    _passes_db[passes[i]](al, *asr, pass_options);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/loop_vectorise.cpp[39m[0m[2m", line 195[0m
+    v.visit_TranslationUnit(unit);
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 37561[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4778[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4505[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 37579[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4778[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4506[0m
+[2m  File "[0m[1m[35m../libasr/pass/pass_utils.h[39m[0m[2m", line 239[0m
+[2m  File "[0m[1m[35m../libasr/pass/pass_utils.h[39m[0m[2m", line 204[0m
+[2m  File "[0m[1m[35m../libasr/pass/pass_utils.h[39m[0m[2m", line 149[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4793[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4533[0m
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/loop_vectorise.cpp[39m[0m[2m", line 182[0m
+    return ;
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/loop_vectorise.cpp[39m[0m[2m", line 133[0m
+    ASR::expr_t* loop_end_value = ASRUtils::expr_value(loop_end);
+[2m  File "[0m[1m[35m../libasr/asr_utils.h[39m[0m[2m", line 352[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 46895[0m
+AssertFailed: f != nullptr
+
+
+
+
+
+
+
+AssertionError
+
+Internal Compiler Error: Unhandled exception
+Traceback (most recent call last):
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/bin/lpython.cpp[39m[0m[2m", line 1828[0m
+    err = compile_python_to_object_file(arg_file, tmp_o, runtime_library_dir,
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/bin/lpython.cpp[39m[0m[2m", line 809[0m
+    res = fe.get_llvm3(*asr, pass_manager, diagnostics, infile);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/lpython/python_evaluator.cpp[39m[0m[2m", line 58[0m
+    run_fn, infile);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/codegen/asr_to_llvm.cpp[39m[0m[2m", line 8527[0m
+    v.visit_asr((ASR::asr_t&)asr);
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4775[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4751[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4776[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4497[0m
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/codegen/asr_to_llvm.cpp[39m[0m[2m", line 1354[0m
+    ASR::symbol_t *mod = x.m_global_scope->get_symbol(item);
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4778[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4505[0m
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/codegen/asr_to_llvm.cpp[39m[0m[2m", line 2818[0m
+    finish_module_init_function_prototype(x);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/codegen/asr_to_llvm.cpp[39m[0m[2m", line 4410[0m
+    visit_Function(*s);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/codegen/asr_to_llvm.cpp[39m[0m[2m", line 4020[0m
+    visit_procedures(x);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/codegen/asr_to_llvm.cpp[39m[0m[2m", line 4361[0m
+    this->visit_stmt(*x.m_body[i]);
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4793[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4527[0m
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/codegen/asr_to_llvm.cpp[39m[0m[2m", line 5026[0m
+    } else {
+[2m  File "[0m[1m[35m../libasr/asr_utils.h[39m[0m[2m", line 99[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 41[0m
+AssertFailed: is_a<T>(*f)
+
+
+
+[0;31;1mcode generation error[0;0m[0;1m: asr_to_llvm: module failed verification. Error:
+Stored value type does not match pointer operand type!
+  store %list %59, i32* %_lpython_return_variable__lpython_get_argc, align 8
+ i32Stored value type does not match pointer operand type!
+  store %list %59, i32* %_lpython_return_variable__lpython_get_argc__lpython_argv, align 8
+ i32Stored value type does not match pointer operand type!
+  store i32 %60, %list* @argv, align 4
+ %list = type { i32, i32, i8** }[0;0m
+
+
+[0;1mNote[0;0m: if any of the above error or warning messages are not clear or are lacking
+context please report it to us (we consider that a bug that must be fixed).
+
+[0;31;1mcode generation error[0;0m[0;1m: asr_to_llvm: module failed verification. Error:
+Stored value type does not match pointer operand type!
+  store %list %59, i32* %_lpython_return_variable__lpython_get_argc, align 8
+ i32Stored value type does not match pointer operand type!
+  store %list %59, i32* %_lpython_return_variable__lpython_get_argc__lpython_argv, align 8
+ i32Stored value type does not match pointer operand type!
+  store i32 %60, %list* @argv, align 4
+ %list = type { i32, i32, i8** }[0;0m
+
+
+[0;1mNote[0;0m: if any of the above error or warning messages are not clear or are lacking
+context please report it to us (we consider that a bug that must be fixed).
+
+STOP
+
+STOP
+
+
+AssertionError
+
+AssertionError: Custom message
+
+
+
+
+
+
+[0;31;1mcode generation error[0;0m[0;1m: asr_to_llvm: module failed verification. Error:
+Both operands to a binary operator are not of the same type!
+  %13 = sub %list %12, i32 1
+Both operands to ICmp instruction are not of the same type!
+  %14 = icmp sle i32 %11, %list %13
+Both operands to a binary operator are not of the same type!
+  %116 = sub %list %115, i32 1
+Both operands to ICmp instruction are not of the same type!
+  %117 = icmp slt i32 %114, %list %116
+[0;0m
+
+
+[0;1mNote[0;0m: if any of the above error or warning messages are not clear or are lacking
+context please report it to us (we consider that a bug that must be fixed).
+
+Internal Compiler Error: Unhandled exception
+Traceback (most recent call last):
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/bin/lpython.cpp[39m[0m[2m", line 1828[0m
+    err = compile_python_to_object_file(arg_file, tmp_o, runtime_library_dir,
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/bin/lpython.cpp[39m[0m[2m", line 809[0m
+    res = fe.get_llvm3(*asr, pass_manager, diagnostics, infile);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/lpython/python_evaluator.cpp[39m[0m[2m", line 58[0m
+    run_fn, infile);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/codegen/asr_to_llvm.cpp[39m[0m[2m", line 8521[0m
+    pass_manager.apply_passes(al, &asr, pass_options, diagnostics);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/pass_manager.h[39m[0m[2m", line 274[0m
+    apply_passes(al, asr, _with_optimization_passes, pass_options,
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/pass_manager.h[39m[0m[2m", line 148[0m
+    _passes_db[passes[i]](al, *asr, pass_options);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/inline_function_calls.cpp[39m[0m[2m", line 485[0m
+    v.visit_TranslationUnit(unit);
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 37561[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4778[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4505[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 37579[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4778[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4506[0m
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/inline_function_calls.cpp[39m[0m[2m", line 93[0m
+    current_routine = std::string(xx.m_name);
+[2m  File "[0m[1m[35m../libasr/pass/pass_utils.h[39m[0m[2m", line 204[0m
+[2m  File "[0m[1m[35m../libasr/pass/pass_utils.h[39m[0m[2m", line 149[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4793[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4527[0m
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/inline_function_calls.cpp[39m[0m[2m", line 468[0m
+    function_result_var = nullptr;
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4839[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4580[0m
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/inline_function_calls.cpp[39m[0m[2m", line 288[0m
+    ASR::Variable_t* func_var = ASR::down_cast<ASR::Variable_t>(itr.second);
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 41[0m
+AssertFailed: is_a<T>(*f)
+
+
+
+Undefined symbols for architecture arm64:
+  "_print_value_c", referenced from:
+      ___module__global_symbols__lpython_main_program in const_03.out.tmp.o
+      ___module__global_symbols_test_global_consts in const_03.out.tmp.o
+      _main in const_03.out.tmp.o
+ld: symbol(s) not found for architecture arm64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+
+
+
+Internal Compiler Error: Unhandled exception
+Traceback (most recent call last):
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/bin/lpython.cpp[39m[0m[2m", line 1828[0m
+    err = compile_python_to_object_file(arg_file, tmp_o, runtime_library_dir,
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/bin/lpython.cpp[39m[0m[2m", line 809[0m
+    res = fe.get_llvm3(*asr, pass_manager, diagnostics, infile);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/lpython/python_evaluator.cpp[39m[0m[2m", line 58[0m
+    run_fn, infile);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/codegen/asr_to_llvm.cpp[39m[0m[2m", line 8521[0m
+    pass_manager.apply_passes(al, &asr, pass_options, diagnostics);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/pass_manager.h[39m[0m[2m", line 274[0m
+    apply_passes(al, asr, _with_optimization_passes, pass_options,
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/pass_manager.h[39m[0m[2m", line 148[0m
+    _passes_db[passes[i]](al, *asr, pass_options);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/fma.cpp[39m[0m[2m", line 172[0m
+    v.visit_TranslationUnit(unit);
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 37561[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4778[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4505[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 37579[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4778[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4506[0m
+[2m  File "[0m[1m[35m../libasr/pass/pass_utils.h[39m[0m[2m", line 239[0m
+[2m  File "[0m[1m[35m../libasr/pass/pass_utils.h[39m[0m[2m", line 204[0m
+[2m  File "[0m[1m[35m../libasr/pass/pass_utils.h[39m[0m[2m", line 149[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4793[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4539[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 37759[0m
+[2m  File "[0m[1m[35m../libasr/pass/pass_utils.h[39m[0m[2m", line 149[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4793[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4527[0m
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/fma.cpp[39m[0m[2m", line 129[0m
+    fma_var = nullptr;
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4839[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4599[0m
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/fma.cpp[39m[0m[2m", line 120[0m
+    fma_var = PassUtils::get_fma(other_expr, first_arg, second_arg,
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/pass_utils.cpp[39m[0m[2m", line 657[0m
+    al, unit, pass_options, current_scope, arg0->base.loc);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/pass_utils.cpp[39m[0m[2m", line 429[0m
+    ASR::Module_t *m = ASRUtils::load_module(al, current_scope,
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/asr_utils.cpp[39m[0m[2m", line 173[0m
+    loc);
+[2m  File "[0m[1m[35m/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__functional/function.h[39m[0m[2m", line 1197[0m
+    return __f_(_VSTD::forward<_ArgTypes>(__arg)...);
+[2m  File "[0m[1m[35m/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__functional/function.h[39m[0m[2m", line 512[0m
+    return (*__f_)(_VSTD::forward<_ArgTypes>(__args)...);
+[2m  File "[0m[1m[35m/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__functional/function.h[39m[0m[2m", line 359[0m
+    return __f_(_VSTD::forward<_ArgTypes>(__arg)...);
+[2m  File "[0m[1m[35m/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__functional/function.h[39m[0m[2m", line 185[0m
+    return _Invoker::__call(__f_.first(),
+[2m  File "[0m[1m[35m/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__functional/invoke.h[39m[0m[2m", line 479[0m
+    std::__invoke(std::forward<_Args>(__args)...);
+[2m  File "[0m[1m[35m/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__functional/invoke.h[39m[0m[2m", line 394[0m
+    { return          static_cast<_Fp&&>(__f)(static_cast<_Args&&>(__args)...); }
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/pass_utils.cpp[39m[0m[2m", line 432[0m
+    [&](const std::string &msg, const Location &) { throw LCompilersException(msg); }
+LCompilersException: Module 'lfortran_intrinsic_optimization' not declared in the current source and the modfile was not found
+
+Internal Compiler Error: Unhandled exception
+Traceback (most recent call last):
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/bin/lpython.cpp[39m[0m[2m", line 1828[0m
+    err = compile_python_to_object_file(arg_file, tmp_o, runtime_library_dir,
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/bin/lpython.cpp[39m[0m[2m", line 809[0m
+    res = fe.get_llvm3(*asr, pass_manager, diagnostics, infile);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/lpython/python_evaluator.cpp[39m[0m[2m", line 58[0m
+    run_fn, infile);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/codegen/asr_to_llvm.cpp[39m[0m[2m", line 8521[0m
+    pass_manager.apply_passes(al, &asr, pass_options, diagnostics);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/pass_manager.h[39m[0m[2m", line 274[0m
+    apply_passes(al, asr, _with_optimization_passes, pass_options,
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/pass_manager.h[39m[0m[2m", line 148[0m
+    _passes_db[passes[i]](al, *asr, pass_options);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/fma.cpp[39m[0m[2m", line 172[0m
+    v.visit_TranslationUnit(unit);
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 37561[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4778[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4505[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 37579[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4778[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4506[0m
+[2m  File "[0m[1m[35m../libasr/pass/pass_utils.h[39m[0m[2m", line 239[0m
+[2m  File "[0m[1m[35m../libasr/pass/pass_utils.h[39m[0m[2m", line 204[0m
+[2m  File "[0m[1m[35m../libasr/pass/pass_utils.h[39m[0m[2m", line 149[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4793[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4527[0m
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/fma.cpp[39m[0m[2m", line 129[0m
+    fma_var = nullptr;
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4839[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4599[0m
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/fma.cpp[39m[0m[2m", line 120[0m
+    fma_var = PassUtils::get_fma(other_expr, first_arg, second_arg,
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/pass_utils.cpp[39m[0m[2m", line 657[0m
+    al, unit, pass_options, current_scope, arg0->base.loc);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/pass_utils.cpp[39m[0m[2m", line 429[0m
+    ASR::Module_t *m = ASRUtils::load_module(al, current_scope,
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/asr_utils.cpp[39m[0m[2m", line 173[0m
+    loc);
+[2m  File "[0m[1m[35m/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__functional/function.h[39m[0m[2m", line 1197[0m
+    return __f_(_VSTD::forward<_ArgTypes>(__arg)...);
+[2m  File "[0m[1m[35m/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__functional/function.h[39m[0m[2m", line 512[0m
+    return (*__f_)(_VSTD::forward<_ArgTypes>(__args)...);
+[2m  File "[0m[1m[35m/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__functional/function.h[39m[0m[2m", line 359[0m
+    return __f_(_VSTD::forward<_ArgTypes>(__arg)...);
+[2m  File "[0m[1m[35m/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__functional/function.h[39m[0m[2m", line 185[0m
+    return _Invoker::__call(__f_.first(),
+[2m  File "[0m[1m[35m/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__functional/invoke.h[39m[0m[2m", line 479[0m
+    std::__invoke(std::forward<_Args>(__args)...);
+[2m  File "[0m[1m[35m/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__functional/invoke.h[39m[0m[2m", line 394[0m
+    { return          static_cast<_Fp&&>(__f)(static_cast<_Args&&>(__args)...); }
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/pass_utils.cpp[39m[0m[2m", line 432[0m
+    [&](const std::string &msg, const Location &) { throw LCompilersException(msg); }
+LCompilersException: Module 'lfortran_intrinsic_optimization' not declared in the current source and the modfile was not found
+
+ASR verify pass error: ASR verify: The symbol table was not found in the scope of `symtab`.
+
+ASR verify pass error: ASR verify: FunctionCall::m_name `_lfortran_dsin` cannot point outside of its symbol table
+Internal Compiler Error: Unhandled exception
+Traceback (most recent call last):
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/bin/lpython.cpp[39m[0m[2m", line 1828[0m
+    err = compile_python_to_object_file(arg_file, tmp_o, runtime_library_dir,
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/bin/lpython.cpp[39m[0m[2m", line 809[0m
+    res = fe.get_llvm3(*asr, pass_manager, diagnostics, infile);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/lpython/python_evaluator.cpp[39m[0m[2m", line 58[0m
+    run_fn, infile);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/codegen/asr_to_llvm.cpp[39m[0m[2m", line 8521[0m
+    pass_manager.apply_passes(al, &asr, pass_options, diagnostics);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/pass_manager.h[39m[0m[2m", line 274[0m
+    apply_passes(al, asr, _with_optimization_passes, pass_options,
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/pass_manager.h[39m[0m[2m", line 152[0m
+    throw LCompilersException("Verify failed in the pass: "
+LCompilersException: Verify failed in the pass: inline_function_calls
+
+
+AssertionError
+
+
+
+
+
+Undefined symbols for architecture arm64:
+  "_deref_array", referenced from:
+      ___module__global_symbols__lpython_main_program in expr_13.out.tmp.o
+      ___module__global_symbols_test_pointer_to_cptr in expr_13.out.tmp.o
+      _main in expr_13.out.tmp.o
+  "_get_arrays", referenced from:
+      ___module__global_symbols__lpython_main_program in expr_13.out.tmp.o
+      ___module__global_symbols_test_pointer_to_cptr in expr_13.out.tmp.o
+      _main in expr_13.out.tmp.o
+  "_sum_array", referenced from:
+      ___module__global_symbols__lpython_main_program in expr_13.out.tmp.o
+      ___module__global_symbols_sum_array_python in expr_13.out.tmp.o
+      ___module__global_symbols_test_pointer_to_cptr in expr_13.out.tmp.o
+      _main in expr_13.out.tmp.o
+     (maybe you meant: ___module__global_symbols_sum_array_python)
+ld: symbol(s) not found for architecture arm64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+
+
+
+
+
+
+
+
+
+
+
+[0;31;1mcode generation error[0;0m[0;1m: asr_to_llvm: module failed verification. Error:
+Stored value type does not match pointer operand type!
+  store %list %59, i32* %_lpython_return_variable__lpython_get_argc, align 8
+ i32Stored value type does not match pointer operand type!
+  store %list %59, i32* %_lpython_return_variable__lpython_get_argc__lpython_argv, align 8
+ i32Stored value type does not match pointer operand type!
+  store i32 %60, %list* @argv, align 4
+ %list = type { i32, i32, i8** }[0;0m
+
+
+[0;1mNote[0;0m: if any of the above error or warning messages are not clear or are lacking
+context please report it to us (we consider that a bug that must be fixed).
+
+
+
+
+
+
+
+
+
+Internal Compiler Error: Unhandled exception
+Traceback (most recent call last):
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/bin/lpython.cpp[39m[0m[2m", line 1828[0m
+    err = compile_python_to_object_file(arg_file, tmp_o, runtime_library_dir,
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/bin/lpython.cpp[39m[0m[2m", line 809[0m
+    res = fe.get_llvm3(*asr, pass_manager, diagnostics, infile);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/lpython/python_evaluator.cpp[39m[0m[2m", line 58[0m
+    run_fn, infile);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/codegen/asr_to_llvm.cpp[39m[0m[2m", line 8521[0m
+    pass_manager.apply_passes(al, &asr, pass_options, diagnostics);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/pass_manager.h[39m[0m[2m", line 274[0m
+    apply_passes(al, asr, _with_optimization_passes, pass_options,
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/pass_manager.h[39m[0m[2m", line 148[0m
+    _passes_db[passes[i]](al, *asr, pass_options);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/inline_function_calls.cpp[39m[0m[2m", line 485[0m
+    v.visit_TranslationUnit(unit);
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 37561[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4778[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4505[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 37579[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4778[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4506[0m
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/inline_function_calls.cpp[39m[0m[2m", line 93[0m
+    current_routine = std::string(xx.m_name);
+[2m  File "[0m[1m[35m../libasr/pass/pass_utils.h[39m[0m[2m", line 204[0m
+[2m  File "[0m[1m[35m../libasr/pass/pass_utils.h[39m[0m[2m", line 149[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4793[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4527[0m
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/inline_function_calls.cpp[39m[0m[2m", line 468[0m
+    function_result_var = nullptr;
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4839[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4580[0m
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/inline_function_calls.cpp[39m[0m[2m", line 288[0m
+    ASR::Variable_t* func_var = ASR::down_cast<ASR::Variable_t>(itr.second);
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 41[0m
+AssertFailed: is_a<T>(*f)
+
+[0;31;1mcode generation error[0;0m[0;1m: asr_to_llvm: module failed verification. Error:
+Stored value type does not match pointer operand type!
+  store double %119, i32* %j, align 8
+ i32[0;0m
+
+
+[0;1mNote[0;0m: if any of the above error or warning messages are not clear or are lacking
+context please report it to us (we consider that a bug that must be fixed).
+
+Internal Compiler Error: Unhandled exception
+Traceback (most recent call last):
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/bin/lpython.cpp[39m[0m[2m", line 1828[0m
+    err = compile_python_to_object_file(arg_file, tmp_o, runtime_library_dir,
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/bin/lpython.cpp[39m[0m[2m", line 809[0m
+    res = fe.get_llvm3(*asr, pass_manager, diagnostics, infile);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/lpython/python_evaluator.cpp[39m[0m[2m", line 58[0m
+    run_fn, infile);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/codegen/asr_to_llvm.cpp[39m[0m[2m", line 8521[0m
+    pass_manager.apply_passes(al, &asr, pass_options, diagnostics);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/pass_manager.h[39m[0m[2m", line 274[0m
+    apply_passes(al, asr, _with_optimization_passes, pass_options,
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/pass_manager.h[39m[0m[2m", line 148[0m
+    _passes_db[passes[i]](al, *asr, pass_options);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/inline_function_calls.cpp[39m[0m[2m", line 485[0m
+    v.visit_TranslationUnit(unit);
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 37561[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4778[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4505[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 37579[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4778[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4506[0m
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/inline_function_calls.cpp[39m[0m[2m", line 93[0m
+    current_routine = std::string(xx.m_name);
+[2m  File "[0m[1m[35m../libasr/pass/pass_utils.h[39m[0m[2m", line 204[0m
+[2m  File "[0m[1m[35m../libasr/pass/pass_utils.h[39m[0m[2m", line 149[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4793[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4527[0m
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/inline_function_calls.cpp[39m[0m[2m", line 468[0m
+    function_result_var = nullptr;
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4839[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4580[0m
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/inline_function_calls.cpp[39m[0m[2m", line 288[0m
+    ASR::Variable_t* func_var = ASR::down_cast<ASR::Variable_t>(itr.second);
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 41[0m
+AssertFailed: is_a<T>(*f)
+
+
+Internal Compiler Error: Unhandled exception
+Traceback (most recent call last):
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/bin/lpython.cpp[39m[0m[2m", line 1828[0m
+    err = compile_python_to_object_file(arg_file, tmp_o, runtime_library_dir,
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/bin/lpython.cpp[39m[0m[2m", line 809[0m
+    res = fe.get_llvm3(*asr, pass_manager, diagnostics, infile);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/lpython/python_evaluator.cpp[39m[0m[2m", line 58[0m
+    run_fn, infile);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/codegen/asr_to_llvm.cpp[39m[0m[2m", line 8521[0m
+    pass_manager.apply_passes(al, &asr, pass_options, diagnostics);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/pass_manager.h[39m[0m[2m", line 274[0m
+    apply_passes(al, asr, _with_optimization_passes, pass_options,
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/pass_manager.h[39m[0m[2m", line 148[0m
+    _passes_db[passes[i]](al, *asr, pass_options);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/inline_function_calls.cpp[39m[0m[2m", line 485[0m
+    v.visit_TranslationUnit(unit);
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 37561[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4778[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4505[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 37579[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4778[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4506[0m
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/inline_function_calls.cpp[39m[0m[2m", line 93[0m
+    current_routine = std::string(xx.m_name);
+[2m  File "[0m[1m[35m../libasr/pass/pass_utils.h[39m[0m[2m", line 204[0m
+[2m  File "[0m[1m[35m../libasr/pass/pass_utils.h[39m[0m[2m", line 149[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4793[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4527[0m
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/inline_function_calls.cpp[39m[0m[2m", line 468[0m
+    function_result_var = nullptr;
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4839[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4580[0m
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/inline_function_calls.cpp[39m[0m[2m", line 288[0m
+    ASR::Variable_t* func_var = ASR::down_cast<ASR::Variable_t>(itr.second);
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 41[0m
+AssertFailed: is_a<T>(*f)
+
+Internal Compiler Error: Unhandled exception
+Traceback (most recent call last):
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/bin/lpython.cpp[39m[0m[2m", line 1828[0m
+    err = compile_python_to_object_file(arg_file, tmp_o, runtime_library_dir,
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/bin/lpython.cpp[39m[0m[2m", line 809[0m
+    res = fe.get_llvm3(*asr, pass_manager, diagnostics, infile);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/lpython/python_evaluator.cpp[39m[0m[2m", line 58[0m
+    run_fn, infile);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/codegen/asr_to_llvm.cpp[39m[0m[2m", line 8527[0m
+    v.visit_asr((ASR::asr_t&)asr);
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4775[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4751[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4776[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4497[0m
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/codegen/asr_to_llvm.cpp[39m[0m[2m", line 1354[0m
+    ASR::symbol_t *mod = x.m_global_scope->get_symbol(item);
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4778[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4505[0m
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/codegen/asr_to_llvm.cpp[39m[0m[2m", line 2818[0m
+    finish_module_init_function_prototype(x);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/codegen/asr_to_llvm.cpp[39m[0m[2m", line 4410[0m
+    visit_Function(*s);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/codegen/asr_to_llvm.cpp[39m[0m[2m", line 4020[0m
+    visit_procedures(x);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/codegen/asr_to_llvm.cpp[39m[0m[2m", line 4361[0m
+    this->visit_stmt(*x.m_body[i]);
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4793[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4555[0m
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/codegen/asr_to_llvm.cpp[39m[0m[2m", line 5692[0m
+    }, [=]() {
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/codegen/asr_to_llvm.cpp[39m[0m[2m", line 317[0m
+    start_new_block(loopbody); {
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/codegen/asr_to_llvm.cpp[39m[0m[2m", line 5694[0m
+    this->visit_stmt(*x.m_body[i]);
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4793[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4555[0m
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/codegen/asr_to_llvm.cpp[39m[0m[2m", line 5692[0m
+    }, [=]() {
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/codegen/asr_to_llvm.cpp[39m[0m[2m", line 317[0m
+    start_new_block(loopbody); {
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/codegen/asr_to_llvm.cpp[39m[0m[2m", line 5694[0m
+    this->visit_stmt(*x.m_body[i]);
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4793[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4539[0m
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/codegen/asr_to_llvm.cpp[39m[0m[2m", line 5661[0m
+    }, [=]() {
+[2m  File "[0m[1m[35m../libasr/codegen/llvm_utils.h[39m[0m[2m", line 174[0m
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/codegen/asr_to_llvm.cpp[39m[0m[2m", line 5659[0m
+    this->visit_stmt(*x.m_body[i]);
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4793[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4527[0m
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/codegen/asr_to_llvm.cpp[39m[0m[2m", line 5026[0m
+    } else {
+[2m  File "[0m[1m[35m../libasr/asr_utils.h[39m[0m[2m", line 99[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 41[0m
+AssertFailed: is_a<T>(*f)
+
+Internal Compiler Error: Unhandled exception
+Traceback (most recent call last):
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/bin/lpython.cpp[39m[0m[2m", line 1828[0m
+    err = compile_python_to_object_file(arg_file, tmp_o, runtime_library_dir,
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/bin/lpython.cpp[39m[0m[2m", line 809[0m
+    res = fe.get_llvm3(*asr, pass_manager, diagnostics, infile);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/lpython/python_evaluator.cpp[39m[0m[2m", line 58[0m
+    run_fn, infile);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/codegen/asr_to_llvm.cpp[39m[0m[2m", line 8527[0m
+    v.visit_asr((ASR::asr_t&)asr);
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4775[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4751[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4776[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4497[0m
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/codegen/asr_to_llvm.cpp[39m[0m[2m", line 1354[0m
+    ASR::symbol_t *mod = x.m_global_scope->get_symbol(item);
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4778[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4505[0m
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/codegen/asr_to_llvm.cpp[39m[0m[2m", line 2818[0m
+    finish_module_init_function_prototype(x);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/codegen/asr_to_llvm.cpp[39m[0m[2m", line 4410[0m
+    visit_Function(*s);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/codegen/asr_to_llvm.cpp[39m[0m[2m", line 4020[0m
+    visit_procedures(x);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/codegen/asr_to_llvm.cpp[39m[0m[2m", line 4361[0m
+    this->visit_stmt(*x.m_body[i]);
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4793[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4527[0m
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/codegen/asr_to_llvm.cpp[39m[0m[2m", line 4860[0m
+    llvm::Value* target_list = tmp;
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4839[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4610[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4873[0m
+LCompilersException: visit_ListConcat() not implemented
+
+Internal Compiler Error: Unhandled exception
+Traceback (most recent call last):
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/bin/lpython.cpp[39m[0m[2m", line 1828[0m
+    err = compile_python_to_object_file(arg_file, tmp_o, runtime_library_dir,
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/bin/lpython.cpp[39m[0m[2m", line 809[0m
+    res = fe.get_llvm3(*asr, pass_manager, diagnostics, infile);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/lpython/python_evaluator.cpp[39m[0m[2m", line 58[0m
+    run_fn, infile);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/codegen/asr_to_llvm.cpp[39m[0m[2m", line 8527[0m
+    v.visit_asr((ASR::asr_t&)asr);
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4775[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4751[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4776[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4497[0m
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/codegen/asr_to_llvm.cpp[39m[0m[2m", line 1354[0m
+    ASR::symbol_t *mod = x.m_global_scope->get_symbol(item);
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4778[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4505[0m
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/codegen/asr_to_llvm.cpp[39m[0m[2m", line 2818[0m
+    finish_module_init_function_prototype(x);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/codegen/asr_to_llvm.cpp[39m[0m[2m", line 4410[0m
+    visit_Function(*s);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/codegen/asr_to_llvm.cpp[39m[0m[2m", line 4020[0m
+    visit_procedures(x);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/codegen/asr_to_llvm.cpp[39m[0m[2m", line 4361[0m
+    this->visit_stmt(*x.m_body[i]);
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4793[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4527[0m
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/codegen/asr_to_llvm.cpp[39m[0m[2m", line 4860[0m
+    llvm::Value* target_list = tmp;
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4839[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4662[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4925[0m
+LCompilersException: visit_ListSection() not implemented
+
+
+Internal Compiler Error: Unhandled exception
+Traceback (most recent call last):
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/bin/lpython.cpp[39m[0m[2m", line 1828[0m
+    err = compile_python_to_object_file(arg_file, tmp_o, runtime_library_dir,
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/bin/lpython.cpp[39m[0m[2m", line 809[0m
+    res = fe.get_llvm3(*asr, pass_manager, diagnostics, infile);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/lpython/python_evaluator.cpp[39m[0m[2m", line 58[0m
+    run_fn, infile);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/codegen/asr_to_llvm.cpp[39m[0m[2m", line 8527[0m
+    v.visit_asr((ASR::asr_t&)asr);
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4775[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4751[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4776[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4497[0m
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/codegen/asr_to_llvm.cpp[39m[0m[2m", line 1354[0m
+    ASR::symbol_t *mod = x.m_global_scope->get_symbol(item);
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4778[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4505[0m
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/codegen/asr_to_llvm.cpp[39m[0m[2m", line 2818[0m
+    finish_module_init_function_prototype(x);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/codegen/asr_to_llvm.cpp[39m[0m[2m", line 4410[0m
+    visit_Function(*s);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/codegen/asr_to_llvm.cpp[39m[0m[2m", line 4020[0m
+    visit_procedures(x);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/codegen/asr_to_llvm.cpp[39m[0m[2m", line 4361[0m
+    this->visit_stmt(*x.m_body[i]);
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4793[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4552[0m
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/codegen/asr_to_llvm.cpp[39m[0m[2m", line 6361[0m
+    this->visit_expr_wrapper(x.m_test, true);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/codegen/asr_to_llvm.cpp[39m[0m[2m", line 5185[0m
+    this->visit_expr(*x);
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4839[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4612[0m
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/codegen/asr_to_llvm.cpp[39m[0m[2m", line 1868[0m
+    int64_t ptr_loads_copy = ptr_loads;
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4839[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4662[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4925[0m
+LCompilersException: visit_ListSection() not implemented
+
+
+
+
+
+Internal Compiler Error: Unhandled exception
+Traceback (most recent call last):
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/bin/lpython.cpp[39m[0m[2m", line 1828[0m
+    err = compile_python_to_object_file(arg_file, tmp_o, runtime_library_dir,
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/bin/lpython.cpp[39m[0m[2m", line 809[0m
+    res = fe.get_llvm3(*asr, pass_manager, diagnostics, infile);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/lpython/python_evaluator.cpp[39m[0m[2m", line 58[0m
+    run_fn, infile);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/codegen/asr_to_llvm.cpp[39m[0m[2m", line 8521[0m
+    pass_manager.apply_passes(al, &asr, pass_options, diagnostics);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/pass_manager.h[39m[0m[2m", line 274[0m
+    apply_passes(al, asr, _with_optimization_passes, pass_options,
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/pass_manager.h[39m[0m[2m", line 148[0m
+    _passes_db[passes[i]](al, *asr, pass_options);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/inline_function_calls.cpp[39m[0m[2m", line 485[0m
+    v.visit_TranslationUnit(unit);
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 37561[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4778[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4505[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 37579[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4778[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4506[0m
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/inline_function_calls.cpp[39m[0m[2m", line 93[0m
+    current_routine = std::string(xx.m_name);
+[2m  File "[0m[1m[35m../libasr/pass/pass_utils.h[39m[0m[2m", line 204[0m
+[2m  File "[0m[1m[35m../libasr/pass/pass_utils.h[39m[0m[2m", line 149[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4793[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4527[0m
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/inline_function_calls.cpp[39m[0m[2m", line 468[0m
+    function_result_var = nullptr;
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4839[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4580[0m
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/inline_function_calls.cpp[39m[0m[2m", line 288[0m
+    ASR::Variable_t* func_var = ASR::down_cast<ASR::Variable_t>(itr.second);
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 41[0m
+AssertFailed: is_a<T>(*f)
+
+
+
+
+Internal Compiler Error: Unhandled exception
+Traceback (most recent call last):
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/bin/lpython.cpp[39m[0m[2m", line 1828[0m
+    err = compile_python_to_object_file(arg_file, tmp_o, runtime_library_dir,
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/bin/lpython.cpp[39m[0m[2m", line 809[0m
+    res = fe.get_llvm3(*asr, pass_manager, diagnostics, infile);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/lpython/python_evaluator.cpp[39m[0m[2m", line 58[0m
+    run_fn, infile);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/codegen/asr_to_llvm.cpp[39m[0m[2m", line 8521[0m
+    pass_manager.apply_passes(al, &asr, pass_options, diagnostics);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/pass_manager.h[39m[0m[2m", line 274[0m
+    apply_passes(al, asr, _with_optimization_passes, pass_options,
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/pass_manager.h[39m[0m[2m", line 148[0m
+    _passes_db[passes[i]](al, *asr, pass_options);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/fma.cpp[39m[0m[2m", line 172[0m
+    v.visit_TranslationUnit(unit);
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 37561[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4778[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4505[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 37579[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4778[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4506[0m
+[2m  File "[0m[1m[35m../libasr/pass/pass_utils.h[39m[0m[2m", line 239[0m
+[2m  File "[0m[1m[35m../libasr/pass/pass_utils.h[39m[0m[2m", line 204[0m
+[2m  File "[0m[1m[35m../libasr/pass/pass_utils.h[39m[0m[2m", line 149[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4793[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4527[0m
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/fma.cpp[39m[0m[2m", line 129[0m
+    fma_var = nullptr;
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4839[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4653[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 38529[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4839[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4599[0m
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/fma.cpp[39m[0m[2m", line 120[0m
+    fma_var = PassUtils::get_fma(other_expr, first_arg, second_arg,
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/pass_utils.cpp[39m[0m[2m", line 657[0m
+    al, unit, pass_options, current_scope, arg0->base.loc);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/pass_utils.cpp[39m[0m[2m", line 429[0m
+    ASR::Module_t *m = ASRUtils::load_module(al, current_scope,
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/asr_utils.cpp[39m[0m[2m", line 173[0m
+    loc);
+[2m  File "[0m[1m[35m/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__functional/function.h[39m[0m[2m", line 1197[0m
+    return __f_(_VSTD::forward<_ArgTypes>(__arg)...);
+[2m  File "[0m[1m[35m/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__functional/function.h[39m[0m[2m", line 512[0m
+    return (*__f_)(_VSTD::forward<_ArgTypes>(__args)...);
+[2m  File "[0m[1m[35m/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__functional/function.h[39m[0m[2m", line 359[0m
+    return __f_(_VSTD::forward<_ArgTypes>(__arg)...);
+[2m  File "[0m[1m[35m/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__functional/function.h[39m[0m[2m", line 185[0m
+    return _Invoker::__call(__f_.first(),
+[2m  File "[0m[1m[35m/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__functional/invoke.h[39m[0m[2m", line 479[0m
+    std::__invoke(std::forward<_Args>(__args)...);
+[2m  File "[0m[1m[35m/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__functional/invoke.h[39m[0m[2m", line 394[0m
+    { return          static_cast<_Fp&&>(__f)(static_cast<_Args&&>(__args)...); }
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/pass_utils.cpp[39m[0m[2m", line 432[0m
+    [&](const std::string &msg, const Location &) { throw LCompilersException(msg); }
+LCompilersException: Module 'lfortran_intrinsic_optimization' not declared in the current source and the modfile was not found
+
+Internal Compiler Error: Unhandled exception
+Traceback (most recent call last):
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/bin/lpython.cpp[39m[0m[2m", line 1828[0m
+    err = compile_python_to_object_file(arg_file, tmp_o, runtime_library_dir,
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/bin/lpython.cpp[39m[0m[2m", line 809[0m
+    res = fe.get_llvm3(*asr, pass_manager, diagnostics, infile);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/lpython/python_evaluator.cpp[39m[0m[2m", line 58[0m
+    run_fn, infile);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/codegen/asr_to_llvm.cpp[39m[0m[2m", line 8521[0m
+    pass_manager.apply_passes(al, &asr, pass_options, diagnostics);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/pass_manager.h[39m[0m[2m", line 274[0m
+    apply_passes(al, asr, _with_optimization_passes, pass_options,
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/pass_manager.h[39m[0m[2m", line 148[0m
+    _passes_db[passes[i]](al, *asr, pass_options);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/inline_function_calls.cpp[39m[0m[2m", line 485[0m
+    v.visit_TranslationUnit(unit);
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 37561[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4778[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4505[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 37579[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4778[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4506[0m
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/inline_function_calls.cpp[39m[0m[2m", line 93[0m
+    current_routine = std::string(xx.m_name);
+[2m  File "[0m[1m[35m../libasr/pass/pass_utils.h[39m[0m[2m", line 204[0m
+[2m  File "[0m[1m[35m../libasr/pass/pass_utils.h[39m[0m[2m", line 149[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4793[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4527[0m
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/inline_function_calls.cpp[39m[0m[2m", line 468[0m
+    function_result_var = nullptr;
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4839[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4653[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 38529[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4839[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4580[0m
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/inline_function_calls.cpp[39m[0m[2m", line 288[0m
+    ASR::Variable_t* func_var = ASR::down_cast<ASR::Variable_t>(itr.second);
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 41[0m
+AssertFailed: is_a<T>(*f)
+
+Internal Compiler Error: Unhandled exception
+Traceback (most recent call last):
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/bin/lpython.cpp[39m[0m[2m", line 1828[0m
+    err = compile_python_to_object_file(arg_file, tmp_o, runtime_library_dir,
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/bin/lpython.cpp[39m[0m[2m", line 809[0m
+    res = fe.get_llvm3(*asr, pass_manager, diagnostics, infile);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/lpython/python_evaluator.cpp[39m[0m[2m", line 58[0m
+    run_fn, infile);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/codegen/asr_to_llvm.cpp[39m[0m[2m", line 8521[0m
+    pass_manager.apply_passes(al, &asr, pass_options, diagnostics);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/pass_manager.h[39m[0m[2m", line 274[0m
+    apply_passes(al, asr, _with_optimization_passes, pass_options,
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/pass_manager.h[39m[0m[2m", line 148[0m
+    _passes_db[passes[i]](al, *asr, pass_options);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/inline_function_calls.cpp[39m[0m[2m", line 485[0m
+    v.visit_TranslationUnit(unit);
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 37561[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4778[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4505[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 37579[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4778[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4506[0m
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/inline_function_calls.cpp[39m[0m[2m", line 93[0m
+    current_routine = std::string(xx.m_name);
+[2m  File "[0m[1m[35m../libasr/pass/pass_utils.h[39m[0m[2m", line 204[0m
+[2m  File "[0m[1m[35m../libasr/pass/pass_utils.h[39m[0m[2m", line 149[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4793[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4555[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 37943[0m
+[2m  File "[0m[1m[35m../libasr/pass/pass_utils.h[39m[0m[2m", line 149[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4793[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4568[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 38007[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4839[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4615[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 38260[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4839[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4599[0m
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/inline_function_calls.cpp[39m[0m[2m", line 433[0m
+    handle_BinOp(x);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/inline_function_calls.cpp[39m[0m[2m", line 453[0m
+    function_result_var = nullptr;
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4839[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4580[0m
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/inline_function_calls.cpp[39m[0m[2m", line 288[0m
+    ASR::Variable_t* func_var = ASR::down_cast<ASR::Variable_t>(itr.second);
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 41[0m
+AssertFailed: is_a<T>(*f)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[0;31;1msemantic error[0;0m[0;1m: Could not find the module '__init__'. If an import path is available, please use the `-I` option to specify it[0;0m
+ [0;34;1m-->[0;0m integration_tests/test_import_04.py:1:1
+  [0;34;1m|[0;0m
+[0;34;1m1 |[0;0m import test_modules
+  [0;34;1m|[0;0m [0;31;1m^^^^^^^^^^^^^^^^^^^ [0;0m
+
+
+[0;1mNote[0;0m: if any of the above error or warning messages are not clear or are lacking
+context please report it to us (we consider that a bug that must be fixed).
+
+
+Internal Compiler Error: Unhandled exception
+Traceback (most recent call last):
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/bin/lpython.cpp[39m[0m[2m", line 1828[0m
+    err = compile_python_to_object_file(arg_file, tmp_o, runtime_library_dir,
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/bin/lpython.cpp[39m[0m[2m", line 809[0m
+    res = fe.get_llvm3(*asr, pass_manager, diagnostics, infile);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/lpython/python_evaluator.cpp[39m[0m[2m", line 58[0m
+    run_fn, infile);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/codegen/asr_to_llvm.cpp[39m[0m[2m", line 8521[0m
+    pass_manager.apply_passes(al, &asr, pass_options, diagnostics);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/pass_manager.h[39m[0m[2m", line 274[0m
+    apply_passes(al, asr, _with_optimization_passes, pass_options,
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/pass_manager.h[39m[0m[2m", line 148[0m
+    _passes_db[passes[i]](al, *asr, pass_options);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/fma.cpp[39m[0m[2m", line 172[0m
+    v.visit_TranslationUnit(unit);
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 37561[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4778[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4505[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 37579[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4778[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4506[0m
+[2m  File "[0m[1m[35m../libasr/pass/pass_utils.h[39m[0m[2m", line 239[0m
+[2m  File "[0m[1m[35m../libasr/pass/pass_utils.h[39m[0m[2m", line 204[0m
+[2m  File "[0m[1m[35m../libasr/pass/pass_utils.h[39m[0m[2m", line 149[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4793[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4555[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 37943[0m
+[2m  File "[0m[1m[35m../libasr/pass/pass_utils.h[39m[0m[2m", line 149[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4793[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4527[0m
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/fma.cpp[39m[0m[2m", line 129[0m
+    fma_var = nullptr;
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4839[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4599[0m
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/fma.cpp[39m[0m[2m", line 120[0m
+    fma_var = PassUtils::get_fma(other_expr, first_arg, second_arg,
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/pass_utils.cpp[39m[0m[2m", line 657[0m
+    al, unit, pass_options, current_scope, arg0->base.loc);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/pass_utils.cpp[39m[0m[2m", line 429[0m
+    ASR::Module_t *m = ASRUtils::load_module(al, current_scope,
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/asr_utils.cpp[39m[0m[2m", line 173[0m
+    loc);
+[2m  File "[0m[1m[35m/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__functional/function.h[39m[0m[2m", line 1197[0m
+    return __f_(_VSTD::forward<_ArgTypes>(__arg)...);
+[2m  File "[0m[1m[35m/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__functional/function.h[39m[0m[2m", line 512[0m
+    return (*__f_)(_VSTD::forward<_ArgTypes>(__args)...);
+[2m  File "[0m[1m[35m/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__functional/function.h[39m[0m[2m", line 359[0m
+    return __f_(_VSTD::forward<_ArgTypes>(__arg)...);
+[2m  File "[0m[1m[35m/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__functional/function.h[39m[0m[2m", line 185[0m
+    return _Invoker::__call(__f_.first(),
+[2m  File "[0m[1m[35m/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__functional/invoke.h[39m[0m[2m", line 479[0m
+    std::__invoke(std::forward<_Args>(__args)...);
+[2m  File "[0m[1m[35m/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__functional/invoke.h[39m[0m[2m", line 394[0m
+    { return          static_cast<_Fp&&>(__f)(static_cast<_Args&&>(__args)...); }
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/pass_utils.cpp[39m[0m[2m", line 432[0m
+    [&](const std::string &msg, const Location &) { throw LCompilersException(msg); }
+LCompilersException: Module 'lfortran_intrinsic_optimization' not declared in the current source and the modfile was not found
+
+
+
+
+
+Internal Compiler Error: Unhandled exception
+Traceback (most recent call last):
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/bin/lpython.cpp[39m[0m[2m", line 1828[0m
+    err = compile_python_to_object_file(arg_file, tmp_o, runtime_library_dir,
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/bin/lpython.cpp[39m[0m[2m", line 809[0m
+    res = fe.get_llvm3(*asr, pass_manager, diagnostics, infile);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/lpython/python_evaluator.cpp[39m[0m[2m", line 58[0m
+    run_fn, infile);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/codegen/asr_to_llvm.cpp[39m[0m[2m", line 8521[0m
+    pass_manager.apply_passes(al, &asr, pass_options, diagnostics);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/pass_manager.h[39m[0m[2m", line 274[0m
+    apply_passes(al, asr, _with_optimization_passes, pass_options,
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/pass_manager.h[39m[0m[2m", line 148[0m
+    _passes_db[passes[i]](al, *asr, pass_options);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/loop_vectorise.cpp[39m[0m[2m", line 195[0m
+    v.visit_TranslationUnit(unit);
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 37561[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4778[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4505[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 37579[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4778[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4506[0m
+[2m  File "[0m[1m[35m../libasr/pass/pass_utils.h[39m[0m[2m", line 239[0m
+[2m  File "[0m[1m[35m../libasr/pass/pass_utils.h[39m[0m[2m", line 204[0m
+[2m  File "[0m[1m[35m../libasr/pass/pass_utils.h[39m[0m[2m", line 149[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4793[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4533[0m
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/loop_vectorise.cpp[39m[0m[2m", line 181[0m
+    visit_stmt(*x.m_body[0]);
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4793[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4533[0m
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/loop_vectorise.cpp[39m[0m[2m", line 182[0m
+    return ;
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/loop_vectorise.cpp[39m[0m[2m", line 133[0m
+    ASR::expr_t* loop_end_value = ASRUtils::expr_value(loop_end);
+[2m  File "[0m[1m[35m../libasr/asr_utils.h[39m[0m[2m", line 352[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 46895[0m
+AssertFailed: f != nullptr
+
+Internal Compiler Error: Unhandled exception
+Traceback (most recent call last):
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/bin/lpython.cpp[39m[0m[2m", line 1828[0m
+    err = compile_python_to_object_file(arg_file, tmp_o, runtime_library_dir,
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/bin/lpython.cpp[39m[0m[2m", line 809[0m
+    res = fe.get_llvm3(*asr, pass_manager, diagnostics, infile);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/lpython/python_evaluator.cpp[39m[0m[2m", line 58[0m
+    run_fn, infile);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/codegen/asr_to_llvm.cpp[39m[0m[2m", line 8521[0m
+    pass_manager.apply_passes(al, &asr, pass_options, diagnostics);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/pass_manager.h[39m[0m[2m", line 274[0m
+    apply_passes(al, asr, _with_optimization_passes, pass_options,
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/pass_manager.h[39m[0m[2m", line 148[0m
+    _passes_db[passes[i]](al, *asr, pass_options);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/loop_vectorise.cpp[39m[0m[2m", line 195[0m
+    v.visit_TranslationUnit(unit);
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 37561[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4778[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4505[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 37579[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4778[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4506[0m
+[2m  File "[0m[1m[35m../libasr/pass/pass_utils.h[39m[0m[2m", line 239[0m
+[2m  File "[0m[1m[35m../libasr/pass/pass_utils.h[39m[0m[2m", line 204[0m
+[2m  File "[0m[1m[35m../libasr/pass/pass_utils.h[39m[0m[2m", line 149[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4793[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4533[0m
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/loop_vectorise.cpp[39m[0m[2m", line 181[0m
+    visit_stmt(*x.m_body[0]);
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4793[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4533[0m
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/loop_vectorise.cpp[39m[0m[2m", line 182[0m
+    return ;
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/loop_vectorise.cpp[39m[0m[2m", line 133[0m
+    ASR::expr_t* loop_end_value = ASRUtils::expr_value(loop_end);
+[2m  File "[0m[1m[35m../libasr/asr_utils.h[39m[0m[2m", line 352[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 46895[0m
+AssertFailed: f != nullptr
+
+Internal Compiler Error: Unhandled exception
+Traceback (most recent call last):
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/bin/lpython.cpp[39m[0m[2m", line 1828[0m
+    err = compile_python_to_object_file(arg_file, tmp_o, runtime_library_dir,
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/bin/lpython.cpp[39m[0m[2m", line 809[0m
+    res = fe.get_llvm3(*asr, pass_manager, diagnostics, infile);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/lpython/python_evaluator.cpp[39m[0m[2m", line 58[0m
+    run_fn, infile);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/codegen/asr_to_llvm.cpp[39m[0m[2m", line 8521[0m
+    pass_manager.apply_passes(al, &asr, pass_options, diagnostics);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/pass_manager.h[39m[0m[2m", line 274[0m
+    apply_passes(al, asr, _with_optimization_passes, pass_options,
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/pass_manager.h[39m[0m[2m", line 148[0m
+    _passes_db[passes[i]](al, *asr, pass_options);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/loop_vectorise.cpp[39m[0m[2m", line 195[0m
+    v.visit_TranslationUnit(unit);
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 37561[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4778[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4505[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 37579[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4778[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4506[0m
+[2m  File "[0m[1m[35m../libasr/pass/pass_utils.h[39m[0m[2m", line 239[0m
+[2m  File "[0m[1m[35m../libasr/pass/pass_utils.h[39m[0m[2m", line 204[0m
+[2m  File "[0m[1m[35m../libasr/pass/pass_utils.h[39m[0m[2m", line 149[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4793[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4533[0m
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/loop_vectorise.cpp[39m[0m[2m", line 182[0m
+    return ;
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/loop_vectorise.cpp[39m[0m[2m", line 133[0m
+    ASR::expr_t* loop_end_value = ASRUtils::expr_value(loop_end);
+[2m  File "[0m[1m[35m../libasr/asr_utils.h[39m[0m[2m", line 352[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 46895[0m
+AssertFailed: f != nullptr
+
+Internal Compiler Error: Unhandled exception
+Traceback (most recent call last):
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/bin/lpython.cpp[39m[0m[2m", line 1828[0m
+    err = compile_python_to_object_file(arg_file, tmp_o, runtime_library_dir,
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/bin/lpython.cpp[39m[0m[2m", line 809[0m
+    res = fe.get_llvm3(*asr, pass_manager, diagnostics, infile);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/lpython/python_evaluator.cpp[39m[0m[2m", line 58[0m
+    run_fn, infile);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/codegen/asr_to_llvm.cpp[39m[0m[2m", line 8521[0m
+    pass_manager.apply_passes(al, &asr, pass_options, diagnostics);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/pass_manager.h[39m[0m[2m", line 274[0m
+    apply_passes(al, asr, _with_optimization_passes, pass_options,
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/pass_manager.h[39m[0m[2m", line 148[0m
+    _passes_db[passes[i]](al, *asr, pass_options);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/loop_vectorise.cpp[39m[0m[2m", line 195[0m
+    v.visit_TranslationUnit(unit);
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 37561[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4778[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4505[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 37579[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4778[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4506[0m
+[2m  File "[0m[1m[35m../libasr/pass/pass_utils.h[39m[0m[2m", line 239[0m
+[2m  File "[0m[1m[35m../libasr/pass/pass_utils.h[39m[0m[2m", line 204[0m
+[2m  File "[0m[1m[35m../libasr/pass/pass_utils.h[39m[0m[2m", line 149[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4793[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4533[0m
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/loop_vectorise.cpp[39m[0m[2m", line 182[0m
+    return ;
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/loop_vectorise.cpp[39m[0m[2m", line 133[0m
+    ASR::expr_t* loop_end_value = ASRUtils::expr_value(loop_end);
+[2m  File "[0m[1m[35m../libasr/asr_utils.h[39m[0m[2m", line 352[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 46895[0m
+AssertFailed: f != nullptr
+
+Internal Compiler Error: Unhandled exception
+Traceback (most recent call last):
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/bin/lpython.cpp[39m[0m[2m", line 1828[0m
+    err = compile_python_to_object_file(arg_file, tmp_o, runtime_library_dir,
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/bin/lpython.cpp[39m[0m[2m", line 809[0m
+    res = fe.get_llvm3(*asr, pass_manager, diagnostics, infile);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/lpython/python_evaluator.cpp[39m[0m[2m", line 58[0m
+    run_fn, infile);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/codegen/asr_to_llvm.cpp[39m[0m[2m", line 8521[0m
+    pass_manager.apply_passes(al, &asr, pass_options, diagnostics);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/pass_manager.h[39m[0m[2m", line 274[0m
+    apply_passes(al, asr, _with_optimization_passes, pass_options,
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/pass_manager.h[39m[0m[2m", line 148[0m
+    _passes_db[passes[i]](al, *asr, pass_options);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/loop_vectorise.cpp[39m[0m[2m", line 195[0m
+    v.visit_TranslationUnit(unit);
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 37561[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4778[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4505[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 37579[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4778[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4506[0m
+[2m  File "[0m[1m[35m../libasr/pass/pass_utils.h[39m[0m[2m", line 239[0m
+[2m  File "[0m[1m[35m../libasr/pass/pass_utils.h[39m[0m[2m", line 204[0m
+[2m  File "[0m[1m[35m../libasr/pass/pass_utils.h[39m[0m[2m", line 149[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4793[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4533[0m
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/loop_vectorise.cpp[39m[0m[2m", line 181[0m
+    visit_stmt(*x.m_body[0]);
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4793[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4533[0m
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/loop_vectorise.cpp[39m[0m[2m", line 182[0m
+    return ;
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/loop_vectorise.cpp[39m[0m[2m", line 133[0m
+    ASR::expr_t* loop_end_value = ASRUtils::expr_value(loop_end);
+[2m  File "[0m[1m[35m../libasr/asr_utils.h[39m[0m[2m", line 352[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 46895[0m
+AssertFailed: f != nullptr
+
+Internal Compiler Error: Unhandled exception
+Traceback (most recent call last):
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/bin/lpython.cpp[39m[0m[2m", line 1828[0m
+    err = compile_python_to_object_file(arg_file, tmp_o, runtime_library_dir,
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/bin/lpython.cpp[39m[0m[2m", line 809[0m
+    res = fe.get_llvm3(*asr, pass_manager, diagnostics, infile);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/lpython/python_evaluator.cpp[39m[0m[2m", line 58[0m
+    run_fn, infile);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/codegen/asr_to_llvm.cpp[39m[0m[2m", line 8521[0m
+    pass_manager.apply_passes(al, &asr, pass_options, diagnostics);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/pass_manager.h[39m[0m[2m", line 274[0m
+    apply_passes(al, asr, _with_optimization_passes, pass_options,
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/pass_manager.h[39m[0m[2m", line 148[0m
+    _passes_db[passes[i]](al, *asr, pass_options);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/loop_vectorise.cpp[39m[0m[2m", line 195[0m
+    v.visit_TranslationUnit(unit);
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 37561[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4778[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4505[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 37579[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4778[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4506[0m
+[2m  File "[0m[1m[35m../libasr/pass/pass_utils.h[39m[0m[2m", line 239[0m
+[2m  File "[0m[1m[35m../libasr/pass/pass_utils.h[39m[0m[2m", line 204[0m
+[2m  File "[0m[1m[35m../libasr/pass/pass_utils.h[39m[0m[2m", line 149[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4793[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4533[0m
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/loop_vectorise.cpp[39m[0m[2m", line 182[0m
+    return ;
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/loop_vectorise.cpp[39m[0m[2m", line 133[0m
+    ASR::expr_t* loop_end_value = ASRUtils::expr_value(loop_end);
+[2m  File "[0m[1m[35m../libasr/asr_utils.h[39m[0m[2m", line 352[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 46895[0m
+AssertFailed: f != nullptr
+
+Internal Compiler Error: Unhandled exception
+Traceback (most recent call last):
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/bin/lpython.cpp[39m[0m[2m", line 1828[0m
+    err = compile_python_to_object_file(arg_file, tmp_o, runtime_library_dir,
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/bin/lpython.cpp[39m[0m[2m", line 809[0m
+    res = fe.get_llvm3(*asr, pass_manager, diagnostics, infile);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/lpython/python_evaluator.cpp[39m[0m[2m", line 58[0m
+    run_fn, infile);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/codegen/asr_to_llvm.cpp[39m[0m[2m", line 8521[0m
+    pass_manager.apply_passes(al, &asr, pass_options, diagnostics);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/pass_manager.h[39m[0m[2m", line 274[0m
+    apply_passes(al, asr, _with_optimization_passes, pass_options,
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/pass_manager.h[39m[0m[2m", line 148[0m
+    _passes_db[passes[i]](al, *asr, pass_options);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/loop_vectorise.cpp[39m[0m[2m", line 195[0m
+    v.visit_TranslationUnit(unit);
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 37561[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4778[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4505[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 37579[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4778[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4506[0m
+[2m  File "[0m[1m[35m../libasr/pass/pass_utils.h[39m[0m[2m", line 239[0m
+[2m  File "[0m[1m[35m../libasr/pass/pass_utils.h[39m[0m[2m", line 204[0m
+[2m  File "[0m[1m[35m../libasr/pass/pass_utils.h[39m[0m[2m", line 149[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4793[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4533[0m
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/loop_vectorise.cpp[39m[0m[2m", line 182[0m
+    return ;
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/loop_vectorise.cpp[39m[0m[2m", line 133[0m
+    ASR::expr_t* loop_end_value = ASRUtils::expr_value(loop_end);
+[2m  File "[0m[1m[35m../libasr/asr_utils.h[39m[0m[2m", line 352[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 46895[0m
+AssertFailed: f != nullptr
+
+Internal Compiler Error: Unhandled exception
+Traceback (most recent call last):
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/bin/lpython.cpp[39m[0m[2m", line 1828[0m
+    err = compile_python_to_object_file(arg_file, tmp_o, runtime_library_dir,
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/bin/lpython.cpp[39m[0m[2m", line 809[0m
+    res = fe.get_llvm3(*asr, pass_manager, diagnostics, infile);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/lpython/python_evaluator.cpp[39m[0m[2m", line 58[0m
+    run_fn, infile);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/codegen/asr_to_llvm.cpp[39m[0m[2m", line 8521[0m
+    pass_manager.apply_passes(al, &asr, pass_options, diagnostics);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/pass_manager.h[39m[0m[2m", line 274[0m
+    apply_passes(al, asr, _with_optimization_passes, pass_options,
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/pass_manager.h[39m[0m[2m", line 148[0m
+    _passes_db[passes[i]](al, *asr, pass_options);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/loop_vectorise.cpp[39m[0m[2m", line 195[0m
+    v.visit_TranslationUnit(unit);
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 37561[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4778[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4505[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 37579[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4778[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4506[0m
+[2m  File "[0m[1m[35m../libasr/pass/pass_utils.h[39m[0m[2m", line 239[0m
+[2m  File "[0m[1m[35m../libasr/pass/pass_utils.h[39m[0m[2m", line 204[0m
+[2m  File "[0m[1m[35m../libasr/pass/pass_utils.h[39m[0m[2m", line 149[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4793[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4533[0m
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/loop_vectorise.cpp[39m[0m[2m", line 182[0m
+    return ;
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/loop_vectorise.cpp[39m[0m[2m", line 133[0m
+    ASR::expr_t* loop_end_value = ASRUtils::expr_value(loop_end);
+[2m  File "[0m[1m[35m../libasr/asr_utils.h[39m[0m[2m", line 352[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 46895[0m
+AssertFailed: f != nullptr
+
+Internal Compiler Error: Unhandled exception
+Traceback (most recent call last):
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/bin/lpython.cpp[39m[0m[2m", line 1828[0m
+    err = compile_python_to_object_file(arg_file, tmp_o, runtime_library_dir,
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/bin/lpython.cpp[39m[0m[2m", line 809[0m
+    res = fe.get_llvm3(*asr, pass_manager, diagnostics, infile);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/lpython/python_evaluator.cpp[39m[0m[2m", line 58[0m
+    run_fn, infile);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/codegen/asr_to_llvm.cpp[39m[0m[2m", line 8521[0m
+    pass_manager.apply_passes(al, &asr, pass_options, diagnostics);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/pass_manager.h[39m[0m[2m", line 274[0m
+    apply_passes(al, asr, _with_optimization_passes, pass_options,
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/pass_manager.h[39m[0m[2m", line 148[0m
+    _passes_db[passes[i]](al, *asr, pass_options);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/loop_vectorise.cpp[39m[0m[2m", line 195[0m
+    v.visit_TranslationUnit(unit);
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 37561[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4778[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4505[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 37579[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4778[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4506[0m
+[2m  File "[0m[1m[35m../libasr/pass/pass_utils.h[39m[0m[2m", line 239[0m
+[2m  File "[0m[1m[35m../libasr/pass/pass_utils.h[39m[0m[2m", line 204[0m
+[2m  File "[0m[1m[35m../libasr/pass/pass_utils.h[39m[0m[2m", line 149[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4793[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4533[0m
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/loop_vectorise.cpp[39m[0m[2m", line 181[0m
+    visit_stmt(*x.m_body[0]);
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4793[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4533[0m
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/loop_vectorise.cpp[39m[0m[2m", line 182[0m
+    return ;
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/loop_vectorise.cpp[39m[0m[2m", line 133[0m
+    ASR::expr_t* loop_end_value = ASRUtils::expr_value(loop_end);
+[2m  File "[0m[1m[35m../libasr/asr_utils.h[39m[0m[2m", line 352[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 46895[0m
+AssertFailed: f != nullptr
+
+Internal Compiler Error: Unhandled exception
+Traceback (most recent call last):
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/bin/lpython.cpp[39m[0m[2m", line 1828[0m
+    err = compile_python_to_object_file(arg_file, tmp_o, runtime_library_dir,
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/bin/lpython.cpp[39m[0m[2m", line 809[0m
+    res = fe.get_llvm3(*asr, pass_manager, diagnostics, infile);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/lpython/python_evaluator.cpp[39m[0m[2m", line 58[0m
+    run_fn, infile);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/codegen/asr_to_llvm.cpp[39m[0m[2m", line 8521[0m
+    pass_manager.apply_passes(al, &asr, pass_options, diagnostics);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/pass_manager.h[39m[0m[2m", line 274[0m
+    apply_passes(al, asr, _with_optimization_passes, pass_options,
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/pass_manager.h[39m[0m[2m", line 148[0m
+    _passes_db[passes[i]](al, *asr, pass_options);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/loop_vectorise.cpp[39m[0m[2m", line 195[0m
+    v.visit_TranslationUnit(unit);
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 37561[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4778[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4505[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 37579[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4778[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4506[0m
+[2m  File "[0m[1m[35m../libasr/pass/pass_utils.h[39m[0m[2m", line 239[0m
+[2m  File "[0m[1m[35m../libasr/pass/pass_utils.h[39m[0m[2m", line 204[0m
+[2m  File "[0m[1m[35m../libasr/pass/pass_utils.h[39m[0m[2m", line 149[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4793[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4533[0m
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/loop_vectorise.cpp[39m[0m[2m", line 181[0m
+    visit_stmt(*x.m_body[0]);
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4793[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4533[0m
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/loop_vectorise.cpp[39m[0m[2m", line 181[0m
+    visit_stmt(*x.m_body[0]);
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4793[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4533[0m
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/loop_vectorise.cpp[39m[0m[2m", line 182[0m
+    return ;
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/loop_vectorise.cpp[39m[0m[2m", line 133[0m
+    ASR::expr_t* loop_end_value = ASRUtils::expr_value(loop_end);
+[2m  File "[0m[1m[35m../libasr/asr_utils.h[39m[0m[2m", line 352[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 46895[0m
+AssertFailed: f != nullptr
+
+Internal Compiler Error: Unhandled exception
+Traceback (most recent call last):
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/bin/lpython.cpp[39m[0m[2m", line 1828[0m
+    err = compile_python_to_object_file(arg_file, tmp_o, runtime_library_dir,
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/bin/lpython.cpp[39m[0m[2m", line 809[0m
+    res = fe.get_llvm3(*asr, pass_manager, diagnostics, infile);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/lpython/python_evaluator.cpp[39m[0m[2m", line 58[0m
+    run_fn, infile);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/codegen/asr_to_llvm.cpp[39m[0m[2m", line 8521[0m
+    pass_manager.apply_passes(al, &asr, pass_options, diagnostics);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/pass_manager.h[39m[0m[2m", line 274[0m
+    apply_passes(al, asr, _with_optimization_passes, pass_options,
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/pass_manager.h[39m[0m[2m", line 148[0m
+    _passes_db[passes[i]](al, *asr, pass_options);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/loop_vectorise.cpp[39m[0m[2m", line 195[0m
+    v.visit_TranslationUnit(unit);
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 37561[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4778[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4505[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 37579[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4778[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4506[0m
+[2m  File "[0m[1m[35m../libasr/pass/pass_utils.h[39m[0m[2m", line 239[0m
+[2m  File "[0m[1m[35m../libasr/pass/pass_utils.h[39m[0m[2m", line 204[0m
+[2m  File "[0m[1m[35m../libasr/pass/pass_utils.h[39m[0m[2m", line 149[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4793[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4533[0m
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/loop_vectorise.cpp[39m[0m[2m", line 182[0m
+    return ;
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/loop_vectorise.cpp[39m[0m[2m", line 133[0m
+    ASR::expr_t* loop_end_value = ASRUtils::expr_value(loop_end);
+[2m  File "[0m[1m[35m../libasr/asr_utils.h[39m[0m[2m", line 352[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 46895[0m
+AssertFailed: f != nullptr
+
+Internal Compiler Error: Unhandled exception
+Traceback (most recent call last):
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/bin/lpython.cpp[39m[0m[2m", line 1828[0m
+    err = compile_python_to_object_file(arg_file, tmp_o, runtime_library_dir,
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/bin/lpython.cpp[39m[0m[2m", line 809[0m
+    res = fe.get_llvm3(*asr, pass_manager, diagnostics, infile);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/lpython/python_evaluator.cpp[39m[0m[2m", line 58[0m
+    run_fn, infile);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/codegen/asr_to_llvm.cpp[39m[0m[2m", line 8521[0m
+    pass_manager.apply_passes(al, &asr, pass_options, diagnostics);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/pass_manager.h[39m[0m[2m", line 274[0m
+    apply_passes(al, asr, _with_optimization_passes, pass_options,
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/pass_manager.h[39m[0m[2m", line 148[0m
+    _passes_db[passes[i]](al, *asr, pass_options);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/loop_vectorise.cpp[39m[0m[2m", line 195[0m
+    v.visit_TranslationUnit(unit);
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 37561[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4778[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4505[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 37579[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4778[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4506[0m
+[2m  File "[0m[1m[35m../libasr/pass/pass_utils.h[39m[0m[2m", line 239[0m
+[2m  File "[0m[1m[35m../libasr/pass/pass_utils.h[39m[0m[2m", line 204[0m
+[2m  File "[0m[1m[35m../libasr/pass/pass_utils.h[39m[0m[2m", line 149[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4793[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4533[0m
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/loop_vectorise.cpp[39m[0m[2m", line 181[0m
+    visit_stmt(*x.m_body[0]);
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4793[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4533[0m
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/loop_vectorise.cpp[39m[0m[2m", line 181[0m
+    visit_stmt(*x.m_body[0]);
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4793[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4533[0m
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/loop_vectorise.cpp[39m[0m[2m", line 181[0m
+    visit_stmt(*x.m_body[0]);
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4793[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4533[0m
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/loop_vectorise.cpp[39m[0m[2m", line 182[0m
+    return ;
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/loop_vectorise.cpp[39m[0m[2m", line 133[0m
+    ASR::expr_t* loop_end_value = ASRUtils::expr_value(loop_end);
+[2m  File "[0m[1m[35m../libasr/asr_utils.h[39m[0m[2m", line 352[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 46895[0m
+AssertFailed: f != nullptr
+
+Internal Compiler Error: Unhandled exception
+Traceback (most recent call last):
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/bin/lpython.cpp[39m[0m[2m", line 1828[0m
+    err = compile_python_to_object_file(arg_file, tmp_o, runtime_library_dir,
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/bin/lpython.cpp[39m[0m[2m", line 809[0m
+    res = fe.get_llvm3(*asr, pass_manager, diagnostics, infile);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/lpython/python_evaluator.cpp[39m[0m[2m", line 58[0m
+    run_fn, infile);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/codegen/asr_to_llvm.cpp[39m[0m[2m", line 8521[0m
+    pass_manager.apply_passes(al, &asr, pass_options, diagnostics);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/pass_manager.h[39m[0m[2m", line 274[0m
+    apply_passes(al, asr, _with_optimization_passes, pass_options,
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/pass_manager.h[39m[0m[2m", line 148[0m
+    _passes_db[passes[i]](al, *asr, pass_options);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/fma.cpp[39m[0m[2m", line 172[0m
+    v.visit_TranslationUnit(unit);
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 37561[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4778[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4505[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 37579[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4778[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4506[0m
+[2m  File "[0m[1m[35m../libasr/pass/pass_utils.h[39m[0m[2m", line 239[0m
+[2m  File "[0m[1m[35m../libasr/pass/pass_utils.h[39m[0m[2m", line 204[0m
+[2m  File "[0m[1m[35m../libasr/pass/pass_utils.h[39m[0m[2m", line 149[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4793[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4527[0m
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/fma.cpp[39m[0m[2m", line 129[0m
+    fma_var = nullptr;
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4839[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4599[0m
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/fma.cpp[39m[0m[2m", line 120[0m
+    fma_var = PassUtils::get_fma(other_expr, first_arg, second_arg,
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/pass_utils.cpp[39m[0m[2m", line 657[0m
+    al, unit, pass_options, current_scope, arg0->base.loc);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/pass_utils.cpp[39m[0m[2m", line 429[0m
+    ASR::Module_t *m = ASRUtils::load_module(al, current_scope,
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/asr_utils.cpp[39m[0m[2m", line 173[0m
+    loc);
+[2m  File "[0m[1m[35m/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__functional/function.h[39m[0m[2m", line 1197[0m
+    return __f_(_VSTD::forward<_ArgTypes>(__arg)...);
+[2m  File "[0m[1m[35m/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__functional/function.h[39m[0m[2m", line 512[0m
+    return (*__f_)(_VSTD::forward<_ArgTypes>(__args)...);
+[2m  File "[0m[1m[35m/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__functional/function.h[39m[0m[2m", line 359[0m
+    return __f_(_VSTD::forward<_ArgTypes>(__arg)...);
+[2m  File "[0m[1m[35m/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__functional/function.h[39m[0m[2m", line 185[0m
+    return _Invoker::__call(__f_.first(),
+[2m  File "[0m[1m[35m/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__functional/invoke.h[39m[0m[2m", line 479[0m
+    std::__invoke(std::forward<_Args>(__args)...);
+[2m  File "[0m[1m[35m/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__functional/invoke.h[39m[0m[2m", line 394[0m
+    { return          static_cast<_Fp&&>(__f)(static_cast<_Args&&>(__args)...); }
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/pass_utils.cpp[39m[0m[2m", line 432[0m
+    [&](const std::string &msg, const Location &) { throw LCompilersException(msg); }
+LCompilersException: Module 'lfortran_intrinsic_optimization' not declared in the current source and the modfile was not found
+
+../test_os.py: No such file or directory
+
+
+
+
+[0;33;1mstyle suggestion[0;0m[0;1m: Could have used '**' instead of 'pow'[0;0m
+  [0;34;1m-->[0;0m integration_tests/test_builtin_pow.py:11:16
+   [0;34;1m|[0;0m
+[0;34;1m11 |[0;0m     assert i32(pow(a, b)) == 32
+   [0;34;1m|[0;0m                [0;32;1m^^^^^^^^^ '**' could be used instead[0;0m
+
+
+[0;1mNote[0;0m: if any of the above error or warning messages are not clear or are lacking
+context please report it to us (we consider that a bug that must be fixed).
+
+
+
+
+
+
+
+
+AssertionError
+
+
+
+
+
+[0;31;1mcode generation error[0;0m[0;1m: asr_to_llvm: module failed verification. Error:
+Stored value type does not match pointer operand type!
+  store double %4, i1* %6, align 8
+ i1[0;0m
+
+
+[0;1mNote[0;0m: if any of the above error or warning messages are not clear or are lacking
+context please report it to us (we consider that a bug that must be fixed).
+
+
+
+
+Undefined symbols for architecture arm64:
+  "_f_f32_f32", referenced from:
+      ___module__global_symbols_test_c_callbacks in test_c_interop_02.out.tmp.o
+  "_f_f64_f64", referenced from:
+      ___module__global_symbols_test_c_callbacks in test_c_interop_02.out.tmp.o
+  "_f_i16_i16", referenced from:
+      ___module__global_symbols_test_c_callbacks in test_c_interop_02.out.tmp.o
+  "_f_i32_i32", referenced from:
+      ___module__global_symbols_test_c_callbacks in test_c_interop_02.out.tmp.o
+  "_f_i64_i64", referenced from:
+      ___module__global_symbols_test_c_callbacks in test_c_interop_02.out.tmp.o
+  "_f_i8_i8", referenced from:
+      ___module__global_symbols_test_c_callbacks in test_c_interop_02.out.tmp.o
+  "_f_str_i32", referenced from:
+      ___module__global_symbols_test_c_callbacks in test_c_interop_02.out.tmp.o
+ld: symbol(s) not found for architecture arm64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+Undefined symbols for architecture arm64:
+  "_f_pf32_i32", referenced from:
+      ___module__global_symbols_test_c_callbacks in test_c_interop_03.out.tmp.o
+  "_f_pf64_i32", referenced from:
+      ___module__global_symbols_test_c_callbacks in test_c_interop_03.out.tmp.o
+  "_f_pi32_i32", referenced from:
+      ___module__global_symbols_test_c_callbacks in test_c_interop_03.out.tmp.o
+  "_f_pi64_i32", referenced from:
+      ___module__global_symbols_test_c_callbacks in test_c_interop_03.out.tmp.o
+  "_f_pvoid_pvoid", referenced from:
+      ___module__global_symbols_test_c_callbacks in test_c_interop_03.out.tmp.o
+ld: symbol(s) not found for architecture arm64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+Undefined symbols for architecture arm64:
+  "_driver1", referenced from:
+      ___module__global_symbols_test_c_callbacks in test_c_interop_05.out.tmp.o
+  "_driver2", referenced from:
+      ___module__global_symbols_test_c_callbacks in test_c_interop_05.out.tmp.o
+  "_driver3", referenced from:
+      ___module__global_symbols_test_c_callbacks in test_c_interop_05.out.tmp.o
+  "_driver4", referenced from:
+      ___module__global_symbols_test_c_callbacks in test_c_interop_05.out.tmp.o
+  "_driver5", referenced from:
+      ___module__global_symbols_test_c_callbacks in test_c_interop_05.out.tmp.o
+  "_f_enum_i32", referenced from:
+      _callback5 in test_c_interop_05.out.tmp.o
+  "_f_i32_i32", referenced from:
+      _callback2 in test_c_interop_05.out.tmp.o
+  "_f_pi32_i32", referenced from:
+      _callback1 in test_c_interop_05.out.tmp.o
+      _callback3 in test_c_interop_05.out.tmp.o
+  "_f_pstruct_i32", referenced from:
+      _callback4 in test_c_interop_05.out.tmp.o
+ld: symbol(s) not found for architecture arm64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+Undefined symbols for architecture arm64:
+  "_g", referenced from:
+      _f in bindc_03.out.tmp.o
+      ___module__global_symbols_gpy in bindc_03.out.tmp.o
+      ___module__global_symbols_run in bindc_03.out.tmp.o
+     (maybe you meant: ___module__global_symbols__lpython_main_program, ___module__global_symbols_h , ___module__global_symbols_run , ___module__global_symbols_gpy )
+  "_get_array", referenced from:
+      ___module__global_symbols_run in bindc_03.out.tmp.o
+ld: symbol(s) not found for architecture arm64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+Undefined symbols for architecture arm64:
+  "_print_value", referenced from:
+      ___module__global_symbols__lpython_main_program in bindc_05.out.tmp.o
+      ___module__global_symbols_test_trunc in bindc_05.out.tmp.o
+      _main in bindc_05.out.tmp.o
+  "_trunc_custom", referenced from:
+      ___module__global_symbols__lpython_main_program in bindc_05.out.tmp.o
+      ___module__global_symbols_test_trunc in bindc_05.out.tmp.o
+      _main in bindc_05.out.tmp.o
+ld: symbol(s) not found for architecture arm64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+Undefined symbols for architecture arm64:
+  "_compare_array_element", referenced from:
+      ___module__global_symbols_test_arrays in bindc_06.out.tmp.o
+ld: symbol(s) not found for architecture arm64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+[0;31;1mcode generation error[0;0m[0;1m: asr_to_llvm: module failed verification. Error:
+Both operands to ICmp instruction are not of the same type!
+  %34 = icmp eq i32 %32, i1 false
+Stored value type does not match pointer operand type!
+  store i32 %32, i1* %35, align 4
+ i1Stored value type does not match pointer operand type!
+  store i32 %33, i1* %35, align 4
+ i1Both operands to ICmp instruction are not of the same type!
+  %41 = icmp eq i32 %39, i1 false
+Stored value type does not match pointer operand type!
+  store i32 %39, i1* %42, align 4
+ i1Stored value type does not match pointer operand type!
+  store i32 %40, i1* %42, align 4
+ i1[0;0m
+
+
+[0;1mNote[0;0m: if any of the above error or warning messages are not clear or are lacking
+context please report it to us (we consider that a bug that must be fixed).
+
+Internal Compiler Error: Unhandled exception
+Traceback (most recent call last):
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/bin/lpython.cpp[39m[0m[2m", line 1828[0m
+    err = compile_python_to_object_file(arg_file, tmp_o, runtime_library_dir,
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/bin/lpython.cpp[39m[0m[2m", line 809[0m
+    res = fe.get_llvm3(*asr, pass_manager, diagnostics, infile);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/lpython/python_evaluator.cpp[39m[0m[2m", line 58[0m
+    run_fn, infile);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/codegen/asr_to_llvm.cpp[39m[0m[2m", line 8521[0m
+    pass_manager.apply_passes(al, &asr, pass_options, diagnostics);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/pass_manager.h[39m[0m[2m", line 274[0m
+    apply_passes(al, asr, _with_optimization_passes, pass_options,
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/pass_manager.h[39m[0m[2m", line 148[0m
+    _passes_db[passes[i]](al, *asr, pass_options);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/inline_function_calls.cpp[39m[0m[2m", line 485[0m
+    v.visit_TranslationUnit(unit);
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 37561[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4778[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4505[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 37579[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4778[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4506[0m
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/inline_function_calls.cpp[39m[0m[2m", line 93[0m
+    current_routine = std::string(xx.m_name);
+[2m  File "[0m[1m[35m../libasr/pass/pass_utils.h[39m[0m[2m", line 204[0m
+[2m  File "[0m[1m[35m../libasr/pass/pass_utils.h[39m[0m[2m", line 149[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4793[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4527[0m
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/inline_function_calls.cpp[39m[0m[2m", line 468[0m
+    function_result_var = nullptr;
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4839[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4615[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 38260[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4839[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4580[0m
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/inline_function_calls.cpp[39m[0m[2m", line 288[0m
+    ASR::Variable_t* func_var = ASR::down_cast<ASR::Variable_t>(itr.second);
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 41[0m
+AssertFailed: is_a<T>(*f)
+
+
+
+
+
+
+
+
+
+
+
+AssertionError
+
+
+
+
+
+
+
+Undefined symbols for architecture arm64:
+  "_cfree", referenced from:
+      ___module__global_symbols__lpython_main_program in structs_07.out.tmp.o
+      ___module__global_symbols_call_malloc in structs_07.out.tmp.o
+      _main in structs_07.out.tmp.o
+  "_cmalloc", referenced from:
+      ___module__global_symbols__lpython_main_program in structs_07.out.tmp.o
+      ___module__global_symbols_call_malloc in structs_07.out.tmp.o
+      _main in structs_07.out.tmp.o
+ld: symbol(s) not found for architecture arm64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+
+Internal Compiler Error: Unhandled exception
+Traceback (most recent call last):
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/bin/lpython.cpp[39m[0m[2m", line 1828[0m
+    err = compile_python_to_object_file(arg_file, tmp_o, runtime_library_dir,
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/bin/lpython.cpp[39m[0m[2m", line 809[0m
+    res = fe.get_llvm3(*asr, pass_manager, diagnostics, infile);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/lpython/python_evaluator.cpp[39m[0m[2m", line 58[0m
+    run_fn, infile);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/codegen/asr_to_llvm.cpp[39m[0m[2m", line 8521[0m
+    pass_manager.apply_passes(al, &asr, pass_options, diagnostics);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/pass_manager.h[39m[0m[2m", line 274[0m
+    apply_passes(al, asr, _with_optimization_passes, pass_options,
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/pass_manager.h[39m[0m[2m", line 148[0m
+    _passes_db[passes[i]](al, *asr, pass_options);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/fma.cpp[39m[0m[2m", line 172[0m
+    v.visit_TranslationUnit(unit);
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 37561[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4778[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4505[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 37579[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4778[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4506[0m
+[2m  File "[0m[1m[35m../libasr/pass/pass_utils.h[39m[0m[2m", line 239[0m
+[2m  File "[0m[1m[35m../libasr/pass/pass_utils.h[39m[0m[2m", line 204[0m
+[2m  File "[0m[1m[35m../libasr/pass/pass_utils.h[39m[0m[2m", line 149[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4793[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4527[0m
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/fma.cpp[39m[0m[2m", line 129[0m
+    fma_var = nullptr;
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4839[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4599[0m
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/fma.cpp[39m[0m[2m", line 120[0m
+    fma_var = PassUtils::get_fma(other_expr, first_arg, second_arg,
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/pass_utils.cpp[39m[0m[2m", line 657[0m
+    al, unit, pass_options, current_scope, arg0->base.loc);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/pass_utils.cpp[39m[0m[2m", line 429[0m
+    ASR::Module_t *m = ASRUtils::load_module(al, current_scope,
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/asr_utils.cpp[39m[0m[2m", line 173[0m
+    loc);
+[2m  File "[0m[1m[35m/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__functional/function.h[39m[0m[2m", line 1197[0m
+    return __f_(_VSTD::forward<_ArgTypes>(__arg)...);
+[2m  File "[0m[1m[35m/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__functional/function.h[39m[0m[2m", line 512[0m
+    return (*__f_)(_VSTD::forward<_ArgTypes>(__args)...);
+[2m  File "[0m[1m[35m/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__functional/function.h[39m[0m[2m", line 359[0m
+    return __f_(_VSTD::forward<_ArgTypes>(__arg)...);
+[2m  File "[0m[1m[35m/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__functional/function.h[39m[0m[2m", line 185[0m
+    return _Invoker::__call(__f_.first(),
+[2m  File "[0m[1m[35m/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__functional/invoke.h[39m[0m[2m", line 479[0m
+    std::__invoke(std::forward<_Args>(__args)...);
+[2m  File "[0m[1m[35m/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__functional/invoke.h[39m[0m[2m", line 394[0m
+    { return          static_cast<_Fp&&>(__f)(static_cast<_Args&&>(__args)...); }
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/pass_utils.cpp[39m[0m[2m", line 432[0m
+    [&](const std::string &msg, const Location &) { throw LCompilersException(msg); }
+LCompilersException: Module 'lfortran_intrinsic_optimization' not declared in the current source and the modfile was not found
+
+
+
+Undefined symbols for architecture arm64:
+  "_add_Aptr_members", referenced from:
+      ___module__global_symbols_test_Aptr_member_passing in structs_13.out.tmp.o
+  "_cmalloc", referenced from:
+      ___module__global_symbols_test_A_member_passing in structs_13.out.tmp.o
+      ___module__global_symbols_test_Aptr_member_passing in structs_13.out.tmp.o
+  "_is_null", referenced from:
+      ___module__global_symbols_test_A_member_passing in structs_13.out.tmp.o
+      ___module__global_symbols_test_Aptr_member_passing in structs_13.out.tmp.o
+ld: symbol(s) not found for architecture arm64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+
+
+
+Undefined symbols for architecture arm64:
+  "_fill_buffer", referenced from:
+      ___module__global_symbols_f in structs_18.out.tmp.o
+  "_sum_buffer_i16", referenced from:
+      ___module__global_symbols_f in structs_18.out.tmp.o
+ld: symbol(s) not found for architecture arm64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+Undefined symbols for architecture arm64:
+  "_fill_buffer", referenced from:
+      ___module__global_symbols_f in structs_19.out.tmp.o
+  "_fill_buffer_array", referenced from:
+      ___module__global_symbols_f_array in structs_19.out.tmp.o
+  "_get_buffer", referenced from:
+      ___module__global_symbols_f in structs_19.out.tmp.o
+  "_get_buffer_array", referenced from:
+      ___module__global_symbols_f_array in structs_19.out.tmp.o
+ld: symbol(s) not found for architecture arm64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+Undefined symbols for architecture arm64:
+  "_fill_buffer", referenced from:
+      ___module__global_symbols_f in structs_20.out.tmp.o
+  "_get_buffer", referenced from:
+      ___module__global_symbols_f in structs_20.out.tmp.o
+ld: symbol(s) not found for architecture arm64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+
+
+
+
+Undefined symbols for architecture arm64:
+  "_cmalloc", referenced from:
+      ___module__global_symbols__lpython_main_program in sizeof_01.out.tmp.o
+      ___module__global_symbols_test_c_array in sizeof_01.out.tmp.o
+      _main in sizeof_01.out.tmp.o
+  "_fill_carray", referenced from:
+      ___module__global_symbols__lpython_main_program in sizeof_01.out.tmp.o
+      ___module__global_symbols_test_c_array in sizeof_01.out.tmp.o
+      _main in sizeof_01.out.tmp.o
+  "_sum_carray", referenced from:
+      ___module__global_symbols__lpython_main_program in sizeof_01.out.tmp.o
+      ___module__global_symbols_test_c_array in sizeof_01.out.tmp.o
+      _main in sizeof_01.out.tmp.o
+ld: symbol(s) not found for architecture arm64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+
+
+
+
+Undefined symbols for architecture arm64:
+  "_test_selected_color", referenced from:
+      ___module__global_symbols_test_colors in enum_05.out.tmp.o
+ld: symbol(s) not found for architecture arm64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[0;31;1mcode generation error[0;0m[0;1m: asr_to_llvm: module failed verification. Error:
+Stored value type does not match pointer operand type!
+  store %list %59, i32* %_lpython_return_variable__lpython_get_argc, align 8
+ i32Stored value type does not match pointer operand type!
+  store %list %59, i32* %_lpython_return_variable__lpython_get_argc__lpython_argv, align 8
+ i32Stored value type does not match pointer operand type!
+  store i32 %60, %list* @argv, align 4
+ %list = type { i32, i32, i8** }[0;0m
+
+
+[0;1mNote[0;0m: if any of the above error or warning messages are not clear or are lacking
+context please report it to us (we consider that a bug that must be fixed).
+
+
+ASR verify pass error: ASR verify: The symbol table was not found in the scope of `symtab`.
+
+ASR verify pass error: ASR verify: FunctionCall::m_name `func` cannot point outside of its symbol table
+Internal Compiler Error: Unhandled exception
+Traceback (most recent call last):
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/bin/lpython.cpp[39m[0m[2m", line 1828[0m
+    err = compile_python_to_object_file(arg_file, tmp_o, runtime_library_dir,
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/bin/lpython.cpp[39m[0m[2m", line 809[0m
+    res = fe.get_llvm3(*asr, pass_manager, diagnostics, infile);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/lpython/python_evaluator.cpp[39m[0m[2m", line 58[0m
+    run_fn, infile);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/codegen/asr_to_llvm.cpp[39m[0m[2m", line 8521[0m
+    pass_manager.apply_passes(al, &asr, pass_options, diagnostics);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/pass_manager.h[39m[0m[2m", line 274[0m
+    apply_passes(al, asr, _with_optimization_passes, pass_options,
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/pass_manager.h[39m[0m[2m", line 152[0m
+    throw LCompilersException("Verify failed in the pass: "
+LCompilersException: Verify failed in the pass: inline_function_calls
+
+
+Internal Compiler Error: Unhandled exception
+Traceback (most recent call last):
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/bin/lpython.cpp[39m[0m[2m", line 1828[0m
+    err = compile_python_to_object_file(arg_file, tmp_o, runtime_library_dir,
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/bin/lpython.cpp[39m[0m[2m", line 809[0m
+    res = fe.get_llvm3(*asr, pass_manager, diagnostics, infile);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/lpython/python_evaluator.cpp[39m[0m[2m", line 58[0m
+    run_fn, infile);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/codegen/asr_to_llvm.cpp[39m[0m[2m", line 8521[0m
+    pass_manager.apply_passes(al, &asr, pass_options, diagnostics);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/pass_manager.h[39m[0m[2m", line 274[0m
+    apply_passes(al, asr, _with_optimization_passes, pass_options,
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/pass_manager.h[39m[0m[2m", line 148[0m
+    _passes_db[passes[i]](al, *asr, pass_options);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/fma.cpp[39m[0m[2m", line 172[0m
+    v.visit_TranslationUnit(unit);
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 37561[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4778[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4505[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 37579[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4778[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4506[0m
+[2m  File "[0m[1m[35m../libasr/pass/pass_utils.h[39m[0m[2m", line 239[0m
+[2m  File "[0m[1m[35m../libasr/pass/pass_utils.h[39m[0m[2m", line 204[0m
+[2m  File "[0m[1m[35m../libasr/pass/pass_utils.h[39m[0m[2m", line 149[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4793[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4527[0m
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/fma.cpp[39m[0m[2m", line 129[0m
+    fma_var = nullptr;
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4839[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4599[0m
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/fma.cpp[39m[0m[2m", line 120[0m
+    fma_var = PassUtils::get_fma(other_expr, first_arg, second_arg,
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/pass_utils.cpp[39m[0m[2m", line 657[0m
+    al, unit, pass_options, current_scope, arg0->base.loc);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/pass_utils.cpp[39m[0m[2m", line 429[0m
+    ASR::Module_t *m = ASRUtils::load_module(al, current_scope,
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/asr_utils.cpp[39m[0m[2m", line 173[0m
+    loc);
+[2m  File "[0m[1m[35m/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__functional/function.h[39m[0m[2m", line 1197[0m
+    return __f_(_VSTD::forward<_ArgTypes>(__arg)...);
+[2m  File "[0m[1m[35m/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__functional/function.h[39m[0m[2m", line 512[0m
+    return (*__f_)(_VSTD::forward<_ArgTypes>(__args)...);
+[2m  File "[0m[1m[35m/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__functional/function.h[39m[0m[2m", line 359[0m
+    return __f_(_VSTD::forward<_ArgTypes>(__arg)...);
+[2m  File "[0m[1m[35m/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__functional/function.h[39m[0m[2m", line 185[0m
+    return _Invoker::__call(__f_.first(),
+[2m  File "[0m[1m[35m/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__functional/invoke.h[39m[0m[2m", line 479[0m
+    std::__invoke(std::forward<_Args>(__args)...);
+[2m  File "[0m[1m[35m/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__functional/invoke.h[39m[0m[2m", line 394[0m
+    { return          static_cast<_Fp&&>(__f)(static_cast<_Args&&>(__args)...); }
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/pass_utils.cpp[39m[0m[2m", line 432[0m
+    [&](const std::string &msg, const Location &) { throw LCompilersException(msg); }
+LCompilersException: Module 'lfortran_intrinsic_optimization' not declared in the current source and the modfile was not found
+
+Internal Compiler Error: Unhandled exception
+Traceback (most recent call last):
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/bin/lpython.cpp[39m[0m[2m", line 1828[0m
+    err = compile_python_to_object_file(arg_file, tmp_o, runtime_library_dir,
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/bin/lpython.cpp[39m[0m[2m", line 809[0m
+    res = fe.get_llvm3(*asr, pass_manager, diagnostics, infile);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/lpython/python_evaluator.cpp[39m[0m[2m", line 58[0m
+    run_fn, infile);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/codegen/asr_to_llvm.cpp[39m[0m[2m", line 8521[0m
+    pass_manager.apply_passes(al, &asr, pass_options, diagnostics);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/pass_manager.h[39m[0m[2m", line 274[0m
+    apply_passes(al, asr, _with_optimization_passes, pass_options,
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/pass_manager.h[39m[0m[2m", line 148[0m
+    _passes_db[passes[i]](al, *asr, pass_options);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/fma.cpp[39m[0m[2m", line 172[0m
+    v.visit_TranslationUnit(unit);
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 37561[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4778[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4505[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 37579[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4778[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4506[0m
+[2m  File "[0m[1m[35m../libasr/pass/pass_utils.h[39m[0m[2m", line 239[0m
+[2m  File "[0m[1m[35m../libasr/pass/pass_utils.h[39m[0m[2m", line 204[0m
+[2m  File "[0m[1m[35m../libasr/pass/pass_utils.h[39m[0m[2m", line 149[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4793[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4527[0m
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/fma.cpp[39m[0m[2m", line 129[0m
+    fma_var = nullptr;
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4839[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4599[0m
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/fma.cpp[39m[0m[2m", line 120[0m
+    fma_var = PassUtils::get_fma(other_expr, first_arg, second_arg,
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/pass_utils.cpp[39m[0m[2m", line 657[0m
+    al, unit, pass_options, current_scope, arg0->base.loc);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/pass_utils.cpp[39m[0m[2m", line 429[0m
+    ASR::Module_t *m = ASRUtils::load_module(al, current_scope,
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/asr_utils.cpp[39m[0m[2m", line 173[0m
+    loc);
+[2m  File "[0m[1m[35m/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__functional/function.h[39m[0m[2m", line 1197[0m
+    return __f_(_VSTD::forward<_ArgTypes>(__arg)...);
+[2m  File "[0m[1m[35m/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__functional/function.h[39m[0m[2m", line 512[0m
+    return (*__f_)(_VSTD::forward<_ArgTypes>(__args)...);
+[2m  File "[0m[1m[35m/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__functional/function.h[39m[0m[2m", line 359[0m
+    return __f_(_VSTD::forward<_ArgTypes>(__arg)...);
+[2m  File "[0m[1m[35m/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__functional/function.h[39m[0m[2m", line 185[0m
+    return _Invoker::__call(__f_.first(),
+[2m  File "[0m[1m[35m/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__functional/invoke.h[39m[0m[2m", line 479[0m
+    std::__invoke(std::forward<_Args>(__args)...);
+[2m  File "[0m[1m[35m/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__functional/invoke.h[39m[0m[2m", line 394[0m
+    { return          static_cast<_Fp&&>(__f)(static_cast<_Args&&>(__args)...); }
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/pass_utils.cpp[39m[0m[2m", line 432[0m
+    [&](const std::string &msg, const Location &) { throw LCompilersException(msg); }
+LCompilersException: Module 'lfortran_intrinsic_optimization' not declared in the current source and the modfile was not found
+
+
+
+
+
+
+
+Internal Compiler Error: Unhandled exception
+Traceback (most recent call last):
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/bin/lpython.cpp[39m[0m[2m", line 1828[0m
+    err = compile_python_to_object_file(arg_file, tmp_o, runtime_library_dir,
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/bin/lpython.cpp[39m[0m[2m", line 809[0m
+    res = fe.get_llvm3(*asr, pass_manager, diagnostics, infile);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/lpython/python_evaluator.cpp[39m[0m[2m", line 58[0m
+    run_fn, infile);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/codegen/asr_to_llvm.cpp[39m[0m[2m", line 8521[0m
+    pass_manager.apply_passes(al, &asr, pass_options, diagnostics);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/pass_manager.h[39m[0m[2m", line 274[0m
+    apply_passes(al, asr, _with_optimization_passes, pass_options,
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/pass_manager.h[39m[0m[2m", line 148[0m
+    _passes_db[passes[i]](al, *asr, pass_options);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/fma.cpp[39m[0m[2m", line 172[0m
+    v.visit_TranslationUnit(unit);
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 37561[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4778[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4505[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 37579[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4778[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4506[0m
+[2m  File "[0m[1m[35m../libasr/pass/pass_utils.h[39m[0m[2m", line 239[0m
+[2m  File "[0m[1m[35m../libasr/pass/pass_utils.h[39m[0m[2m", line 204[0m
+[2m  File "[0m[1m[35m../libasr/pass/pass_utils.h[39m[0m[2m", line 149[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4793[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4555[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 37943[0m
+[2m  File "[0m[1m[35m../libasr/pass/pass_utils.h[39m[0m[2m", line 149[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4793[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4527[0m
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/fma.cpp[39m[0m[2m", line 129[0m
+    fma_var = nullptr;
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4839[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4599[0m
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/fma.cpp[39m[0m[2m", line 120[0m
+    fma_var = PassUtils::get_fma(other_expr, first_arg, second_arg,
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/pass_utils.cpp[39m[0m[2m", line 657[0m
+    al, unit, pass_options, current_scope, arg0->base.loc);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/pass_utils.cpp[39m[0m[2m", line 429[0m
+    ASR::Module_t *m = ASRUtils::load_module(al, current_scope,
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/asr_utils.cpp[39m[0m[2m", line 173[0m
+    loc);
+[2m  File "[0m[1m[35m/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__functional/function.h[39m[0m[2m", line 1197[0m
+    return __f_(_VSTD::forward<_ArgTypes>(__arg)...);
+[2m  File "[0m[1m[35m/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__functional/function.h[39m[0m[2m", line 512[0m
+    return (*__f_)(_VSTD::forward<_ArgTypes>(__args)...);
+[2m  File "[0m[1m[35m/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__functional/function.h[39m[0m[2m", line 359[0m
+    return __f_(_VSTD::forward<_ArgTypes>(__arg)...);
+[2m  File "[0m[1m[35m/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__functional/function.h[39m[0m[2m", line 185[0m
+    return _Invoker::__call(__f_.first(),
+[2m  File "[0m[1m[35m/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__functional/invoke.h[39m[0m[2m", line 479[0m
+    std::__invoke(std::forward<_Args>(__args)...);
+[2m  File "[0m[1m[35m/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__functional/invoke.h[39m[0m[2m", line 394[0m
+    { return          static_cast<_Fp&&>(__f)(static_cast<_Args&&>(__args)...); }
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/pass_utils.cpp[39m[0m[2m", line 432[0m
+    [&](const std::string &msg, const Location &) { throw LCompilersException(msg); }
+LCompilersException: Module 'lfortran_intrinsic_optimization' not declared in the current source and the modfile was not found
+
+
+Internal Compiler Error: Unhandled exception
+Traceback (most recent call last):
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/bin/lpython.cpp[39m[0m[2m", line 1828[0m
+    err = compile_python_to_object_file(arg_file, tmp_o, runtime_library_dir,
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/bin/lpython.cpp[39m[0m[2m", line 809[0m
+    res = fe.get_llvm3(*asr, pass_manager, diagnostics, infile);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/lpython/python_evaluator.cpp[39m[0m[2m", line 58[0m
+    run_fn, infile);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/codegen/asr_to_llvm.cpp[39m[0m[2m", line 8521[0m
+    pass_manager.apply_passes(al, &asr, pass_options, diagnostics);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/pass_manager.h[39m[0m[2m", line 274[0m
+    apply_passes(al, asr, _with_optimization_passes, pass_options,
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/pass_manager.h[39m[0m[2m", line 148[0m
+    _passes_db[passes[i]](al, *asr, pass_options);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/inline_function_calls.cpp[39m[0m[2m", line 485[0m
+    v.visit_TranslationUnit(unit);
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 37561[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4778[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4505[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 37579[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4778[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4506[0m
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/inline_function_calls.cpp[39m[0m[2m", line 93[0m
+    current_routine = std::string(xx.m_name);
+[2m  File "[0m[1m[35m../libasr/pass/pass_utils.h[39m[0m[2m", line 204[0m
+[2m  File "[0m[1m[35m../libasr/pass/pass_utils.h[39m[0m[2m", line 149[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4793[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4527[0m
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/inline_function_calls.cpp[39m[0m[2m", line 468[0m
+    function_result_var = nullptr;
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4839[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4580[0m
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/inline_function_calls.cpp[39m[0m[2m", line 288[0m
+    ASR::Variable_t* func_var = ASR::down_cast<ASR::Variable_t>(itr.second);
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 41[0m
+AssertFailed: is_a<T>(*f)
+
+
+
+
+
+
+
+
+
+
+
+
+[0;31;1mcode generation error[0;0m[0;1m: asr_to_llvm: module failed verification. Error:
+Stored value type does not match pointer operand type!
+  store %list %59, i32* %_lpython_return_variable__lpython_get_argc, align 8
+ i32Stored value type does not match pointer operand type!
+  store %list %59, i32* %_lpython_return_variable__lpython_get_argc__lpython_argv, align 8
+ i32Stored value type does not match pointer operand type!
+  store i32 %60, %list* @argv, align 4
+ %list = type { i32, i32, i8** }[0;0m
+
+
+[0;1mNote[0;0m: if any of the above error or warning messages are not clear or are lacking
+context please report it to us (we consider that a bug that must be fixed).
+
+
+
+
+
+
+
+
+
+Internal Compiler Error: Unhandled exception
+Traceback (most recent call last):
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/bin/lpython.cpp[39m[0m[2m", line 1828[0m
+    err = compile_python_to_object_file(arg_file, tmp_o, runtime_library_dir,
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/bin/lpython.cpp[39m[0m[2m", line 809[0m
+    res = fe.get_llvm3(*asr, pass_manager, diagnostics, infile);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/lpython/python_evaluator.cpp[39m[0m[2m", line 58[0m
+    run_fn, infile);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/codegen/asr_to_llvm.cpp[39m[0m[2m", line 8521[0m
+    pass_manager.apply_passes(al, &asr, pass_options, diagnostics);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/pass_manager.h[39m[0m[2m", line 274[0m
+    apply_passes(al, asr, _with_optimization_passes, pass_options,
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/pass_manager.h[39m[0m[2m", line 148[0m
+    _passes_db[passes[i]](al, *asr, pass_options);
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/loop_vectorise.cpp[39m[0m[2m", line 195[0m
+    v.visit_TranslationUnit(unit);
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 37561[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4778[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4506[0m
+[2m  File "[0m[1m[35m../libasr/pass/pass_utils.h[39m[0m[2m", line 239[0m
+[2m  File "[0m[1m[35m../libasr/pass/pass_utils.h[39m[0m[2m", line 204[0m
+[2m  File "[0m[1m[35m../libasr/pass/pass_utils.h[39m[0m[2m", line 149[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4793[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 4533[0m
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/loop_vectorise.cpp[39m[0m[2m", line 182[0m
+    return ;
+[2m  File "[0m[1m[35m/Users/ubaid/Desktop/OpenSource/lpython/src/libasr/pass/loop_vectorise.cpp[39m[0m[2m", line 133[0m
+    ASR::expr_t* loop_end_value = ASRUtils::expr_value(loop_end);
+[2m  File "[0m[1m[35m../libasr/asr_utils.h[39m[0m[2m", line 352[0m
+[2m  File "[0m[1m[35m../libasr/asr.h[39m[0m[2m", line 46895[0m
+AssertFailed: f != nullptr
