@@ -622,12 +622,7 @@ namespace LCompilers {
 
                         if( type == nullptr ) {
                             type = get_type_from_ttype_t_util(v_type->m_type, module, arg_m_abi)->getPointerTo();
-                }
-                }
-                if( type != nullptr ) {
-                        }
-                if( type != nullptr ) {
-                        break;
+                }           break;
                     }
                     case ASR::array_physical_typeType::FixedSizeArray: {
                         type = llvm::ArrayType::get(get_el_type(v_type->m_type, module),
