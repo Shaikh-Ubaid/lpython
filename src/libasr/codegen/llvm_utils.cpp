@@ -1485,7 +1485,8 @@ namespace LCompilers {
                         break;
                     }
                     default: {
-                        // can exit with error
+                        throw LCompilersException("LLVMUtils::is_ineq_by_value unsupported overload_id " +
+                                        std::to_string(overload_id));
                     }
                 }
                 return builder->CreateCmp(pred, left, right);
@@ -1509,7 +1510,8 @@ namespace LCompilers {
                         break;
                     }
                     default: {
-                        // can exit with error
+                        throw LCompilersException("LLVMUtils::is_ineq_by_value unsupported overload_id " +
+                                        std::to_string(overload_id));
                     }
                 }
                 return builder->CreateCmp(pred, left, right);
@@ -1556,7 +1558,8 @@ namespace LCompilers {
                             break;
                         }
                         default: {
-                            // can exit with error
+                            throw LCompilersException("LLVMUtils::is_ineq_by_value unsupported overload_id " +
+                                        std::to_string(overload_id));
                         }
                     }
                     cond = builder->CreateAnd(cond, builder->CreateCmp(pred, l, r));
