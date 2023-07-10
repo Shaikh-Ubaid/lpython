@@ -831,6 +831,8 @@ public:
             this->visit_expr(*exprs[i]);
             ASR::expr_t* expr = nullptr;
             ASR::call_arg_t arg;
+            arg.loc.first = -1;
+            arg.loc.last = -1;
             if (tmp) {
                 expr = ASRUtils::EXPR(tmp);
                 arg.loc = expr->base.loc;
@@ -2362,7 +2364,7 @@ public:
                         result = left_value >> right_value;
                         break;
                     }
-                    default: { LCOMPILERS_ASSERT(false); } // should never happen
+                    default: { throw SemanticError("ICE: Unknown binary operator", loc); } // should never happen
                 }
                 value = ASR::down_cast<ASR::expr_t>(ASR::make_IntegerConstant_t(
                     al, loc, result, dest_type));
@@ -3396,7 +3398,7 @@ public:
         ASR::expr_t *left = ASRUtils::EXPR(tmp);
         this->visit_expr(*x.m_right);
         ASR::expr_t *right = ASRUtils::EXPR(tmp);
-        ASR::binopType op;
+        ASR::binopType op = ASR::binopType::Add /* temporary assignment */;
         std::string op_name = "";
         switch (x.m_op) {
             case (AST::operatorType::Add) : { op = ASR::binopType::Add; break; }
@@ -5602,7 +5604,7 @@ public:
         ASR::expr_t *right = ASRUtils::EXPR(tmp);
         ASR::ttype_t* left_type = ASRUtils::expr_type(left);
         ASR::ttype_t* right_type = ASRUtils::expr_type(right);
-        ASR::binopType op;
+        ASR::binopType op = ASR::binopType::Add /* temporary assignment */;
         std::string op_name = "";
         switch (x.m_op) {
             case (AST::operatorType::Add) : { op = ASR::binopType::Add; break; }
@@ -6313,7 +6315,9 @@ public:
                         result = (strcmp < 0 || strcmp == 0);
                         break;
                     }
-                    default: LCOMPILERS_ASSERT(false); // should never happen
+                    default: {
+                        throw SemanticError("ICE: Unknown compare operator", x.base.base.loc); // should never happen
+                    }
                 }
                 value = ASR::down_cast<ASR::expr_t>(ASR::make_LogicalConstant_t(
                     al, x.base.base.loc, result, type));
