@@ -622,12 +622,7 @@ namespace LCompilers {
 
                         if( type == nullptr ) {
                             type = get_type_from_ttype_t_util(v_type->m_type, module, arg_m_abi)->getPointerTo();
-                }
-                }
-                if( type != nullptr ) {
-                        }
-                if( type != nullptr ) {
-                        break;
+                }           break;
                     }
                     case ASR::array_physical_typeType::FixedSizeArray: {
                         type = llvm::ArrayType::get(get_el_type(v_type->m_type, module),
@@ -1485,7 +1480,8 @@ namespace LCompilers {
                         break;
                     }
                     default: {
-                        // can exit with error
+                        throw LCompilersException("LLVMUtils::is_ineq_by_value unsupported overload_id " +
+                                        std::to_string(overload_id));
                     }
                 }
                 return builder->CreateCmp(pred, left, right);
@@ -1509,7 +1505,8 @@ namespace LCompilers {
                         break;
                     }
                     default: {
-                        // can exit with error
+                        throw LCompilersException("LLVMUtils::is_ineq_by_value unsupported overload_id " +
+                                        std::to_string(overload_id));
                     }
                 }
                 return builder->CreateCmp(pred, left, right);
@@ -1556,7 +1553,8 @@ namespace LCompilers {
                             break;
                         }
                         default: {
-                            // can exit with error
+                            throw LCompilersException("LLVMUtils::is_ineq_by_value unsupported overload_id " +
+                                        std::to_string(overload_id));
                         }
                     }
                     cond = builder->CreateAnd(cond, builder->CreateCmp(pred, l, r));
@@ -4431,21 +4429,21 @@ namespace LCompilers {
                                                  ASR::ttype_t* int32_type) {
         /**
          * Equivalent in C++
-         * 
+         *
          * equality_holds = 1;
          * inequality_holds = 0;
          * i = 0;
-         * 
+         *
          * while( i < a_len && i < b_len && equality_holds ) {
          *     equality_holds &= (a[i] == b[i]);
          *     inequality_holds |= (a[i] op b[i]);
          *     i++;
          * }
-         * 
+         *
          * if( (i == a_len || i == b_len) && equality_holds ) {
          *     inequality_holds = a_len op b_len;
          * }
-         * 
+         *
          */
 
         llvm::AllocaInst *equality_holds = builder->CreateAlloca(
@@ -4670,11 +4668,11 @@ namespace LCompilers {
                                                  llvm::Module& module, int8_t overload_id) {
         /**
          * Equivalent in C++
-         * 
+         *
          * equality_holds = 1;
          * inequality_holds = 0;
          * i = 0;
-         * 
+         *
          * // owing to compile-time access of indices,
          * // loop is unrolled into multiple if statements
          * while( i < a_len && equality_holds ) {
@@ -4682,9 +4680,9 @@ namespace LCompilers {
          *     equality_holds &= (a[i] == b[i]);
          *     i++;
          * }
-         * 
+         *
          * return inequality_holds;
-         * 
+         *
          */
 
         llvm::AllocaInst *equality_holds = builder->CreateAlloca(
