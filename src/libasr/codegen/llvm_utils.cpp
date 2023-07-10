@@ -4434,21 +4434,21 @@ namespace LCompilers {
                                                  ASR::ttype_t* int32_type) {
         /**
          * Equivalent in C++
-         * 
+         *
          * equality_holds = 1;
          * inequality_holds = 0;
          * i = 0;
-         * 
+         *
          * while( i < a_len && i < b_len && equality_holds ) {
          *     equality_holds &= (a[i] == b[i]);
          *     inequality_holds |= (a[i] op b[i]);
          *     i++;
          * }
-         * 
+         *
          * if( (i == a_len || i == b_len) && equality_holds ) {
          *     inequality_holds = a_len op b_len;
          * }
-         * 
+         *
          */
 
         llvm::AllocaInst *equality_holds = builder->CreateAlloca(
@@ -4673,11 +4673,11 @@ namespace LCompilers {
                                                  llvm::Module& module, int8_t overload_id) {
         /**
          * Equivalent in C++
-         * 
+         *
          * equality_holds = 1;
          * inequality_holds = 0;
          * i = 0;
-         * 
+         *
          * // owing to compile-time access of indices,
          * // loop is unrolled into multiple if statements
          * while( i < a_len && equality_holds ) {
@@ -4685,9 +4685,9 @@ namespace LCompilers {
          *     equality_holds &= (a[i] == b[i]);
          *     i++;
          * }
-         * 
+         *
          * return inequality_holds;
-         * 
+         *
          */
 
         llvm::AllocaInst *equality_holds = builder->CreateAlloca(
