@@ -4740,7 +4740,6 @@ public:
         // if (!main_module) {
             module_sym = current_scope->get_symbol(module_name);
             mod = ASR::down_cast<ASR::Module_t>(module_sym);
-            current_module = mod;
             current_scope = mod->m_symtab;
             LCOMPILERS_ASSERT(current_scope != nullptr);
         // }
