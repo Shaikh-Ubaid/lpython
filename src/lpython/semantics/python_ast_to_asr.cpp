@@ -3950,9 +3950,11 @@ public:
         global_scope = current_scope;
 
         ASR::Module_t* module_sym = nullptr;
-        if (!main_module) {
-            // Main module goes directly to TranslationUnit.
-            // Every other module goes into a Module.
+        if (main_module) {
+            module_name = "__xx_main__";
+        }
+        // if (!main_module) {
+            // Every module goes into a Module.
             SymbolTable *parent_scope = current_scope;
             current_scope = al.make_new<SymbolTable>(parent_scope);
 
@@ -3969,15 +3971,15 @@ public:
             }
             module_sym = ASR::down_cast<ASR::Module_t>(ASR::down_cast<ASR::symbol_t>(tmp1));
             parent_scope->add_symbol(mod_name, ASR::down_cast<ASR::symbol_t>(tmp1));
-        }
+        // }
         current_module_dependencies.reserve(al, 1);
         for (size_t i=0; i<x.n_body; i++) {
             visit_stmt(*x.m_body[i]);
         }
-        if( module_sym ) {
+        // if( module_sym ) {
             module_sym->m_dependencies = current_module_dependencies.p;
             module_sym->n_dependencies = current_module_dependencies.size();
-        }
+        // }
         if (!overload_defs.empty()) {
             create_GenericProcedure(x.base.base.loc);
         }
@@ -4465,9 +4467,9 @@ public:
             paths.push_back(rl_path);
             paths.push_back(parent_dir);
 
-            if (!main_module) {
+            // if (!main_module) {
                 st = st->parent;
-            }
+            // }
             bool lpython, enum_py, copy, sympy;
             set_module_symbol(msym, paths);
             t = (ASR::symbol_t*)(load_module(al, st,
@@ -4539,9 +4541,9 @@ public:
         for (size_t i=0; i<x.n_names; i++) {
             mods.push_back(x.m_names[i].m_name);
         }
-        if (!main_module) {
+        // if (!main_module) {
             st = st->parent;
-        }
+        // }
         for (auto &mod_sym : mods) {
             bool lpython, enum_py, copy, sympy;
             set_module_symbol(mod_sym, paths);
@@ -4745,12 +4747,17 @@ public:
         ASR::symbol_t* module_sym = nullptr;
         ASR::Module_t* mod = nullptr;
 
-        if (!main_module) {
+        if (main_module) {
+            module_name =  "__xx_main__";
+        }
+
+        // if (!main_module) {
             module_sym = current_scope->get_symbol(module_name);
             mod = ASR::down_cast<ASR::Module_t>(module_sym);
+            current_module = mod;
             current_scope = mod->m_symtab;
             LCOMPILERS_ASSERT(current_scope != nullptr);
-        }
+        // }
 
         Vec<ASR::asr_t*> items;
         items.reserve(al, 4);
@@ -4770,7 +4777,7 @@ public:
             }
         }
 
-        if( mod ) {
+        // if( mod ) {
             for( size_t i = 0; i < mod->n_dependencies; i++ ) {
                 current_module_dependencies.push_back(al, mod->m_dependencies[i]);
             }
@@ -4825,14 +4832,14 @@ public:
                 items.p = nullptr;
                 items.n = 0;
             }
-        } else {
-            // It is main_module
-            for (auto item:items) {
-                global_init.push_back(al, item);
-            }
-            unit->m_items = global_init.p;
-            unit->n_items = global_init.size();
-        }
+        // } else {
+        //     // It is main_module
+        //     for (auto item:items) {
+        //         global_init.push_back(al, item);
+        //     }
+        //     unit->m_items = global_init.p;
+        //     unit->n_items = global_init.size();
+        // }
 
         tmp = asr;
     }
@@ -7756,28 +7763,78 @@ Result<ASR::TranslationUnit_t*> python_ast_to_asr(Allocator &al, LocationManager
     }
 
     if (main_module) {
+        Vec<ASR::stmt_t*> prog_body;
+        prog_body.reserve(al, 1);
+        SetChar prog_dep;
+        prog_dep.reserve(al, 1);
+        SymbolTable *program_scope = al.make_new<SymbolTable>(tu->m_global_scope);
+
+        std::string mod_name = "__xx_main__";
+        ASR::symbol_t *mod_sym = tu->m_global_scope->resolve_symbol(mod_name);
+        ASR::Module_t *mod = ASR::down_cast<ASR::Module_t>(mod_sym);
+        std::string g_func_name = mod_name + "@global_initializer";
+        ASR::symbol_t *g_func = mod->m_symtab->get_symbol("global_initializer");
+        if (g_func && !program_scope->get_symbol(g_func_name)) {
+            ASR::symbol_t *es = ASR::down_cast<ASR::symbol_t>(
+                ASR::make_ExternalSymbol_t(al, mod->base.base.loc,
+                program_scope, s2c(al, g_func_name), g_func,
+                s2c(al, mod_name), nullptr, 0, s2c(al, "global_initializer"),
+                ASR::accessType::Public));
+            program_scope->add_symbol(g_func_name, es);
+            prog_body.push_back(al, ASRUtils::STMT(ASRUtils::make_SubroutineCall_t_util(al, tu->base.base.loc,
+                es, g_func, nullptr, 0, nullptr, nullptr, false)));
+            prog_dep.push_back(al, s2c(al, mod_name));
+        }
+
+        g_func_name = mod_name + "@global_statements";
+        g_func = mod->m_symtab->get_symbol("global_statements");
+        if (g_func && !program_scope->get_symbol(g_func_name)) {
+            ASR::symbol_t *es = ASR::down_cast<ASR::symbol_t>(
+                ASR::make_ExternalSymbol_t(al, mod->base.base.loc,
+                program_scope, s2c(al, g_func_name), g_func,
+                s2c(al, mod_name), nullptr, 0, s2c(al, "global_statements"),
+                ASR::accessType::Public));
+            program_scope->add_symbol(g_func_name, es);
+            prog_body.push_back(al, ASRUtils::STMT(ASRUtils::make_SubroutineCall_t_util(al, tu->base.base.loc,
+                es, g_func, nullptr, 0, nullptr, nullptr, false)));
+            prog_dep.push_back(al, s2c(al, mod_name));
+        }
+
         // If it is a main module, turn it into a program
         // Note: we can modify this behavior for interactive mode later
         LCompilers::PassOptions pass_options;
         pass_options.disable_main = compiler_options.disable_main;
-        if (compiler_options.disable_main) {
-            if (tu->n_items > 0) {
-                diagnostics.add(diag::Diagnostic(
-                    "The script is invoked as the main module and it has code to execute,\n"
-                    "but `--disable-main` was passed so no code was generated for `main`.\n"
-                    "We are removing all global executable code from ASR.",
-                    diag::Level::Warning, diag::Stage::Semantic, {})
-                );
-                // We have to remove the code
-                tu->m_items=nullptr;
-                tu->n_items=0;
-                // LCOMPILERS_ASSERT(asr_verify(*tu));
-            }
-        } else {
-            pass_options.run_fun = "_lpython_main_program";
-            pass_options.runtime_library_dir = get_runtime_library_dir();
+        if( !pass_options.disable_main ) {
+            std::string prog_name = "main_program";
+            ASR::asr_t *prog = ASR::make_Program_t(
+                al, tu->base.base.loc,
+                /* a_symtab */ program_scope,
+                /* a_name */ s2c(al, prog_name),
+                prog_dep.p,
+                prog_dep.n,
+                /* a_body */ prog_body.p,
+                /* n_body */ prog_body.n);
+            tu->m_global_scope->add_symbol(prog_name, ASR::down_cast<ASR::symbol_t>(prog));
         }
-        pass_wrap_global_stmts_program(al, *tu, pass_options);
+
+        // if (compiler_options.disable_main) {
+        //     if (tu->n_items > 0) {
+        //         diagnostics.add(diag::Diagnostic(
+        //             "The script is invoked as the main module and it has code to execute,\n"
+        //             "but `--disable-main` was passed so no code was generated for `main`.\n"
+        //             "We are removing all global executable code from ASR.",
+        //             diag::Level::Warning, diag::Stage::Semantic, {})
+        //         );
+        //         // We have to remove the code
+        //         tu->m_items=nullptr;
+        //         tu->n_items=0;
+        //         // LCOMPILERS_ASSERT(asr_verify(*tu));
+        //     }
+        // } else {
+        //     pass_options.run_fun = "_lpython_main_program";
+        //     pass_options.runtime_library_dir = get_runtime_library_dir();
+        // }
+        // pass_wrap_global_stmts_program(al, *tu, pass_options);
         #if defined(WITH_LFORTRAN_ASSERT)
                     diag::Diagnostics diagnostics;
                     if (!asr_verify(*tu, true, diagnostics)) {
