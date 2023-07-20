@@ -347,13 +347,19 @@ jobs:
             cmake --build . -j16 --target install
 
       - name: Test Linux
-        shell: bash -e -l {0}
+        shell: bash -l {0}
         run: |
             ctest
+            cat Testing/Temporary/LastTest.log
             ./run_tests.py -s
             cd integration_tests
             ./run_tests.py -b llvm c
             ./run_tests.py -b llvm c -f
+      - name: Test Linux2
+        shell: bash -e -l {0}
+        run: |
+            ctest
+            cat Testing/Temporary/LastTest.log
 
   cpython_interop:
     name: Test CPython Interop (@pythoncall)
