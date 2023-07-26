@@ -398,6 +398,9 @@ jobs:
             cd integration_tests
             ./run_tests.py -b cpython c_py llvm_py
             ./run_tests.py -b cpython c_py llvm_py -f
+        env:
+          CC: clang
+          CXX: clang++
 
   sympy:
     name: Run SymPy tests
