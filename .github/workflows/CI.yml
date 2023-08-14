@@ -455,11 +455,10 @@ jobs:
 
       - uses: mamba-org/setup-micromamba@v1
         with:
-          environment-file: ci/environment.yml
+          environment-file: environment_unix.yml
           create-args: >-
             python=3.11.3
             bison=3.4
-            xeus=3.1.1
 
       - uses: hendrikmuhs/ccache-action@main
         with:
