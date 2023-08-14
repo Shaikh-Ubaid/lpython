@@ -729,7 +729,7 @@ class LpythonJITCache:
         rt_path_01 = "-I" + get_rtlib_dir() + "/../libasr/runtime "
         rt_path_02 = "-L" + get_rtlib_dir() + " -Wl,-rpath," \
             + get_rtlib_dir() + " -llpython_runtime "
-        python_lib = "-L" + get_python_lib() + "/../.." + f" -Wl,-rpath,{get_python_lib()+'/../..'}" + " -lpython" + \
+        python_lib = "-L" + get_python_lib() + "/../.." + " -lpython" + \
             get_python_version() + " -lm"
 
         # ----------------------------------------------------------------------
