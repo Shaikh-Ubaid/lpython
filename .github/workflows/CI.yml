@@ -459,6 +459,7 @@ jobs:
           create-args: >-
             python=3.11.3
             bison=3.4
+            xeus=3.x
 
       - uses: hendrikmuhs/ccache-action@main
         with:
@@ -467,6 +468,23 @@ jobs:
       - name: Show Python version
         shell: bash -e -l {0}
         run: python --version
+
+      - name: Build
+        shell: bash -e -l {0}
+        run: |
+            ./build0.sh
+            cmake . -G"Unix Makefiles" \
+              -DCMAKE_BUILD_TYPE=Debug \
+              -DWITH_LLVM=yes \
+              -DLPYTHON_BUILD_ALL=yes \
+              -DWITH_STACKTRACE=no \
+              -DWITH_RUNTIME_STACKTRACE=no \
+              -DCMAKE_PREFIX_PATH="$CONDA_PREFIX" \
+              -DCMAKE_INSTALL_PREFIX=`pwd`/inst \
+              -DCMAKE_C_COMPILER_LAUNCHER=ccache \
+              -DCMAKE_CXX_COMPILER_LAUNCHER=ccache
+
+            cmake --build . -j16 --target install
 
       - name: Test
         shell: bash -e -l {0}
