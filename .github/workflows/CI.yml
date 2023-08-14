@@ -466,7 +466,7 @@ jobs:
             zlib
             cmake
             make
-            python=3.11.4
+            python=3.11
             numpy
 
       - uses: hendrikmuhs/ccache-action@main
