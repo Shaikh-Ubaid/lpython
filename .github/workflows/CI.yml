@@ -455,10 +455,19 @@ jobs:
 
       - uses: mamba-org/setup-micromamba@v1
         with:
-          environment-file: environment_unix.yml
+          environment-name: lp
+          condarc: |
+            channels:
+              - conda-forge
           create-args: >-
-            python=3.11.3
+            llvmdev=11.1.0
             bison=3.4
+            re2c
+            zlib
+            cmake
+            make
+            python=3.11.4
+            numpy
 
       - uses: hendrikmuhs/ccache-action@main
         with:
