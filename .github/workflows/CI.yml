@@ -459,7 +459,7 @@ jobs:
           create-args: >-
             python=3.11.3
             bison=3.4
-            xeus=3.x
+            xeus=3.1.1
 
       - uses: hendrikmuhs/ccache-action@main
         with:
