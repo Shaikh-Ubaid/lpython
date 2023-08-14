@@ -2,7 +2,7 @@ from inspect import getfullargspec, getcallargs, isclass, getsource
 import os
 import ctypes
 import platform
-from dataclasses import dataclass as py_dataclass, is_dataclass as py_is_dataclass
+from dataclasses import dataclass as py_dataclass, is_dataclass as py_is_dataclass, field as py_field
 import functools
 
 
@@ -52,6 +52,16 @@ def dataclass(arg):
     def __class_getitem__(key):
         return Array(arg, key)
     arg.__class_getitem__ = __class_getitem__
+
+    class_mems = list(arg.__annotations__.keys())
+    class_mems_init = dict(list(filter(lambda x: x[0] in class_mems, arg.__dict__.items())))
+
+    for class_mem in class_mems_init.keys():
+        orig_val = class_mems_init[class_mem]
+        if isinstance(orig_val, (int, float, str, bool, tuple)):
+            setattr(arg, class_mem, py_field(default=orig_val))
+        else:
+            setattr(arg, class_mem, py_field(default_factory=lambda val=orig_val: val))
 
     return py_dataclass(arg)
 
