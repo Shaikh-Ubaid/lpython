@@ -780,3 +780,4 @@ COMPILE(NAME import_order_01     LABELS cpython llvm c) # any
 
 # LPython emulation mode
 RUN(NAME lpython_emulation_01    LABELS cpython NOMOD)
+RUN(NAME lpython_emulation_02    LABELS cpython)
