@@ -71,12 +71,22 @@ jobs:
 
             cmake --build . -j16 --target install
 
-      - name: Run Tests
+      - name: Run Ctest
+        if: Always()
         shell: bash -e -l {0}
         run: |
             ctest --rerun-failed --output-on-failure
+
+      - name: Run Reference Tests
+        if: Always()
+        shell: bash -e -l {0}
+        run: |
             ./run_tests.py -s
 
+      - name: Run Integration Tests
+        if: Always()
+        shell: bash -e -l {0}
+        run: |
             cd integration_tests
             ./run_tests.py -b llvm
             ./run_tests.py -b llvm -f
