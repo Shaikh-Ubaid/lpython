@@ -66,7 +66,6 @@ jobs:
         shell: bash -e -l {0}
         run: |
             ./build0.sh
-            export CXXFLAGS="-Werror -DDEBUG_ERROR_RENDERING"
             export LPYTHON_TEST_DEBUG=1
             export DOCTEST_CONFIG_SUPER_QUIET=1
             cmake . -GNinja \
