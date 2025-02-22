@@ -57,10 +57,10 @@ jobs:
             echo "=== Python Dependencies ==="
             pip list
 
-            - uses: hendrikmuhs/ccache-action@main
-            with:
-              variant: sccache
-              key: ${{ github.job }}-ubuntu
+      - uses: hendrikmuhs/ccache-action@main
+        with:
+          variant: sccache
+          key: ${{ github.job }}-ubuntu
 
       - name: Build Linux
         shell: bash -e -l {0}
