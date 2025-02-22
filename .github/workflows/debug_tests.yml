@@ -66,8 +66,6 @@ jobs:
         shell: bash -e -l {0}
         run: |
             ./build0.sh
-            export LPYTHON_TEST_DEBUG=1
-            export DOCTEST_CONFIG_SUPER_QUIET=1
             cmake . -GNinja \
                 -DCMAKE_BUILD_TYPE=Release \
                 -DCMAKE_CXX_FLAGS_RELEASE="-Wall -Wextra -O3 -funroll-loops -DNDEBUG -DDEBUG_ERROR_RENDERING" \
@@ -86,15 +84,7 @@ jobs:
         if: Always()
         shell: bash -e -l {0}
         run: |
-            # Print test file contents for debugging
-            echo "=== Test Environment ==="
-            ls -la src/lpython/tests/
-            cat src/lpython/tests/test_error_rendering.cpp
-
-            # Run tests with more verbosity
-            export LPYTHON_TEST_DEBUG=1
-            export DOCTEST_CONFIG_SUPER_QUIET=1
-            CTEST_OUTPUT_ON_FAILURE=1 ctest -V --rerun-failed --output-on-failure
+            ctest --rerun-failed --output-on-failure
 
       - name: Run Reference Tests
         if: Always()
