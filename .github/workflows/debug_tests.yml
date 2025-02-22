@@ -1,0 +1,101 @@
+name: Debug Disabled Tests
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  debug_tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - uses: mamba-org/setup-micromamba@v1
+        with:
+          environment-file: ci/environment.yml
+          create-args: >-
+            python=3.10
+            bison=3.4
+
+      - name: Print Debug Information
+        shell: bash -e -l {0}
+        run: |
+            echo "=== System Information ==="
+            uname -a
+            free -h
+            df -h
+
+            echo "=== Micromamba Information ==="
+            micromamba --version
+            micromamba info
+
+            echo "=== Compiler Versions ==="
+            gfortran --version
+            gcc --version
+            g++ --version
+            clang --version
+            python --version
+            cmake --version
+            ninja --version
+
+            echo "=== Compiler Locations ==="
+            which gfortran
+            which gcc
+            which g++
+            which clang
+            which python
+            which cmake
+            which ninja
+
+            echo "=== Environment ==="
+            env | sort
+
+            echo "=== Python Dependencies ==="
+            pip list
+
+      - uses: hendrikmuhs/ccache-action@main
+        with:
+          variant: sccache
+          key: ${{ github.job }}-ubuntu
+
+      - name: Build Linux
+        shell: bash -e -l {0}
+        run: |
+            ./build0.sh
+            cmake . -GNinja \
+                -DCMAKE_BUILD_TYPE=Release \
+                -DCMAKE_CXX_FLAGS_RELEASE="-Wall -Wextra -O3 -funroll-loops -DNDEBUG -DDEBUG_ERROR_RENDERING" \
+                -DWITH_LLVM=yes \
+                -DLFORTRAN_BUILD_ALL=yes \
+                -DWITH_STACKTRACE=no \
+                -DWITH_RUNTIME_STACKTRACE=yes \
+                -DCMAKE_PREFIX_PATH="$CONDA_PREFIX" \
+                -DCMAKE_INSTALL_PREFIX=`pwd`/inst \
+                -DCMAKE_C_COMPILER_LAUNCHER=sccache \
+                -DCMAKE_CXX_COMPILER_LAUNCHER=sccache
+
+            cmake --build . -j16 --target install
+
+      - name: Run Ctest
+        if: Always()
+        shell: bash -e -l {0}
+        run: |
+            ctest --rerun-failed --output-on-failure
+
+      - name: Run Reference Tests
+        if: Always()
+        shell: bash -e -l {0}
+        run: |
+            ./run_tests.py -s
+
+      - name: Run Integration Tests
+        if: Always()
+        shell: bash -e -l {0}
+        run: |
+            cd integration_tests
+            ./run_tests.py -b llvm
+            ./run_tests.py -b llvm -f

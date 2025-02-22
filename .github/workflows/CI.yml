@@ -6,9 +6,7 @@ on:
       - main
     tags:
       - 'v*'
-  pull_request:
-    branches:
-      - main
+
 env:
   MACOSX_DEPLOYMENT_TARGET: 14.0
 
