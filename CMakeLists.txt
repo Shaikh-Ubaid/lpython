@@ -348,3 +348,4 @@ message("WITH_TARGET_X86: ${WITH_TARGET_X86}")
 
 
 add_subdirectory(src)
+add_subdirectory(lfortran/src/libasr)
