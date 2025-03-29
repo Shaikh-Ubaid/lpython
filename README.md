@@ -1,7 +1,7 @@
 # LPython
 
 LPython is an ahead-of-time compiler for Python written in C++. It is currently in alpha
-stage and under heavy development. LPython works on Windows, macOS and Linux. 
+stage and under heavy development. LPython works on Windows, macOS and Linux.
 
 Some of the goals of LPython include:
 
@@ -13,7 +13,7 @@ Some of the goals of LPython include:
 - Exploring design patterns so that LPython can eventually compile all Python code.
 - Providing excellent user-friendly diagnostic messages: error, warnings, hints, notes, etc.
 
-among many more.
+among many more. No change here.
 
 # Sponsors
 
